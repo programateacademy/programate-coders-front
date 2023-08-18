@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Niveles.css';
+import '../Styles/Niveles.css'
 
 function Niveles() {
   const [selectedLevel, setSelectedLevel] = useState(null);
