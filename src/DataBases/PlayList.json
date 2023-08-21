@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Curso JavaScript",
+      "language": "JavaScript",
+      "program": "Programate Academy",
+      "link": "https://www.youtube.com/playlist?list=PLHE0O79Fwx1LmbRvfZGNI_qlHlXy8C5Lw"
+    },
+    {
+      "title": "Introduccion Python",
+      "language": "Python",
+      "program": "Programate School",
+      "link": "hhttps://www.youtube.com/playlist?list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS"
+    },
+    {
+      "title": "Curso HTML",
+      "language": "HTML",
+      "program": "Programate Academy",
+      "link": "https://www.youtube.com/playlist?list=PLhSj3UTs2_yVHt2DgHky_MzzRC58UHE4z"
+    },
+    {
+        "title": "Introduccion GitHub",
+        "language": "GitHub",
+        "program": "Programate School",
+        "link": "https://www.youtube.com/playlist?list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU"
+      }
+  ]
