@@ -1,10 +1,11 @@
 import React from "react";
-import Carrusel from "./Components/Carrusel";
+
+import CardsSchool from "./Components/CardsSchool";
 
 function App() {
   return (
     <div className="App">
-      <Carrusel />
+      <CardsSchool />
     </div>
   );
 }
