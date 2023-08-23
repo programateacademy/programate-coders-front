@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import '../Styles/Niveles.css'
+import { Document, Page, pdfjs } from 'react-pdf';
+import '../Styles/Niveles.css';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function Niveles() {
   const [selectedLevel, setSelectedLevel] = useState(null);
+  const [pdfFile, setPdfFile] = useState(null);
 
   const handleLevelClick = (level) => {
     setSelectedLevel(level);
+    setPdfFile(`/pdfs/Nivel${level}.pdf`);
   };
 
   return (
@@ -33,6 +38,9 @@ function Niveles() {
       {selectedLevel !== null && (
         <div className="contenido">
           Contenido del Nivel {selectedLevel} desplegado.
+          <Document file={pdfFile}>
+            <Page pageNumber={1} />
+          </Document>
         </div>
       )}
     </div>
