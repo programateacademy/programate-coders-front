@@ -1,0 +1,20 @@
+
+.reproductor-section-container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10%;
+    padding: 50px;
+}
+
+.video-list {
+    max-height: 400px;
+    max-width: 500px;
+    overflow-y: auto;
+
+}
+.video-item{
+    cursor: pointer;
+}
+.video-item:hover{
+    background-color: #d7d7d7;
+}

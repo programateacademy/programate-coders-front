@@ -5,7 +5,7 @@ import VideoReproductor from './VideoReproductor'
 function VideoSection() {
   return (
     <div>
-        <VideoReproductor/>
+        <VideoReproductor language={"JavaScript"}/>
     </div>
   )
 }

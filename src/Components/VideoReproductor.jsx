@@ -1,96 +1,77 @@
-import { useEffect, useState } from 'react'
-import ReactPlayer from 'react-player';
-import axios from 'axios';
+import { useEffect, useState } from "react"
+import playListData from "../DataBases/PlayList";
+import axios from "axios";
+import ReactPlayer from "react-player";
+import "../Styles/VideoReproductor.css"
 
 
-
-const VideoReproductor = () => {
-    const [playlists, setPlaylists] = useState([]);
-    const [selectedPlaylist, setSelectedPlaylist] = useState(null);
+const VideoReproductor = ({ language }) => {
     const [videos, setVideos] = useState([]);
-    const [selectedVideoIndex, setSelectedVideoIndex] = useState(null);
+    const [selectedVideoUrl, setSelectedVideoUrl] = useState(videos.length > 0 ? videos[0].snippet.resourceId.videoId : "");
 
+
+
+    const extractID = (playlistLink) => {
+        const urlParts = playlistLink.split('?');
+        const params = new URLSearchParams(urlParts[1]);
+        return params.get('list');
+    };
+
+
+    //solicitud a la Api de Youtube para traer las listas de reproducción
     useEffect(() => {
-        const fetchPlaylists = async () => {
-            try {
-                const response = await axios.get(
-                    'https://www.googleapis.com/youtube/v3/playlists',
-                    {
-                        params: {
-                            key: 'AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ',
-                            channelId: 'UCmnr_sLPZ1E8H1VgUtaHGPQ',
-                            part: 'snippet',
-                            maxResults: 10,
-                        },
-                    }
-                );
-                setPlaylists(response.data.items);
-            } catch (error) {
-                console.error(error);
-            }
-        };
+        const apiKey = 'AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ';
 
-        fetchPlaylists();
-    }, []);
+        const filterLinks = playListData.find(
+            (item) => item.language === language
+        );
 
-    const fetchPlaylistVideos = async (playlistId) => {
-        try {
-            const response = await axios.get(
-                'https://www.googleapis.com/youtube/v3/playlistItems',
-                {
-                    params: {
-                        key: 'AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ',
-                        playlistId: playlistId,
-                        part: 'snippet',
-                        maxResults: 10,
-                    },
+        if (filterLinks) {
+            const playlistId = extractID(filterLinks.link);
+            axios.get(`https://www.googleapis.com/youtube/v3/playlistItems`, {
+                params: {
+                    part: 'snippet',
+                    playlistId: playlistId,
+                    key: apiKey,
+                    maxResults: 10000// validar si este parametro es necesario
                 }
-            );
-            setVideos(response.data.items);
-        } catch (error) {
-            console.error(error);
+            })
+                .then(response => {
+                    setVideos(response.data.items);
+                    if (response.data.items.length > 0 && !selectedVideoUrl) {
+                        setSelectedVideoUrl(response.data.items[0].snippet.resourceId.videoId);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching YouTube playlist:', error);
+                });
         }
+    }, [language, selectedVideoUrl]);
+
+    const handleVideoClick = (videoUrl) => {
+        setSelectedVideoUrl(videoUrl);
     };
 
-    const handlePlaylistClick = (playlistId) => {
-        setSelectedPlaylist(playlistId);
-        setSelectedVideoIndex(null);
-        fetchPlaylistVideos(playlistId);
-    };
-
-    const handleVideoClick = (index) => {
-        setSelectedVideoIndex(index);
-    };
 
     return (
-        <div>
-            <h2>Listas de Reproducción</h2>
-            <ul>
-                {playlists.map((playlist) => (
-                    <li key={playlist.id} onClick={() => handlePlaylistClick(playlist.id)}>
-                        {playlist.snippet.title}
-                    </li>
+        <div className="reproductor-section-container">
+            <div className="video-selected">
+                {selectedVideoUrl && (
+                    <ReactPlayer url={`https://www.youtube.com/watch?v=${selectedVideoUrl}`} 
+                    controls
+                    width="100%"
+                    height="100%"/>
+                )}
+            </div>
+            <div className="video-list">
+                {videos.map((video) => (
+                    <div key={video.id} className="video-item" onClick={() => handleVideoClick(video.snippet.resourceId.videoId)}>
+                        {/* <img src={video.snippet.thumbnails.default.url} alt={video.snippet.title} /> */}
+                        <p>{video.snippet.title}</p>
+                    </div>
                 ))}
-            </ul>
-            {selectedPlaylist && (
-                <div>
-                    <h3>Videos de la Lista de Reproducción</h3>
-                    <ul>
-                        {videos.map((video, index) => (
-                            <li key={video.snippet.resourceId.videoId} onClick={() => handleVideoClick(index)}>
-                                {selectedVideoIndex === index ? (
-                                    <ReactPlayer
-                                        url={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
-                                        controls
-                                    />
-                                ) : (
-                                    video.snippet.title
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
+            </div>
+            
         </div>
     );
 };
