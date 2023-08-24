@@ -2,7 +2,9 @@
   margin-top: 100px;
   display: flex;
   justify-content: center;
-  grid-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 80%;
 }
 .card-wrap {
   width: 150px;

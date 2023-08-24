@@ -7,9 +7,9 @@ const Navbar = () => {
         <div className="navbar">
             <img className="nav-logo" src="./imagenes/logo jpg.jpg" alt=""></img>
             <div className={`nav-items ${isOpen && "open"}`}>
-                <a href="#">Inicio</a>
+                <a href="/Inicio">Inicio</a>
                 <a href="/Quienes-Somos">Quienes Somos</a>
-                <a href="#">Recursos</a>
+                <a href="/Recursos">Recursos</a>
                 <a href="/Cuentanos">Cuentanos</a>
             </div>
             <div className={`nav-toggle ${isOpen && "open"}`}onClick={ () => setIsOpen(!isOpen)} >
