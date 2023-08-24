@@ -1,16 +1,12 @@
 import React from "react";
-import Carrusel from "./Components/Carrusel";
-import Header from "./Components/Header"
-import Niveles from './Components/Niveles';
+import CardsSchool from "./Components/CardsSchool";
 
 function App() {
-    return (
-        <div className="App">
-            <Header />
-            <ReturnContent/>
-            <Niveles />
-        </div>
-    );
+  return (
+    <div className="App">
+      <CardsSchool />
+    </div>
+  );
 }
 
 function ReturnContent() {
