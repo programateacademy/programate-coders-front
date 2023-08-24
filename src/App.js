@@ -25,4 +25,3 @@ function ReturnContent() {
   }
 }
 
-export default App;
