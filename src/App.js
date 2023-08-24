@@ -14,7 +14,7 @@ function App() {
 
 function ReturnContent() {
   const url = window.location.pathname;
-  console.log(url);
+  //console.log(url);
   switch (url) {
     case "/Recursos":
       return <Recursos />;
