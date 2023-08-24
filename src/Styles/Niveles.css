@@ -1,5 +1,6 @@
-.App {
+.Niveles {
     text-align: center;
+    width: 80%;
   }
   
   .barra {
@@ -8,6 +9,7 @@
     align-items: center;
     background-color: yellow;
     height: 60px;
+    margin-bottom: 20px;
   }
   
   .nivel {
@@ -32,7 +34,6 @@
   .contenido {
     background-color: lightgray;
     padding: 20px;
-    margin-top: 20px;
     border-radius: 5px;
   }
   
