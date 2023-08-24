@@ -1,11 +1,13 @@
 .navbar{
-    background: #FFCC02;
+    background: white;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav-logo{
+    width: 90px;
+    height: 90px;
     font-weight: bold;
     font-size: 20px;
     margin: 15px;
