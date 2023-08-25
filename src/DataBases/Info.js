@@ -324,3 +324,4 @@ const InfoData = [
         ]
     }
 ]
+export default InfoData

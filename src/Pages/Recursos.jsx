@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from "../Components/Header"
 import CardsAcademy from "../Components/CardsAcademy"
+import CardsSchool from '../Components/CardsSchool'
 // import Niveles from "../Components/Niveles"
 import VideoSection from "../Components/VideoSection"
-function Recursos () {
+import Programs from '../Components/Programs'
+import InfoData from '../DataBases/Info'
+// import { program } from '@babel/types'
+function Recursos() {
+
+    const [selectedProgram, setSelectedProgram] = useState('Programate Academy');
+    const handleSelectProgram = (program) => {
+        setSelectedProgram(program);
+    };
+
+
     return (
         <>
-        <Header/>
-        <CardsAcademy/>
-        <VideoSection/>
-        {/* <Niveles/> */}
+            <Header />
+            <Programs onSelectProgram={handleSelectProgram} />
+            {selectedProgram === 'Programate Academy' && <CardsAcademy  />}
+            {selectedProgram === 'Programate School' && <CardsSchool  />}
+            <VideoSection />
+            {/* <Niveles/> */}
         </>
     )
 }
