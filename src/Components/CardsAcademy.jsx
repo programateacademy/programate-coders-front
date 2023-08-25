@@ -15,7 +15,7 @@ const Card = ({ iconSrc, title, btnText }) => {
   );
 };
 
-const CardsAcademy = () => {
+const CardsAcademy = (data) => {
   return (
     <div className="card-container">
       <Card iconSrc="imagenes/html.svg" title="HTML" btnText="CURSO" />

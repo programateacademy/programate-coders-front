@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -35,3 +36,44 @@
   margin-top: 20px;
   border-radius: 5px;
 }
+=======
+.Niveles {
+    text-align: center;
+    width: 80%;
+  }
+  
+  .barra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .nivel {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nivel:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  .nivel.selected {
+    background-color: gray;
+    color: white;
+  }
+  
+  .contenido {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+>>>>>>> 09a3124aaa6cd2e3d1fa9bb0095a1605303200c5

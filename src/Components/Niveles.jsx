@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import '../Styles/Niveles.css'
+import InfoData from '../DataBases/Info';
+import '../Styles/Niveles.css';
+
+
 
 function Niveles() {
   const [selectedLevel, setSelectedLevel] = useState(null);
 
+
   const handleLevelClick = (level) => {
     setSelectedLevel(level);
-  };
 
+  };
   return (
     <div className="Niveles">
       <div className="barra">
@@ -33,6 +37,9 @@ function Niveles() {
       {selectedLevel !== null && (
         <div className="contenido">
           Contenido del Nivel {selectedLevel} desplegado.
+          <Document file={pdfFile}>
+            <Page pageNumber={1} />
+          </Document>
         </div>
       )}
     </div>
