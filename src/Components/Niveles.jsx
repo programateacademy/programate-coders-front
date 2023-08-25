@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import InfoData from '../DataBases/Info';
 import '../Styles/Niveles.css';
 
@@ -46,4 +46,4 @@ function Niveles() {
   );
 }
 
-export default Niveles;
+export default Niveles;*/
