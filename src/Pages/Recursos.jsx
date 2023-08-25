@@ -26,6 +26,7 @@ function Recursos() {
             <VideoSection />
             {/* <Niveles/> */}
         <Footer/>
+
         </>
     )
 }
