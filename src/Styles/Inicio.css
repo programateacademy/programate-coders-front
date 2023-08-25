@@ -1,0 +1,13 @@
+.Container-description{
+    background: #FFCC02;
+    padding: 10px;
+    
+}
+button{
+    width: 80px;
+    height: 40px;
+    border-radius: 30%;
+    background: #D7D7D7;
+    margin: 0px 0px 20px 0px;
+    border: none;
+}

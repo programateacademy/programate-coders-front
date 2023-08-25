@@ -7,6 +7,8 @@ import VideoSection from "../Components/VideoSection"
 import Programs from '../Components/Programs'
 import InfoData from '../DataBases/Info'
 // import { program } from '@babel/types'
+import Footer from '../Components/Footer'
+
 function Recursos() {
 
     const [selectedProgram, setSelectedProgram] = useState('Programate Academy');
@@ -23,6 +25,7 @@ function Recursos() {
             {selectedProgram === 'Programate School' && <CardsSchool  />}
             <VideoSection />
             {/* <Niveles/> */}
+        <Footer/>
         </>
     )
 }
