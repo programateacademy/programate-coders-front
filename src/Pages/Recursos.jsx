@@ -31,4 +31,4 @@ function Recursos() {
     )
 }
 
-export default Recursos
+export default Recursos;
