@@ -11,7 +11,7 @@ function Recursos () {
         <Header/>
         <CardsAcademy/>
         <VideoSection/>
-        <Niveles/>
+        {/* <Niveles/> */}
         <Footer/>
         </>
     )
