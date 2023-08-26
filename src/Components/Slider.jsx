@@ -1,25 +1,25 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
-import '../Styles/Slider.css'
+import "../Styles/Slider.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function Slider() {
   return (
     <>
       <Swiper
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -29,34 +29,54 @@ export default function Slider() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="oneSwiper"
       >
         <SwiperSlide>
-          <img src="./imagenes/1.jpg"  width={300} height={300}/>
+          <img src="./imagenes/1.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./imagenes/2.jpg" width={300} height={300}/>
+          <img src="./imagenes/2.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./imagenes/3.jpg" width={300} height={300}/>
+          <img src="./imagenes/3.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./imagenes/4.jpg" width={300} height={300}/> 
+          <img src="./imagenes/4.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          <img
+            src="https://swiperjs.com/demos/images/nature-5.jpg"
+            width={300}
+            height={300}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          <img
+            src="https://swiperjs.com/demos/images/nature-6.jpg"
+            width={300}
+            height={300}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          <img
+            src="https://swiperjs.com/demos/images/nature-7.jpg"
+            width={300}
+            height={300}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          <img
+            src="https://swiperjs.com/demos/images/nature-8.jpg"
+            width={300}
+            height={300}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <img
+            src="https://swiperjs.com/demos/images/nature-9.jpg"
+            width={300}
+            height={300}
+          />
         </SwiperSlide>
       </Swiper>
     </>

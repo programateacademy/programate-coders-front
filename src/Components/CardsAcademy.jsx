@@ -23,7 +23,7 @@ const CardsAcademy = (data) => {
       <Card iconSrc="imagenes/js.svg" title="JAVASCRIPT" btnText="CURSO" />
       <Card iconSrc="imagenes/github.svg" title="GITHUB" btnText="CURSO" />
       <Card iconSrc="imagenes/python.svg" title="PYTHON" btnText="CURSO" />
-      <Card iconSrc="" title="US UX" btnText="CURSO" />
+      <Card iconSrc="" title="UX-UI" btnText="CURSO" />
       <Card iconSrc="" title="TRASVERSALES" btnText="CURSO" />
       <Card iconSrc="" title="EXTRA" btnText="CURSO" />
     </div>

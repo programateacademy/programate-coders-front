@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   width: 60vw;
   margin: auto;
+  margin-bottom: 100px;
 }
 .card-wrap {
   width: 150px;
@@ -55,6 +56,9 @@
   margin-bottom: 20px;
 }
 .card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: #ffcc02;
   border-radius: 10px;
@@ -67,4 +71,14 @@
 .card-btn:hover {
   background-color: #010101;
   color: #ffcc02;
+}
+@media (max-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+  }
+  .card-wrap {
+    width: 100px;
+  }
 }
