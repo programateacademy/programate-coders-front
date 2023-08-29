@@ -15,18 +15,17 @@ const Card = ({ iconSrc, title, btnText }) => {
   );
 };
 
-const CardsSchool = (data) => {
+const CardsSchool = ({data}) => {
   return (
     <div className="card-container">
-      <Card iconSrc="" title="FUNDAMENTOS" btnText="CURSO" />
-      <Card iconSrc="" title="DISEÑO" btnText="CURSO" />
-      <Card iconSrc="imagenes/html.svg" title="HTML" btnText="CURSO" />
-      <Card iconSrc="imagenes/css3.svg" title="CSS" btnText="CURSO" />
-      <Card iconSrc="imagenes/js.svg" title="JAVASCRIPT" btnText="CURSO" />
-      <Card iconSrc="imagenes/github.svg" title="GITHUB" btnText="CURSO" />
-      <Card iconSrc="imagenes/python.svg" title="PYTHON" btnText="CURSO" />
-      <Card iconSrc="" title="US UX" btnText="CURSO" />
-      <Card iconSrc="" title="EXTRA" btnText="CURSO" />
+      {data.map(course => (
+        <Card
+          key={course.item}
+          iconSrc={course.image}
+          title={course.name}
+          btnText="CURSO"
+        />
+      ))}
     </div>
   );
 };

@@ -35,3 +35,17 @@
   margin-top: 20px;
   border-radius: 5px;
 }
+.info-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.resource-list{
+  list-style: none;
+  text-align: left;
+}
+.enlace{
+  text-decoration: none;
+  font-weight:bold ;
+  color: black;
+}

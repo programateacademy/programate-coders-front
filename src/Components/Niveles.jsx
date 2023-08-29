@@ -1,50 +1,67 @@
-// import React, { useState } from 'react';
-// import { Document, Page, pdfjs } from 'react-pdf';
-// import '../Styles/Niveles.css';
+import React, { useState } from 'react';
+import '../Styles/Niveles.css';
 
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+function Niveles({ levelsArray }) {
+  const [selectedLevel, setSelectedLevel] = useState(null);
+  const [selectedLevelsObject, setSelectedLevelsObject] = useState(null);
 
-// function Niveles() {
-//   const [selectedLevel, setSelectedLevel] = useState(null);
-//   const [pdfFile, setPdfFile] = useState(null);
+  const handleLevelClick = (level, levelsObject) => {
+    setSelectedLevel(level);
+    setSelectedLevelsObject(levelsObject);
+  };
 
-//   const handleLevelClick = (level) => {
-//     setSelectedLevel(level);
-//     setPdfFile(`/pdfs/Nivel${level}.pdf`);
-//   };
+  return (
+    <div className="Niveles">
+      <div className="barra">
+        <div
+          className={`nivel ${selectedLevel === 1 ? 'selected' : ''}`}
+          onClick={() => handleLevelClick(1, levelsArray[0])}
+        >
+          Nivel 1
+        </div>
+        <div
+          className={`nivel ${selectedLevel === 2 ? 'selected' : ''}`}
+          onClick={() => handleLevelClick(2, levelsArray[1])}
+        >
+          Nivel 2
+        </div>
+        <div
+          className={`nivel ${selectedLevel === 3 ? 'selected' : ''}`}
+          onClick={() => handleLevelClick(3, levelsArray[2])}
+        >
+          Nivel 3
+        </div>
+      </div>
 
-//   return (
-//     <div className="Niveles">
-//       <div className="barra">
-//         <div
-//           className={`nivel ${selectedLevel === 1 ? 'selected' : ''}`}
-//           onClick={() => handleLevelClick(1)}
-//         >
-//           Nivel 1
-//         </div>
-//         <div
-//           className={`nivel ${selectedLevel === 2 ? 'selected' : ''}`}
-//           onClick={() => handleLevelClick(2)}
-//         >
-//           Nivel 2
-//         </div>
-//         <div
-//           className={`nivel ${selectedLevel === 3 ? 'selected' : ''}`}
-//           onClick={() => handleLevelClick(3)}
-//         >
-//           Nivel 3
-//         </div>
-//       </div>
-//       {selectedLevel !== null && (
-//         <div className="contenido">
-//           Contenido del Nivel {selectedLevel} desplegado.
-//           <Document file={pdfFile}>
-//             <Page pageNumber={1} />
-//           </Document>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
+      <div className="resources-container">
+        {selectedLevelsObject && (
+          <>
+            {selectedLevelsObject.infoType.map((infoTypeLevelSelected, index) => (
+              <div key={index} className="info-type">
+                {Object.keys(infoTypeLevelSelected).map((recoursetype) => (
 
-//export default Niveles;
+                  <div key={recoursetype}>
+                    <h3>{recoursetype}</h3>
+                    <ul>
+                      {infoTypeLevelSelected[recoursetype].map((resource, resourceIndex) => (
+                        <li className='resource-list' key={resourceIndex}>
+                          <p>Tipo: {resource.type}</p>
+                          <a className='enlace' href={resource.link} target="_blank" rel="noopener noreferrer">
+                            {resource.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+
+                  </div>
+                ))}
+              </div>
+            ))}
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Niveles
