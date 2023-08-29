@@ -29,7 +29,7 @@ export default function Slider() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="oneSwiper"
       >
         <SwiperSlide>
           <img src="./imagenes/1.jpg"  width={300} height={300}/>
