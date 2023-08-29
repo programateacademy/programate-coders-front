@@ -63,6 +63,7 @@
   margin-bottom: 15px;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 .card-btn:hover {
   background-color: #010101;

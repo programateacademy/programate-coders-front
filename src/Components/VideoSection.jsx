@@ -2,7 +2,7 @@ import React from 'react'
 import VideoReproductor from './VideoReproductor'
 
 
-function VideoSection() {
+function VideoSection(data) {
   return (
     <div>
         <VideoReproductor language={"JavaScript"}/>
