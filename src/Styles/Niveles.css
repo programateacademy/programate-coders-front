@@ -9,6 +9,7 @@
   align-items: center;
   background-color: #ffcc02;
   height: 60px;
+  margin: 2rem;
 }
 
 .nivel {
@@ -49,4 +50,18 @@
   text-decoration: none;
   font-weight:bold ;
   color: black;
+}
+.resource-type-title{
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+} 
+
+.logo-recourse {
+  font-size: 7rem;
+  color:  #FFC700;
+}
+
+.logo-recourse:hover{
+  color: #9649C6;
 }
