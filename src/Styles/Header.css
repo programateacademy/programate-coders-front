@@ -19,12 +19,12 @@
   font-size: 20px;
   margin: 30px;
   color: black;
-  transition: 0,5s;
+  transition: 0, 5s;
   position: relative;
+  transition: 0, 5s;
   cursor: pointer;
   text-decoration: none;
 }
-
 .nav-toggle {
   display: none;
 }
@@ -76,22 +76,22 @@
   }
 }
 
-a::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 3px;
-    top: 100%;
-    left: 0;
-    transition: 0.5s;
-    transform: scaleX(0);
-    transform-origin: right;
-    background-color: #FFCC02;
+a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color: #ffcc02;
 }
-a:hover{
-    color: none;
+a:hover {
+  color: none;
 }
-a:hover::after{
-    transform: scaleX(1);
-    transform-origin: left;
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }

@@ -7,7 +7,7 @@ import VideoSection from "../Components/VideoSection"
 import Programs from '../Components/Programs'
 import InfoData from '../DataBases/files'
 // import { program } from '@babel/types'
-import Footer from '../Components/Footer'
+import Footer from "../Components/Footer";
 
 function Recursos() {
 
