@@ -1,37 +1,88 @@
-.form-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Agregado para mejorar el model de caja */
 }
 
-.student-form {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.type-imput {
+  display: none;
+  text-align: left;
+}
+
+.form-container {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Alineación centrada para el contenido */
+}
+
+.form {
   display: flex;
   flex-direction: column;
+  margin-left: 150px;
+  margin-bottom: 150px;
+  text-align: center; /* Alineación centrada para el contenido */
 }
 
-.form-group {
-  margin-bottom: 15px;
+.btn-submit {
+  width: 8rem;
+  height: 2rem;
+  font-size: large;
+  background-color: #ffcc02;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: auto; /* Centro horizontal del botón */
 }
 
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
+.btn-submit:hover {
+  background: black;
+  color: #ffcc02;
+}
+
+.intro-text {
+  justify-content: center;
+  text-align: center;
+  margin: 200px 250px 100px 250px;
+  text-align: center;
+  width: 70%;
 }
 
 input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  width: 80%;
+  height: 30px;
+  font-size: 20px;
 }
 
-button {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
   border-radius: 3px;
-  cursor: pointer;
+  font-size: 20px;
+  width: 80%;
+  height: 10rem;
 }
+
+@media (max-width: 768px) {
+  .intro-text {
+    margin: auto;
+  }
+  .form-container {
+    margin-top: 100px;
+  }
+  .form {
+    margin-top: 100px;
+    margin-left: 10%;
+  }
+}
+
