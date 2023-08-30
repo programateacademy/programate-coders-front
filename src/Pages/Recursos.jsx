@@ -13,19 +13,21 @@ function Recursos() {
 
     const [selectedProgram, setSelectedProgram] = useState('Programate Academy');
     const [levelsArray, setLevelsArray] = useState([]);
+    const [namePlayList, setNamePlayList] = useState("JavaScript");
 
 
     const handleSelectProgram = (program) => {
         setSelectedProgram(program);
     };
 
-    const handleCardClick = (levels) => {
+    const handleCardClick = (levels, name) => {
         setLevelsArray(levels);
+        setNamePlayList(name)
     };
 
     const selectedProgramData = InfoData.find(program => program.program === selectedProgram);
-
-    
+    console.log(selectedProgramData)
+    console.log(selectedProgram)
     
         const filteredPrograms = selectedProgramData.cards;
         // console.log(filteredPrograms)
@@ -36,8 +38,8 @@ function Recursos() {
             <Header />
             <Programs onSelectProgram={handleSelectProgram} />
             {selectedProgram === 'Programate Academy' && <CardsAcademy data = {filteredPrograms} onCardClick = {handleCardClick } />}
-            {selectedProgram === 'Programate School' && <CardsSchool data = {filteredPrograms} />}
-            <VideoSection data ={filteredPrograms} />
+            {selectedProgram === 'Programate School' && <CardsSchool data = {filteredPrograms} onCardClick = {handleCardClick } />}
+            <VideoSection language = {namePlayList} />
             {levelsArray && <Niveles levelsArray={levelsArray} />}
             <Footer />
 

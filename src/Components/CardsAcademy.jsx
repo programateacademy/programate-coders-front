@@ -27,7 +27,7 @@ const CardsAcademy = ({ data, onCardClick}) => {
           iconSrc={course.image}
           title={course.name}
           btnText="CURSO"
-          onClick={() => onCardClick(course.levels)}
+          onClick={() => onCardClick(course.levels, course.name) }
         />
       ))}
     </div>

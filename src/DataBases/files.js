@@ -247,6 +247,7 @@ const InfoData = [
                 item: 3,
                 name: "Html",
                 image: "imagenes/html.svg",
+                playlist: "https://www.youtube.com/playlist?list=PLHE0O79Fwx1IvMC9vhy4t5Z-OwgQwc4hz",
                 levels: [
                     {
                         level: 1,
