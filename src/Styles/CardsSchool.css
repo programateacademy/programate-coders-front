@@ -1,10 +1,11 @@
 .card-container {
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  width: 80%;
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 100px;
 }
 .card-wrap {
   width: 150px;
@@ -55,6 +56,9 @@
   margin-bottom: 20px;
 }
 .card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: #ffcc02;
   border-radius: 10px;
@@ -63,8 +67,19 @@
   margin-bottom: 15px;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 .card-btn:hover {
   background-color: #010101;
   color: #ffcc02;
+}
+@media (max-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+  }
+  .card-wrap {
+    width: 100px;
+  }
 }

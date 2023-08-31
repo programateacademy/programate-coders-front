@@ -9,6 +9,8 @@ const VideoReproductor = ({ language }) => {
     const [videos, setVideos] = useState([]);
     const [selectedVideoUrl, setSelectedVideoUrl] = useState(videos.length > 0 ? videos[0].snippet.resourceId.videoId : "");
 
+    console.log(language)
+
 
 
     const extractID = (playlistLink) => {
@@ -38,15 +40,16 @@ const VideoReproductor = ({ language }) => {
             })
                 .then(response => {
                     setVideos(response.data.items);
-                    if (response.data.items.length > 0 && !selectedVideoUrl) {
-                        setSelectedVideoUrl(response.data.items[0].snippet.resourceId.videoId);
+                    if (response.data.items.length > 0) {
+                        const defaultVideoId = response.data.items[0].snippet.resourceId.videoId;
+                        setSelectedVideoUrl(defaultVideoId);
                     }
                 })
                 .catch(error => {
                     console.error('Error fetching YouTube playlist:', error);
                 });
         }
-    }, [language, selectedVideoUrl]);
+    }, [language]);
 
     const handleVideoClick = (videoUrl) => {
         setSelectedVideoUrl(videoUrl);
