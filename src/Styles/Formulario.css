@@ -19,11 +19,23 @@
 .contacto-title h1 {
   font-size: 40px;
   text-transform: uppercase;
-  color: white;
+  color: black;
+}
+
+.titulo_formulario {
+  background: #ffcc00;
+  width: 70%;
+  height: 7%;
+
 }
 
 .contacto-title p {
-  color: var(--color-gray-600);
+  color: black;
+}
+
+.contacto-title p i {
+  color: black; /* Amarillo */
+  background: #ffcc00;
 }
 
 .contacto-content {
@@ -35,7 +47,11 @@
 
 .contacto-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background: #ffcc00; /* Fondo amarillo */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
 }
 
 .form-inputs {
@@ -43,30 +59,17 @@
   flex-direction: column;
 }
 
-.contacto-form input {
-  padding-left: 2rem;
-  font-size: 20px;
-  height: 70px;
-  width: 35vw;
-  color: var(--color-dark);
-  margin: 1.5rem;
-  border-radius: 5px;
-}
-
-.contacto-form input::placeholder {
-  font-weight: 700;
-  color: var(--color-gray-400);
-}
-
+.contacto-form input,
 .contacto-form textarea {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 20px;
-  width: 35vw;
   color: var(--color-dark);
-  margin: 1.5rem;
+  margin: 0.5rem 0;
+  border: none;
   border-radius: 5px;
 }
 
+.contacto-form input::placeholder,
 .contacto-form textarea::placeholder {
   font-weight: 700;
   color: var(--color-gray-400);
@@ -74,34 +77,41 @@
 
 .contacto-form_button {
   background: #ffcc00; /* Amarillo intenso */
-  margin: 3rem;
-  border-radius: 0.25rem;
-  padding: 1.5rem 4rem 1.5rem;
-  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  color: black; /* Letras negras */
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 1rem;
+}
+
+.contacto-form_button a {
+  text-decoration: none;
+  color: black;
 }
 
 .contacto-form_button:hover {
-  background: var(--color-yellow-dark);
+  background: black;
+ 
+}
+
+.contacto-form_button:hover a {
+  color: #ffcc00;
+ 
 }
 
 @media screen and (max-width: 900px) {
   .contacto-form {
-    display: none;
-  }
-
-  .contacto-form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contacto-form input {
     width: 75vw;
+    margin: 0 auto; /* Centro horizontal en versión móvil */
+    align-items: center; /* Centrar contenido verticalmente en versión móvil */
   }
 
+  .contacto-form input,
   .contacto-form textarea {
-    width: 75vw;
+    width: 88%;
+    margin: 0.5rem 0; /* Espacio reducido entre los campos en versión móvil */
   }
 
   .contacto-form_button {
@@ -109,3 +119,4 @@
     margin: 2rem; /* Margen reducido para la versión móvil */
   }
 }
+

@@ -5,9 +5,9 @@ const Formulario = () => {
   return (
     <div className="contacto" id="contacto">
         <div className="contacto-title">
-            <h2><p><i>¡En Programaté Academy, valoramos enormemente tu opinión!</i></p></h2>
-            <p><i>Tu perspectiva es esencial para mejorar y ofrecerte la mejor experiencia posible. 
-              Si has tenido alguna idea, sugerencia o simplemente quieres compartir tus pensamientos con nosotros, te invitamos a que nos dejes tus comentarios.</i></p>
+            <h2 className="titulo_formulario">¡En Programaté Academy, valoramos enormemente tu opinión!</h2>
+            <p>Tu perspectiva es esencial para mejorar y ofrecerte la mejor experiencia posible. 
+              Si has tenido alguna idea, sugerencia o simplemente quieres compartir tus pensamientos con nosotros, te invitamos a que nos dejes tus comentarios.</p>
         </div>
         <div className="contacto-content">
             <form className="contacto-form">
