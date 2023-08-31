@@ -3,14 +3,13 @@ import Header from "../Components/Header"
 import '../Styles/Inicio.css'
 import Footer from "../Components/Footer"
 import Slider from "../Components/Slider"
-import AccessibilityMenu from '../Components/Accesibilidad'
+
 
 function Inicio() {
   return (
     <div className='Container-programate'>
       <Header />
-      <AccessibilityMenu />
-
+      
       <h1>Bienvenido a Programate</h1>
       <Slider />
       <div className='Container-description'>
@@ -31,34 +30,4 @@ function Inicio() {
 export default Inicio
 
 
-/*import React, { useState } from 'react';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Header from '../Components/Header';
-import "../Styles/Inicio.css"; // Se Importa el archivo de estilos CSS para las transiciones
 
-function Inicio() {
-  const [showHomePreview, setShowHomePreview] = useState(true);
-
-  const toggleHomePreview = () => {
-    setShowHomePreview(!showHomePreview);
-  };
-
-  return (
-    <div>
-      <button onClick={toggleHomePreview}>Toggle Preview</button>
-
-      <TransitionGroup>
-        {showHomePreview && (
-          <CSSTransition classNames="fade" timeout={300}>
-            <div>
-              <Header />
-              <h1>home preview</h1>
-            </div>
-          </CSSTransition>
-        )}
-      </TransitionGroup>
-    </div>
-  );
-}
-
-export default Inicio;*/
