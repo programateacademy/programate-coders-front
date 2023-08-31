@@ -269,6 +269,46 @@ const InfoData = [
     cards: [
       {
         item: 1,
+        name: "INICIO",
+        image: "imagenes/welcome.svg",
+        levels: [
+          {
+            level: 1,
+            infoType: [
+              {
+                Workbook: [
+                  {
+                    title: "Workbook Desarrollo web",
+                    type: "PDF",
+                    link: "https://drive.google.com/file/d/17HAT9LYD1OGEWuAVjvwVq7UbIC12b-UN/view?usp=sharing",
+                  },
+                  {
+                    title: "Metodologia scrum",
+                    type: "PDF",
+                    link: "https://drive.google.com/file/d/1M1xAAAziyuTBXm7dfUSADTAHzvUDHP22/view?usp=sharing",
+                  },
+                ],
+                proyectos: [
+                  {
+                    title: "City for scrum",
+                    type: "PDF",
+                    link: "https://drive.google.com/file/d/1-VJnSPhcED6xQvHIffXI-WzdMbaJv0RP/view?usp=sharing",
+                  },
+                ],
+                recursos: [
+                  {
+                    title: "Metodologia scrum",
+                    type: "VIDEO",
+                    link: "https://drive.google.com/file/d/18zOHHM4S0-OPKEA9pIM2gFatMCVGkSc5/view?usp=sharing",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        item: 2,
         name: "Logica de programacion",
         image: "imagenes/logica.svg",
         levels: [
@@ -308,7 +348,7 @@ const InfoData = [
         ],
       },
       {
-        item: 2,
+        item: 3,
         name: "HTML",
         image: "imagenes/html.svg",
         levels: [
@@ -372,10 +412,11 @@ const InfoData = [
           // Más niveles...
         ],
       },
+
       {
-        item: 3,
-        name: "INICIO",
-        image: "imagenes/welcome.svg",
+        item: 4,
+        name: "GitHub",
+        image: "imagenes/github.svg",
         levels: [
           {
             level: 1,
@@ -383,42 +424,18 @@ const InfoData = [
               {
                 Workbook: [
                   {
-                    title: "Workbook Desarrollo web",
+                    title: "Workbook Primeros pasos con Git-Hub",
                     type: "PDF",
-                    link: "https://drive.google.com/file/d/17HAT9LYD1OGEWuAVjvwVq7UbIC12b-UN/view?usp=sharing",
-                  },
-                  {
-                    title: "Metodologia scrum",
-                    type: "PDF",
-                    link: "https://drive.google.com/file/d/1M1xAAAziyuTBXm7dfUSADTAHzvUDHP22/view?usp=sharing",
-                  },
-                ],
-                proyectos: [],
-                recursos: [
-                  {
-                    title: "Metodologia scrum",
-                    type: "PDF",
-                    link: "https://drive.google.com/file/d/1M1xAAAziyuTBXm7dfUSADTAHzvUDHP22/view?usp=sharing",
+                    link: "https://drive.google.com/file/d/1DxLN2mxWn3Asf67xjamXZ3YBVJkrtoRl/view?usp=sharing",
                   },
                 ],
               },
             ],
-          },
-        ],
-      },
-      {
-        item: 4,
-        name: "Html",
-        image: "imagenes/html.svg",
-        levels: [
-          {
-            level: 1,
-            infoType: "Workbook",
             resources: [
               {
-                title: "Workbook fundamentos de HTML School",
+                title: "Comandos de Git-Hub",
                 type: "PDF",
-                link: "https://drive.google.com/file/d/1-Focvqf7bb6U_hi7_5PIPfniaPJTaYEF/view?usp=sharing",
+                link: "https://drive.google.com/file/d/1gXOviSb1pXpb4_tK6fR6iiLWZF_iVX8F/view?usp=sharing",
               },
             ],
           },
