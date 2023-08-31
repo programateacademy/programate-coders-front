@@ -1,55 +1,29 @@
 import React, { useState } from 'react';
-import "../Styles/Formulario.css"
+import '../Styles/Formulario.css'
 
-function Formulario() {
-  const [nombre, setNombre] = useState('');
-  const [correo, setCorreo] = useState('');
-  const [comentario, setComentario] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!nombre || !correo || !comentario) {
-      alert('Por favor, completa todos los campos antes de enviar.');
-      return;
-    }
-
-    const data = {
-      nombre,
-      correo,
-      comentario,
-    };
-
-
-    setNombre('');
-    setCorreo('');
-    setComentario('');
-  };
-
+const Formulario = () => {
   return (
-    <div className="form-container">
-      <p className='intro-text'>En Programate, valoramos enormemente tu opinión. Tu perspectiva es esencial para mejorar y ofrecerte la mejor experiencia posible. Si has tenido alguna idea, sugerencia o simplemente quieres compartir tus pensamientos con nosotros, te invitamos a que nos dejes tus comentarios.</p>
-      <form  className='form' onSubmit={handleSubmit}>
-        <label>
-          <p className='type-imput'>Nombre: </p>
-          <input type="text" value={nombre} placeholder='Nombre' onChange={(e) => setNombre(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          <p className='type-imput'>Correo: </p>
-          <input type="email" value={correo}  placeholder='Correo electronico' onChange={(e) => setCorreo(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          <p className='type-imput'>Comentario: </p>
-          <textarea value={comentario}  placeholder='Comentarios' onChange={(e) => setComentario(e.target.value)} />
-        </label>
-        <br />
-        <button className='btn-submit' type="submit">Enviar</button>
-      </form>
+    <div className="contacto" id="contacto">
+        <div className="contacto-title">
+            <h2><p><i>¡En Programaté Academy, valoramos enormemente tu opinión!</i></p></h2>
+            <p><i>Tu perspectiva es esencial para mejorar y ofrecerte la mejor experiencia posible. 
+              Si has tenido alguna idea, sugerencia o simplemente quieres compartir tus pensamientos con nosotros, te invitamos a que nos dejes tus comentarios.</i></p>
+        </div>
+        <div className="contacto-content">
+            <form className="contacto-form">
+                <div className="form-inputs">
+                    <input type="text" placeholder="Nombre Completo *"/>
+                    <input type="text" placeholder="Correo Electronico *"/>
+                    <input type="text" placeholder="Celular *"/>
+                </div>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="DEJANOS TU MENSAJE *"></textarea>
+            </form>
+            <div className="contacto-form_button">
+                <a href="#"><b>ENVIAR</b></a>
+            </div>
+        </div>
     </div>
-  );
-}
+);
+};
 
 export default Formulario;
-
