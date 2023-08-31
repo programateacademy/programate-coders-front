@@ -25,7 +25,6 @@ function Inicio() {
           tecnología, y las demandas de las empresas <br /> que se encuentran en
           proceso de transformación y consolidación digital en el país.
         </p>
-        <button>INGRESAR</button>
       </div>
 
       <div className="Container-video">

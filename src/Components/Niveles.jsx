@@ -5,13 +5,14 @@ import { SlBookOpen } from "react-icons/sl";
 
 
 function Niveles({ levelsArray }) {
+  console.log(levelsArray)
   const [selectedLevel, setSelectedLevel] = useState(null);
-  const [selectedLevelsObject, setSelectedLevelsObject] = useState(null);
+  const [LevelsObject, setLevelsObject] = useState(null);
   const [selectedResourceType, setSelectedResourceType] = useState(null);
 
   const handleLevelClick = (level, levelsObject) => {
     setSelectedLevel(level);
-    setSelectedLevelsObject(levelsObject);
+    setLevelsObject(levelsObject);
     setSelectedResourceType(null);
   };
 
@@ -39,9 +40,9 @@ function Niveles({ levelsArray }) {
       </div>
 
       <div className="resources-container">
-        {selectedLevelsObject && (
+        {LevelsObject && (
           <>
-            {selectedLevelsObject.infoType.map((infoTypeLevelSelected, index) => (
+            {LevelsObject.infoType.map((infoTypeLevelSelected, index) => (
               <div key={index} className="info-type">
                 {Object.keys(infoTypeLevelSelected).map((recoursetype) => (
 
