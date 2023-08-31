@@ -31,8 +31,8 @@ function Programs({ onSelectProgram }) {
   return (
     <div className="swiper_content">
       <div className="info-container">
-        <h1>{programInfo[selectedSlideIndex].title}</h1>
-        <p>{programInfo[selectedSlideIndex].description}</p>
+        <h1 className="title-programs">{programInfo[selectedSlideIndex].title}</h1>
+        <p className="info-programs">{programInfo[selectedSlideIndex].description}</p>
         <button onClick={() => onSelectProgram(programInfo[selectedSlideIndex].title)}>
               Ingresar
         </button>

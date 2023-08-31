@@ -11,10 +11,11 @@
   text-align: left;
 }
 
-h1 {
+.title-programs {
   font-weight: bold;
   font-size: 3rem;
-  margin-bottom:2rem ;
+  margin-bottom: 1rem;
+  
 }
 button {
   margin: 2rem;
@@ -30,10 +31,11 @@ button:hover {
   background: #010101;
   color: #ffcc02;
 }
-p{
+.info-programs{
   text-align: justify;
   font-size: 1.5rem;
   line-height: 2rem;
+  padding:0;
 }
 .mySwiper {
   width: 400px;
@@ -66,7 +68,7 @@ p{
     flex-wrap: wrap;
     margin: auto;
   }
-  h1 {
+  .title-programs {
     text-align: center;
     font-size: 40px;
     margin: auto;
