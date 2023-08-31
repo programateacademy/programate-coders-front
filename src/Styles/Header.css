@@ -1,14 +1,14 @@
 .navbar {
   background: white;
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px;
+  margin: 50px;
 }
 .nav-logo {
-  width: 150px;
-  height: 150px;
+  width: 145;
+  height: 125px;
   color: black;
 }
 .nav-items {
@@ -28,6 +28,7 @@
 .nav-toggle {
   display: none;
 }
+
 @media (max-width: 768px) {
   .navbar {
     margin: 30px 5px 40px 20px;

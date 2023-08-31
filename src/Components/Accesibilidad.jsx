@@ -45,7 +45,7 @@ function AccessibilityMenu() {
 
   return (
     <div className="accessibility-menu">
-      <button onClick={increaseFontSize}>Aumentar Texto</button>
+      <button class="boton" onClick={increaseFontSize}>Aumentar Texto</button>
       <button onClick={decreaseFontSize}>Disminuir Texto</button>
       <button onClick={toggleGrayscale}>Escala de Grises</button>
       <button onClick={toggleHighContrast}>Alto Contraste</button>
