@@ -10,7 +10,11 @@ function Inicio() {
     <div className="Container-programate">
       <Header />
       
-      <h1>Bienvenido a Programate</h1>
+      <div className='Container-Bienvenidos'>
+      <h1>Bienvenido a Programate
+      </h1>
+      </div>
+  
       <Slider />
       <div className="Container-description">
         <h1>QUIENES SOMOS</h1>

@@ -1,3 +1,13 @@
+.Container-Bienvenidos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 440px;
+  background-image:url('/public/Imagenes/fondo-bienvenidos.jpeg');
+  background-size: cover;
+  padding: 10px;
+}
+
 .Container-description {
   display: flex;
   justify-content: space-around;
@@ -13,6 +23,7 @@ p {
   align-items: center;
   text-align: center;
   line-height: 3rem;
+  padding: 50px;
 }
 
 .Container-video {
@@ -33,7 +44,15 @@ p {
   width: 200px;
   height: 200px;
 }
-@media (max-width: 768px) {
+@media (max-width: 335px) {
+  Container-Bienvenidos{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-top: 100px;
+    background-image:url('/public/Imagenes/fondo-bienvenidos.jpeg');
+    background-size: cover;
+  }
   .Container-description {
     display: flex;
     flex-direction: column;
