@@ -3,13 +3,12 @@ import Header from "../Components/Header"
 import '../Styles/Inicio.css'
 import Footer from "../Components/Footer"
 import Slider from "../Components/Slider"
-import AccessibilityMenu from '../Components/Accesibilidad'
 
 function Inicio() {
   return (
     <div className='Container-programate'>
       <Header />
-      <AccessibilityMenu />
+      
 
       <h1>Bienvenido a Programate</h1>
       <Slider />

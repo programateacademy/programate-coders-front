@@ -38,9 +38,8 @@
   border-radius: 5px;
 }
 .info-type{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .resource-list{
   list-style: none;

@@ -70,7 +70,7 @@ const VideoReproductor = ({ language }) => {
                 {videos.map((video) => (
                     <div key={video.id} className="video-item" onClick={() => handleVideoClick(video.snippet.resourceId.videoId)}>
                         {/* <img src={video.snippet.thumbnails.default.url} alt={video.snippet.title} /> */}
-                        <p>{video.snippet.title}</p>
+                        <p className="list">{video.snippet.title}</p>
                     </div>
                 ))}
             </div>
