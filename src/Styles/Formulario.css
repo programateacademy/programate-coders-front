@@ -1,74 +1,122 @@
-* {
-  margin: 0;
-  padding: 0;
+.contacto {
+  font-family: var(--font-family);
+  margin-top: 0;
+  padding: 8rem 0;
+  background-color: var(--color-dark);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.type-imput {
-  display: none;
-  text-align: left;
-}
-.form-container {
-  width: 100%;
 
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-.form {
+.contacto-title {
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
-  margin-bottom: 150px;
-}
-.btn-submit {
-  width: 8rem;
-  height: 2rem;
-  font-size: large;
-  background-color: #ffcc02;
-  color: black;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.btn-submit:hover {
-  background: black;
-  color: #ffcc02;
-}
-.intro-text {
+  align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 200px 250px 100px 250px;
-  text-align: center;
+}
+
+.contacto-title h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.titulo_formulario {
+  background: #ffcc00;
   width: 70%;
+  height: 7%;
+
 }
 
-input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  width: 80%;
-  height: 30px;
-  font-size: 20px;
-}
-textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 20px;
-  width: 80%;
-  height: 10rem;
+.contacto-title p {
+  color: black;
 }
 
-@media (max-width: 768px) {
-  .intro-text {
-    justify-content: center;
-    text-align: center;
-    margin: auto;
+.contacto-title p i {
+  color: black; /* Amarillo */
+  background: #ffcc00;
+}
+
+.contacto-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  background: #ffcc00; /* Fondo amarillo */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: 1rem;
+  font-size: 20px;
+  color: var(--color-dark);
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+  font-weight: 700;
+  color: var(--color-gray-400);
+}
+
+.contacto-form_button {
+  background: #ffcc00; /* Amarillo intenso */
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  color: black; /* Letras negras */
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.contacto-form_button a {
+  text-decoration: none;
+  color: black;
+}
+
+.contacto-form_button:hover {
+  background: black;
+ 
+}
+
+.contacto-form_button:hover a {
+  color: #ffcc00;
+ 
+}
+
+@media screen and (max-width: 900px) {
+  .contacto-form {
+    width: 75vw;
+    margin: 0 auto; /* Centro horizontal en versión móvil */
+    align-items: center; /* Centrar contenido verticalmente en versión móvil */
   }
-  .form-container {
-    margin-top: 100px;
+
+  .contacto-form input,
+  .contacto-form textarea {
+    width: 88%;
+    margin: 0.5rem 0; /* Espacio reducido entre los campos en versión móvil */
   }
-  .form {
-    margin-top: 100px;
-    margin-left: 10%;
+
+  .contacto-form_button {
+    padding: 1rem 2rem 1rem; /* Tamaño reducido para la versión móvil */
+    margin: 2rem; /* Margen reducido para la versión móvil */
   }
 }
+

@@ -55,23 +55,60 @@ p {
   }
   .Container-description {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 50vh;
-    margin-top: 100px;
     background: #ffcc02;
+    padding: 10px;
   }
+  
   p {
-    font-size: 20px;
-
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    line-height: 2rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    line-height: 3rem;
   }
+  
   .Container-video {
+    margin: 10%;
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
-    height: 25vh;
+    width: 70vw;
+    height: 80vh;
+  }
+  .slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .elemento {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    width: 200px;
+    height: 200px;
   }
 }
+  @media (max-width: 768px) {
+    .Container-description {
+      display: flex;
+      flex-direction: column;
+      height: 50vh;
+      margin-top: 100px;
+      background: #ffcc02;
+    }
+    p {
+      font-size: 20px;
+  
+      text-align: center;
+      line-height: 2rem;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .Container-video {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+      height: 25vh;
+    }
+  }
