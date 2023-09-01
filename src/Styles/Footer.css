@@ -42,4 +42,9 @@
     height: 25px;
     flex-wrap: nowrap;
   }
+  .redes{
+    font-size: 2rem;
+    color: white;
+    margin:0.5rem;
+   }
 }
