@@ -1,9 +1,9 @@
-.Container-Bienvenidos{
+.Container-Bienvenidos {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 440px;
-  background-image:url('/public/Imagenes/fondo-bienvenidos.jpeg');
+  background-image: url("/public/Imagenes/fondo-bienvenidos.jpeg");
   background-size: cover;
   padding: 10px;
 }
@@ -15,6 +15,9 @@
   height: 50vh;
   background: #ffcc02;
   padding: 10px;
+}
+h1 {
+  font-size: 80px;
 }
 
 p {
@@ -45,12 +48,12 @@ p {
   height: 200px;
 }
 @media (max-width: 335px) {
-  Container-Bienvenidos{
+  Container-Bienvenidos {
     display: flex;
     flex-direction: column;
     height: 50vh;
     margin-top: 100px;
-    background-image:url('/public/Imagenes/fondo-bienvenidos.jpeg');
+    background-image: url("/public/Imagenes/fondo-bienvenidos.jpeg");
     background-size: cover;
   }
   .Container-description {
@@ -61,7 +64,7 @@ p {
     background: #ffcc02;
     padding: 10px;
   }
-  
+
   p {
     font-size: 25px;
     justify-content: center;
@@ -69,7 +72,7 @@ p {
     text-align: center;
     line-height: 3rem;
   }
-  
+
   .Container-video {
     margin: 10%;
     margin-left: auto;
@@ -89,26 +92,26 @@ p {
     height: 200px;
   }
 }
-  @media (max-width: 768px) {
-    .Container-description {
-      display: flex;
-      flex-direction: column;
-      height: 50vh;
-      margin-top: 100px;
-      background: #ffcc02;
-    }
-    p {
-      font-size: 20px;
-  
-      text-align: center;
-      line-height: 2rem;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    .Container-video {
-      margin-left: auto;
-      margin-right: auto;
-      width: 90vw;
-      height: 25vh;
-    }
+@media (max-width: 768px) {
+  .Container-description {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-top: 100px;
+    background: #ffcc02;
   }
+  p {
+    font-size: 20px;
+
+    text-align: center;
+    line-height: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .Container-video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height: 25vh;
+  }
+}

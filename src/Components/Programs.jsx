@@ -11,13 +11,15 @@ function Programs({ onSelectProgram }) {
   const [programInfo, setProgramInfo] = useState([
     {
       title: "Programate Academy",
-      description: "Prográmate es un bootcamp de desarrollo web y tiene como objetivo responder a las necesidades de formación de personas talentosas a las que les apasiona el mundo de la tecnología",
-      image: "./imagenes/academy.svg",
+      description:
+        "Prográmate es un bootcamp de desarrollo web y tiene como objetivo responder a las necesidades de formación de personas talentosas a las que les apasiona el mundo de la tecnología",
+      image: "./Imagenes/IMG_20230601_145350.jpg",
     },
     {
       title: "Programate School",
-      description: "Somos un Bootcamp para el aprendizaje de la programación, dirigido a estudiantes de 11° de colegios oficiales que quieran adquirir competencias en el área del Desarrollo Web",
-      image: "./imagenes/school.svg",
+      description:
+        "Somos un Bootcamp para el aprendizaje de la programación, dirigido a estudiantes de 11° de colegios oficiales que quieran adquirir competencias en el área del Desarrollo Web",
+      image: "./Imagenes/IMG_20230602_093550.jpg",
     },
   ]);
 
@@ -31,10 +33,16 @@ function Programs({ onSelectProgram }) {
   return (
     <div className="swiper_content">
       <div className="info-container">
-        <h1 className="title-programs">{programInfo[selectedSlideIndex].title}</h1>
-        <p className="info-programs">{programInfo[selectedSlideIndex].description}</p>
-        <button onClick={() => onSelectProgram(programInfo[selectedSlideIndex].title)}>
-              Ingresar
+        <h1 className="title-programs">
+          {programInfo[selectedSlideIndex].title}
+        </h1>
+        <p className="info-programs">
+          {programInfo[selectedSlideIndex].description}
+        </p>
+        <button
+          onClick={() => onSelectProgram(programInfo[selectedSlideIndex].title)}
+        >
+          Ingresar
         </button>
       </div>
       <Swiper
@@ -49,7 +57,6 @@ function Programs({ onSelectProgram }) {
         {programInfo.map((program, index) => (
           <SwiperSlide key={index}>
             <img src={program.image} alt={program.title} />
-            
           </SwiperSlide>
         ))}
       </Swiper>

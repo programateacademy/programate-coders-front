@@ -1,20 +1,18 @@
-import React from 'react'
-import Header from "../Components/Header"
-import '../Styles/Inicio.css'
-import Footer from "../Components/Footer"
-import Slider from "../Components/Slider"
-
+import React from "react";
+import Header from "../Components/Header";
+import "../Styles/Inicio.css";
+import Footer from "../Components/Footer";
+import Slider from "../Components/Slider";
 
 function Inicio() {
   return (
     <div className="Container-programate">
       <Header />
-      
-      <div className='Container-Bienvenidos'>
-      <h1>Bienvenido a Programate
-      </h1>
+
+      <div className="Container-Bienvenidos">
+        <h1>Bienvenido a Programate</h1>
       </div>
-  
+
       <Slider />
       <div className="Container-description">
         <h1>QUIENES SOMOS</h1>
@@ -40,10 +38,7 @@ function Inicio() {
       </div>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Inicio
-
-
-
+export default Inicio;
