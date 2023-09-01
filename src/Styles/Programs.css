@@ -1,48 +1,48 @@
-.swiper_content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap:1rem;
-  margin: 4rem;
+/* Styles.css */
+.arrow-icon{
+  color: #ffcc02;
+  margin: 0;
+  padding: 0%;
+  font-size: 2rem;
 }
-.info-container{
-  display:flex;
-  flex-direction: column;
-  text-align: left;
+/* Contenedor principal del componente Programs */
+.swiper_content {
+  margin: 2rem;
+  position: relative;
 }
 
+/* Estilos para el título a la izquierda */
 .title-programs {
-  font-weight: bold;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  
+  position: absolute;
+  left: 0%;
+  font-size: 2.5rem;
+  padding-top: 2rem;
 }
-button {
-  margin: 2rem;
-  width: 8rem;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #ffcc02;
-  font-size: 15px;
-  font-weight: bold;
-  
+
+/* Estilos para el Swiper a la derecha */
+.mySwiper {
+  position: relative;
+  left: 50%;
+  width: 400px;
+  height: 250px;
+  margin-left: 20px;
+  flex: 1;
 }
-button:hover {
-  background: #010101;
-  color: #ffcc02;
-}
-.info-programs{
+
+.info-programs {
+  width: 90%;
   text-align: justify;
   font-size: 1.5rem;
   line-height: 2rem;
-  padding:0;
-}
-.mySwiper {
-  width: 400px;
-  height: 250px;
+  flex: 1;
+  margin-top: 20px;
+  background-color: #ffcc02;
   padding: 50px;
-  padding-bottom: 80px;
+  position: relative;
+  margin: 0;
+  border-radius: 10px;
 }
+
 
 .swiper-slide {
   background-position: center;
@@ -62,17 +62,89 @@ button:hover {
   background: #010101;
   color: #ffcc02;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
+  .swiper_content {
+    margin: 1rem;
+    position: relative;
+  }
+  
+  /* Estilos para el título a la izquierda */
+  .title-programs {
+    position: absolute;
+    left: 3%;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  
+  /* Estilos para el Swiper a la derecha */
+  .mySwiper {
+    position: relative;
+    left: 50%;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .info-programs {
+    width: 90%;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    flex: 1;
+    margin-top: 20px;
+    background-color: #ffcc02;
+    padding: 40px;
+    position: relative;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .swiper_content {
+    margin: 0;
+    
+  }
+ 
+  .title-programs {
+    font-size: 2rem;
+    text-align: center; /* Centrar el título en dispositivos móviles */
+    position: static; /* Volver a la posición estática para el título */
+    padding-top: 0; /* Eliminar el espacio superior en dispositivos móviles */
+  }
+
+  /* Ajustar el tamaño del Swiper para dispositivos móviles */
+  .mySwiper {
+    width: 100%;
+     /* Tomar el 100% del ancho en dispositivos móviles */
+    height: auto; /* Ajustar la altura automáticamente en dispositivos móviles */
+    position: relative; /* Volver a la posición estática para el Swiper */
+    left: 10%; /* Restaurar la posición izquierda en dispositivos móviles */
+    width: 300px;
+    height: 260px;
+  }
+  .info-programs{
+    width: 90%;
+    padding:40px 10px ;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 0;
+  }
+}
+/* @media (max-width: 768px) {
   .swiper_content {
     display: block;
     flex-wrap: wrap;
     margin: auto;
   }
+
   .title-programs {
     text-align: center;
     font-size: 40px;
     margin: auto;
   }
+
   .mySwiper {
     justify-content: center;
     width: 80%;
@@ -81,7 +153,8 @@ button:hover {
     padding-bottom: 20px;
     margin: auto;
   }
+
   .swiper-slide {
     height: 100%;
   }
-}
+} */

@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../Styles/Programs.css";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
+import { BiSolidDownArrow } from "react-icons/bi";
 
 function Programs({ onSelectProgram }) {
   const [programInfo, setProgramInfo] = useState([
@@ -26,25 +27,20 @@ function Programs({ onSelectProgram }) {
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.realIndex;
     setSelectedSlideIndex(currentIndex);
+
+    // Llama a onSelectProgram con el título del programa al cambiar la diapositiva
+    onSelectProgram(programInfo[currentIndex].title);
   };
 
   const [selectedSlideIndex, setSelectedSlideIndex] = useState(0);
 
   return (
     <div className="swiper_content">
-      <div className="info-container">
+      
         <h1 className="title-programs">
           {programInfo[selectedSlideIndex].title}
         </h1>
-        <p className="info-programs">
-          {programInfo[selectedSlideIndex].description}
-        </p>
-        <button
-          onClick={() => onSelectProgram(programInfo[selectedSlideIndex].title)}
-        >
-          Ingresar
-        </button>
-      </div>
+
       <Swiper
         effect={"flip"}
         grabCursor={true}
@@ -54,14 +50,20 @@ function Programs({ onSelectProgram }) {
         modules={[EffectFlip, Pagination, Navigation]}
         className="mySwiper"
       >
+      
         {programInfo.map((program, index) => (
           <SwiperSlide key={index}>
             <img src={program.image} alt={program.title} />
           </SwiperSlide>
         ))}
       </Swiper>
+      <p className="info-programs">
+          {programInfo[selectedSlideIndex].description}
+        </p>
+        <BiSolidDownArrow className="arrow-icon" />
     </div>
   );
 }
 
 export default Programs;
+

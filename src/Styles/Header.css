@@ -51,11 +51,13 @@
   }
   .nav-items.open {
     transform: translateX(0);
+    z-index: 3;
   }
   .nav-toggle {
     display: flex !important;
     flex-direction: column;
     margin: 15px;
+    
   }
   .nav-toggle span {
     width: 30px;
