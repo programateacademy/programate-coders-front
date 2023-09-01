@@ -30,7 +30,7 @@ p {
 }
 
 .Container-video {
-  margin: 2% auto;
+  margin: 10% auto;
   width: 70vw;
   height: 80vh;
 }
@@ -38,52 +38,6 @@ p {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow: auto;
-}
-
-@media (max-width: 335px) {
-  Container-Bienvenidos {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    margin-top: 100px;
-    background-image: url("/public/Imagenes/fondo-bienvenidos.jpeg");
-    background-size: cover;
-  }
-  .Container-description {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50vh;
-    background: #ffcc02;
-    padding: 10px;
-  }
-
-  p {
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 3rem;
-  }
-
-  .Container-video {
-    margin: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70vw;
-    height: 80vh;
-  }
-  .slider {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-  }
-  .elemento {
-    flex: 1 0 auto;
-    margin: 0 50px;
-    width: 200px;
-    height: 200px;
-  }
 }
 @media (max-width: 768px) {
   .Container-description {
@@ -106,5 +60,42 @@ p {
     margin-right: auto;
     width: 90vw;
     height: 25vh;
+  }
+}
+
+@media (max-width: 500px) {
+  Container-Bienvenidos {
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("/public/Imagenes/fondo-bienvenidos.jpeg");
+  }
+  h1 {
+    font-size: 30px;
+  }
+  #quien {
+    margin-top: 30px;
+  }
+  .Container-description {
+    display: flex;
+
+    height: 550px;
+    background: #ffcc02;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 17px;
+
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  .Container-video {
+    margin: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 40vh;
   }
 }
