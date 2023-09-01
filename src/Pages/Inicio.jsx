@@ -15,7 +15,7 @@ function Inicio() {
 
       <Slider />
       <div className="Container-description">
-        <h1>¿QUIENES SOMOS?</h1>
+        <h1 id="quien">¿QUIENES SOMOS?</h1>
         <p>
           Prográmate es un bootcamp de desarrollo web. Tiene como objetivo
           responder <br />a las necesidades de formación de personas talentosas{" "}
