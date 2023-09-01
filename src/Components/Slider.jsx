@@ -15,7 +15,7 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 export default function Slider() {
   return (
     <>
-      <Swiper
+      {/*<Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -32,7 +32,12 @@ export default function Slider() {
         className="oneSwiper"
       >
         <SwiperSlide>
-          <img src="./Imagenes/1.jpg" width={300} height={300} />
+          <img
+            className="slider_img"
+            src="./Imagenes/1.jpg"
+            width={300}
+            height={300}
+          />
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -99,7 +104,32 @@ export default function Slider() {
         <SwiperSlide>
           <img src="./Imagenes/7.jpg" width={300} height={300} />
         </SwiperSlide>
-      </Swiper>
+      </Swiper>*/}
+      <div class="contenedor-galeria">
+        <ul>
+          <li>
+            <img src="./Imagenes/IMG_20230531_144903.jpg" />
+          </li>
+          <li>
+            <img src="./Imagenes/IMG_20230607_150046.jpg" />
+          </li>
+          <li>
+            <img src="./Imagenes/photo_4915742842714959059_y.jpg" />
+          </li>
+          <li>
+            <img src="./Imagenes/photo_4965344350569606176_y.jpg" />
+          </li>
+          <li>
+            <img src="./Imagenes/photo_4965344350569606182_y.jpg" />
+          </li>
+          <li>
+            <img src="./Imagenes/photo_4965344350569606203_y.jpg" />
+          </li>
+          <li>
+            <img src="./Imagenes/photo_4977039447732365910_y.jpg" />
+          </li>
+        </ul>
+      </div>
     </>
   );
 }
