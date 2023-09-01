@@ -78,8 +78,16 @@
     display: grid;
     grid-template-columns: auto auto;
     margin: auto;
+
   }
   .card-wrap {
     width: 100px;
+  }
+  .card-header{
+    height: 80px;
+  }
+  .card-title{
+    margin-top: 30px;
+
   }
 }
