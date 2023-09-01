@@ -8,7 +8,7 @@ import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoTiktok, BiLogoSp
 function Footer() {
     return (
         <div className="footer">
-            <img className="logo" src="./imagenes/Programate.png" alt="" />
+            <img className="logo" src="./Imagenes/Programate.png" alt="" />
 
             <div className='social-media'>
                 <a className='redes' href="https://web.facebook.com/somoseducamas/?_rdc=1&_rdr">

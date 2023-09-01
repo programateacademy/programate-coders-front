@@ -84,9 +84,9 @@ a::after {
   height: 3px;
   top: 100%;
   left: 0;
-  transition: 0.5s;
+  transition: 0.5s; 
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: right; 
   background-color: #ffcc02;
 }
 a:hover {

@@ -82,6 +82,8 @@
   }
   .card-wrap {
     width: 100px;
+    height: 100px;
+
   }
   .card-header{
     height: 80px;

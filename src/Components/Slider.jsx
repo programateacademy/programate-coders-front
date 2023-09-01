@@ -32,16 +32,16 @@ export default function Slider() {
         className="oneSwiper"
       >
         <SwiperSlide>
-          <img src="./imagenes/1.jpg" width={300} height={300} />
+          <img src="./Imagenes/1.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./imagenes/2.jpg" width={300} height={300} />
+          <img src="./Imagenes/2.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
           <img src="./Imagenes/8.jpg" width={300} height={300}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./imagenes/4.jpg" width={300} height={300} />
+          <img src="./Imagenes/4.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
           <img src="./Imagenes/9.jpg" width={300} height={300}/>
