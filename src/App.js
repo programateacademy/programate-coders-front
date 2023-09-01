@@ -5,11 +5,7 @@ import Recursos from "./Pages/Recursos";
 
 function App() {
   const content = ReturnContent();
-  return (
-    <div className="App">
-      {content}
-    </div>
-  );
+  return <div className="App">{content}</div>;
 }
 
 function ReturnContent() {

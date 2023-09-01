@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Niveles.css';
 
 function Niveles({ levelsArray, handleLevelClick }) {
@@ -31,5 +31,6 @@ function Niveles({ levelsArray, handleLevelClick }) {
     </div>
   );
 }
+
 
 export default Niveles;
