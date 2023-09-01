@@ -35,22 +35,69 @@ export default function Slider() {
           <img src="./Imagenes/1.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./Imagenes/2.jpg" width={300} height={300} />
+          <img
+            src="./Imagenes/IMG_20230607_150046.jpg"
+            width={300}
+            height={300}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./Imagenes/8.jpg" width={300} height={300}/>
+          <img
+            src="./Imagenes/IMG_20230531_144903.jpg"
+            width={300}
+            height={300}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="./Imagenes/photo_4915742842714959059_y.jpg"
+            width={300}
+            height={300}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="./Imagenes/photo_4965344350569606176_y.jpg"
+            width={300}
+            height={300}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="./Imagenes/photo_4965344350569606182_y.jpg"
+            width={300}
+            height={300}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="./Imagenes/photo_4965344350569606203_y.jpg"
+            width={300}
+            height={300}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="./Imagenes/photo_4977039447732365910_y.jpg"
+            width={300}
+            height={300}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src="./Imagenes/8.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
           <img src="./Imagenes/4.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./Imagenes/9.jpg" width={300} height={300}/>
+          <img src="./Imagenes/9.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./Imagenes/6.jpg" width={300} height={300}/>
+          <img src="./Imagenes/6.jpg" width={300} height={300} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./Imagenes/7.jpg"width={300} height={300} />
+          <img src="./Imagenes/7.jpg" width={300} height={300} />
         </SwiperSlide>
       </Swiper>
     </>

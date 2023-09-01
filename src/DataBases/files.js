@@ -5,7 +5,7 @@ const InfoData = [
       {
         item: 1,
         name: "JavaScript",
-        image: "imagenes/js.svg",
+        image: "Imagenes/js.svg",
         playlist:
           "https://www.youtube.com/playlist?list=PLHE0O79Fwx1LmbRvfZGNI_qlHlXy8C5Lw",
         levels: [
@@ -108,7 +108,7 @@ const InfoData = [
       {
         item: 2,
         name: "CSS",
-        image: "imagenes/css3.svg",
+        image: "Imagenes/css3.svg",
         levels: [
           {
             level: 1,
@@ -220,7 +220,7 @@ const InfoData = [
       {
         item: 3,
         name: "Html",
-        image: "imagenes/html.svg",
+        image: "Imagenes/html.svg",
         playlist:
           "https://www.youtube.com/playlist?list=PLHE0O79Fwx1IvMC9vhy4t5Z-OwgQwc4hz",
         levels: [
@@ -270,7 +270,7 @@ const InfoData = [
       {
         item: 1,
         name: "INICIO",
-        image: "imagenes/welcome.svg",
+        image: "Imagenes/welcome.svg",
         levels: [
           {
             level: 1,
@@ -310,7 +310,7 @@ const InfoData = [
       {
         item: 2,
         name: "Logica de programacion",
-        image: "imagenes/logica.svg",
+        image: "Imagenes/logica.svg",
         levels: [
           {
             level: 1,
@@ -350,7 +350,7 @@ const InfoData = [
       {
         item: 3,
         name: "HTML",
-        image: "imagenes/html.svg",
+        image: "Imagenes/html.svg",
         levels: [
           {
             level: 1,
@@ -416,7 +416,7 @@ const InfoData = [
       {
         item: 4,
         name: "GitHub",
-        image: "imagenes/github.svg",
+        image: "Imagenes/github.svg",
         levels: [
           {
             level: 1,
