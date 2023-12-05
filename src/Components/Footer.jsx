@@ -14,7 +14,7 @@ function Footer() {
         <div className="footer1">
             <img
               className="logo"
-              src="./Imagenes/logo-a-color--removebg-preview.png"
+              src="./Imagenes/logo_azul.png"
               alt=""
             />
           
