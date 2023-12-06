@@ -1,5 +1,5 @@
-const programateAcademyData = [
-    "videos" = [
+const programateAcademyData = {
+    "videos" : [
         {
             item: 1,
             title: "Curso JavaScript",
@@ -30,7 +30,7 @@ const programateAcademyData = [
         }
     ],
 
-    "workbooks" = [
+    "workbooks" : [
         {
             item: 1,
             title: "Fundamentos Html",
@@ -177,5 +177,5 @@ const programateAcademyData = [
         }
 
     ]
-]
+}
 export default programateAcademyData;

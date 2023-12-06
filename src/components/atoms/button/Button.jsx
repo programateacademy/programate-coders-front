@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button({children, className}) {
+function Button({children, className, onClick}) {
     const buttonClass = `button ${className || ''}`;
   return (
-    <button className={buttonClass}>
+    <button className={buttonClass} onClick={onClick}>
       {children}
     </button>
   )

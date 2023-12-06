@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import ListSources from "../../molecules/ListSources/ListSources";
+import ListVideos from "../../molecules/ListVideos/ListVideos";
 import TabList from "../../molecules/tabList/TabList";
 import ReactPlayer from "react-player";
-import { videosStore } from "../../../store/videosStore";
+import { programateAcademyStore } from "../../../store/programateAcademyStore";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
+import ListWorkbooks from "../../molecules/ListWorkbooks/ListWorkbooks";
+
 //solicitud a la Api de Youtube para traer las listas de reproducción
 const fetchData = async (language, playList, setSelectedVideo) => {
   const apiKey = "AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ";
@@ -36,17 +38,25 @@ const fetchData = async (language, playList, setSelectedVideo) => {
 };
 
 function PanelSources() {
-  const { setSelectedVideo, SelectedVideo, language, playList } = videosStore();
+  const { setSelectedVideo, SelectedVideo, language, playList,} = programateAcademyStore();
 
   const {
     data: videos,
     isLoading,
     isError,
     error,
+    refetch
+    
   } = useQuery({
-    queryKey: ["currentPlayList"],
+    queryKey: ["currentPlayList"],language,
     queryFn: () => fetchData(language, playList, setSelectedVideo),
+    refetchOnWindowFocus: false,
+    enabled: false,
   });
+  useEffect(() => {
+    // Habilita la consulta cuando cambia el idioma
+    refetch();
+  }, [language]);
 
   if (isLoading) {
     return <p>Loading...</p>;
@@ -55,6 +65,7 @@ function PanelSources() {
   if (isError) {
     return <p>{`${error}`}</p>;
   }
+
 
   if (!videos || videos.length === 0) {
     return <p>No videos found in the playlist</p>;
@@ -72,7 +83,8 @@ function PanelSources() {
     </div>
       <div className="tabSources">
       <TabList />
-      <ListSources/>
+      <ListVideos/>
+      <ListWorkbooks/>
       </div>
 
 

@@ -1,6 +1,6 @@
 @use "../../_settings/mixins";
-.list-sources{
-    display: flex;
+.list-videos{
+    display: none;
     flex-direction: column;
     background-color: #0F205B;
     &::-webkit-scrollbar-track
@@ -22,10 +22,14 @@
     }
 
     @include mixins.desktop{
+        height: 600px;
         max-height: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
         padding-left: 2rem;
+    }
+    &-active{
+        display: flex;
     }
 
 }

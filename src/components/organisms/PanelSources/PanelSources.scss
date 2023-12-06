@@ -1,11 +1,13 @@
 @use "../../_settings/mixins";
 
 .panel-sources{
+    background-color:#3d4a7a;
     display: flex;
     flex-direction: column;
-    height: 600px;
+
     width: 100%;
     @include mixins.desktop{
+        height: 600px;
         flex-direction: row;
         flex-wrap: nowrap;
 
