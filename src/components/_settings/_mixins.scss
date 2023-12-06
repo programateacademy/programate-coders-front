@@ -1,0 +1,8 @@
+
+
+@mixin desktop($medida:992px){
+    @media screen and (min-width:$medida) {
+        @content;
+        
+    }
+}
