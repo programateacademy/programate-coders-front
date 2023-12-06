@@ -1,0 +1,28 @@
+@use "../../_settings/mixins";
+.list-item{
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #80A1F8;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &::before{
+        color: #6384D3;
+        content: "\2022"; 
+        font-size: 4rem; 
+        margin-right: 12px; 
+        vertical-align: bottom; 
+        display: inline-block;
+
+    }
+    &:hover{
+        color: white;
+    }
+    @include mixins.desktop{
+        overflow: visible;
+        
+    }
+
+}

@@ -1,0 +1,30 @@
+@use "../../_settings/mixins";
+
+.panel-sources{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    @include mixins.desktop{
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+
+    }
+
+}
+.player-container{
+    @include mixins.desktop{
+        margin-top: 3rem;
+    }
+    width: 100%;
+    height: 100%;
+}
+.tabSources{
+    @include mixins.desktop{
+        width: 40%;
+
+    }
+    
+
+}
