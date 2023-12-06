@@ -1,0 +1,121 @@
+@import '../../_settings/variables.scss';
+// @import '../../../styles.scss';
+@import '../../../assets/fonts/fonts.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-header{
+    width: 35px;
+}
+.nav{
+    background: $color-primary;
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-open {
+    transform: translateX(-100%);
+  }
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    li{
+        a{
+            text-decoration: none;
+            color: $color-white;
+            font-size: 16px;
+            margin: 0 50px;
+            font-family: 'tipographyBold';
+        }
+    }
+}
+.menu-bars{
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+br{
+    border: 2px solid $color-white;
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+
+    a{
+        width: 40px;
+        height: 40px;
+        color: $color-white;
+    }
+}
+@media (min-width: 900px) {
+    .menu-bars{
+        display: none;
+    }
+    .nav-icons{
+        display: none;
+    }
+    .nav{
+        background: $color-primary;
+        width: 100%;
+        height: 70px;
+    }
+    .nav-list{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end;
+          
+        li{
+            a{
+                margin: 0 20px;
+                font-size: 26px;
+                font-family: 'tipographyBold';
+                color: $color-white;
+            }
+          }
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background: $color-primary;
+    }
+    header{
+        width: 25%;
+        height: 100px;
+        display: block;
+    }
+    .logo-header{
+        width: 45px;
+        margin: 20px 20px;
+    }
+    .nav-open{
+        transform: translate(0%);
+    }
+}
