@@ -1,5 +1,7 @@
 import React from "react";
-import "../Styles/Footer.css";
+import logo from "../../../assets/Imagenes/logo_azul.png"
+
+
 import {
   BiLogoFacebook,
   BiLogoInstagram,
@@ -14,7 +16,7 @@ function Footer() {
         <div className="footer1">
             <img
               className="logo"
-              src="../../assets/Imgenes/logo_azul.png"
+              src= {logo}
               alt=""
             />
           
