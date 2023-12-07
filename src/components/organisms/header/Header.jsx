@@ -4,12 +4,12 @@ import { IoLogoInstagram } from 'react-icons/io5';
 import './header.styles.scss';
 
 function Header() {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(true);
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
     return (
-        <div>
+        <div className='cont-Head'>
             <header>
                 <img src="./src/assets/Imagenes/logo1 1.svg" alt="" className="logo-header" />
                 <FaBars className="menu-bars" onClick={toggleMenu} />
