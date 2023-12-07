@@ -5,7 +5,7 @@ const programateSchoolData = [
             title: "intro",
             language: "HTML",
             program: "Programate School",
-            link: "https://drive.google.com/file/d/12tXRzr2ZNSQ3Zrv0vXpi2ZFgX55w2f1b/view?usp=drive_link"
+            link: "https://drive.google.com/file/d/12tXRzr2ZNSQ3Zrv0vXpi2ZFgX55w2f1b/view?usp=drive_link",
         },
         {
             item: 2,
