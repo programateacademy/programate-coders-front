@@ -1,15 +1,12 @@
-import { useState } from "react";
-import ProgramCards from "./components/organisms/programCards/Academy/ProgramCardsAcademyAcademy.jsx";
-import PanelSources from "./components/organisms/PanelSources/PanelSources.jsx";
 import Footer from "./components/organisms/Footer/Footer.jsx";
-import Header from './components/organisms/header/Header'
+import Header from './components/organisms/header/Header';
+import Home from "./components/pages/Home/Home.jsx";
 
 
 function App() {
   return <>
   <Header></Header>
-  <ProgramCards></ProgramCards>
-  <PanelSources></PanelSources>
+  <Home></Home>
   <Footer></Footer>
   </>;
 }
