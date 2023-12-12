@@ -1,3 +1,4 @@
+@use "../../_settings/mixins";
 @import '../../_settings/variables.scss';
 
 .cont-Head{
@@ -87,7 +88,7 @@ header{
         color: $color-white;
     }
 }
-@media (min-width: 900px) {
+@include mixins.desktop {
     .menu-bars{
         display: none;
     }
