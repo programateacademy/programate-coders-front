@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/organisms/header/Header.jsx";
-import Footer from "./components/organisms/footer/Footer.jsx";
+import Footer from "./components/organisms/Footer/Footer.jsx";
 import Inicio from "./components/pages/Inicio/Inicio.jsx";
 import SobreNosotros from "./components/pages/SobreNosotros/SobreNosotros.jsx";
 import Programas from "./components/pages/Programas/Programas.jsx";

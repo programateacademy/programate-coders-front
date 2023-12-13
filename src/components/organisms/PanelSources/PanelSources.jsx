@@ -6,7 +6,7 @@ import { programateAcademyStore } from "../../../store/programateAcademyStore";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 import ListWorkbooks from "../../molecules/ListWorkbooks/ListWorkbooks";
-
+import { tabStore } from "../../../store/tabStore";
 //solicitud a la Api de Youtube para traer las listas de reproducción
 const fetchData = async (language, playList, setSelectedVideo) => {
   const apiKey = "AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ";
@@ -39,6 +39,7 @@ const fetchData = async (language, playList, setSelectedVideo) => {
 
 function PanelSources() {
   const { setSelectedVideo, SelectedVideo, language, playList,} = programateAcademyStore();
+  const {togleState}= tabStore()
 
   const {
     data: videos,
@@ -74,12 +75,16 @@ function PanelSources() {
   return (
     <div className="panel-sources">
       <div className="player-container">
-      <ReactPlayer 
-        controls={true}
-        width={"100%"}
-        height={"100%"}
-        url={`https://www.youtube.com/watch?v=${SelectedVideo}`}
-      ></ReactPlayer>
+        {{
+          "videos":<ReactPlayer 
+          controls={true}
+          width={"100%"}
+          height={"100%"}
+          url={`https://www.youtube.com/watch?v=${SelectedVideo}`}
+        ></ReactPlayer>,
+          "workbooks":<iframe className="container" src="https://drive.google.com/file/d/1lnIVczki4x7kxlJSIoxpthz9M-63Mdi-/preview" width="640" height="480" allow="autoplay"></iframe>
+        }[togleState]}
+
     </div>
       <div className="tabSources">
       <TabList />
