@@ -1,11 +1,11 @@
 import React from "react";
-import ProgramCards from "../../organisms/programCards/Academy/ProgramCardsAcademy";
 import PanelSources from "../../organisms/PanelSources/PanelSources";
+import AcademyVideosCards from "../../organisms/programCards/Academy/AcademyVideosCards";
 
 function Programas() {
   return (
     <>
-      <ProgramCards></ProgramCards>
+      <AcademyVideosCards></AcademyVideosCards>
       <PanelSources></PanelSources>
     </>
   );
