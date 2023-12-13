@@ -40,12 +40,13 @@ header{
     align-items: flex-start;
     
     li{
-        a{
+        a{  
+            font-family: "Gilroy-ExtraBold"; 
+            font-weight: 400; 
             text-decoration: none;
             color: $color-white;
             font-size: 16px;
             margin: 0 50px;
-            font-family: 'tipographyBold';
         }
     }
 }
@@ -90,7 +91,6 @@ header{
             a{
                 margin: 0 20px;
                 font-size: 26px;
-                font-family: 'tipographyBold';
                 color: $color-white;
             }
           }

@@ -7,12 +7,12 @@ const tab ={
   workbooks:"workbooks",
 } 
 function TabList() {
-  const {togleState,setTogleState}= tabStore()
-  console.log(togleState);
+  const {tabTogleState,setTabTogleState}= tabStore()
+  console.log(tabTogleState);
   return (
     <div className='TabList'>
-        <Button className={togleState === tab.videos?"button-tab button-tab-active":"button-tab"}onClick={()=>setTogleState(tab.videos)}>videos</Button>
-        <Button className={togleState === tab.workbooks?"button-tab button-tab-active":"button-tab"}onClick={()=>setTogleState(tab.workbooks)}>workbooks</Button>      
+        <Button className={tabTogleState === tab.videos?"button-tab button-tab-active":"button-tab"}onClick={()=>setTabTogleState(tab.videos)}>Videos</Button>
+        <Button className={tabTogleState === tab.workbooks?"button-tab button-tab-active":"button-tab"}onClick={()=>setTabTogleState(tab.workbooks)}>workbooks</Button>      
     </div>
     
   )
