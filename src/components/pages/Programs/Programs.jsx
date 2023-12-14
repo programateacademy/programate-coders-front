@@ -4,7 +4,7 @@ import ProgramCards from "../../organisms/programCards/ProgramCards";
 import ProgramSelector from "../../organisms/ProgramSelector/ProgramSelector";
 import PanelAcademy from "../../organisms/PanelSources/PanelAcademy";
 import PanelSchool from "../../organisms/PanelSources/PanelSchool";
-function Programas() {
+function Programs() {
   const {fileType}= programateAcademyStore()
   const [programa ,setPrograma] = useState("academy");
   return (

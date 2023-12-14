@@ -1,4 +1,4 @@
-import './StyleContainer1.scss';
+import './styleContainer1.scss';
 import { LiaUserClockSolid } from "react-icons/lia";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { IoChatbubblesOutline } from "react-icons/io5";
