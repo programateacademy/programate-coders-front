@@ -2,7 +2,7 @@ import React from "react";
 import PanelSources from "../../organisms/PanelSources/PanelSources";
 import AcademyVideosCards from "../../organisms/programCards/Academy/AcademyVideosCards";
 
-function Programas() {
+function Programs() {
   return (
     <>
       <AcademyVideosCards></AcademyVideosCards>
@@ -11,4 +11,4 @@ function Programas() {
   );
 }
 
-export default Programas;
+export default Programs;
