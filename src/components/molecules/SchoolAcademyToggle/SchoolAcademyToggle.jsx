@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../atoms/button/Button";
-import { tabStore } from "../../../store/tabStore";
 function SchoolAcademyToggle({programa,setPrograma}) {
     
   return (

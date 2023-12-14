@@ -3,10 +3,6 @@
 .TabList{
     display: flex;
     width: 100%;
-    @include mixins.desktop(720px) {
-        width: 80%;
-        margin: 0px auto;
-      }
     @include mixins.desktop(1200px) {
         width: 100%;
       }

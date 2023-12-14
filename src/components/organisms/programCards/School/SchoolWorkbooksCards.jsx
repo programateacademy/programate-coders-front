@@ -3,7 +3,7 @@ import Card from "../../../atoms/card/Card";
 import { programateAcademyStore } from "../../../../store/programateAcademyStore";
 import programateSchoolData from "../../../../DataBases/programateSchoolData";
 
-function WorkbooksCards() {
+function SchoolWorkbooksCards() {
   const { setLanguage, language } = programateAcademyStore();
   const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
@@ -23,4 +23,4 @@ function WorkbooksCards() {
   );
 }
 
-export default WorkbooksCards;
+export default SchoolWorkbooksCards;

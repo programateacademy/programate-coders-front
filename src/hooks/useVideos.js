@@ -2,8 +2,10 @@ import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 import { programateAcademyStore } from "../store/programateAcademyStore";
 
-export const useVideos = (language, playList,setSelectedVideo) => {
-    const fetchData = async (language, playList) => {
+export const useVideos = (languageYoutube, playList) => {
+    const{setSelectedVideo}= programateAcademyStore()
+    console.log("prueba2");
+    const fetchData = async (languageYoutube, playList) => {
         const apiKey = "AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ";
     
         const extractID = (playlistLink) => {
@@ -12,7 +14,7 @@ export const useVideos = (language, playList,setSelectedVideo) => {
           return params.get("list");
         };
     
-        const filterLinks = playList.find((item) => item.language === language);
+        const filterLinks = playList.find((item) => item.language === languageYoutube);
         const playlistId = extractID(filterLinks.link);
         const response = await axios.get(
           `https://www.googleapis.com/youtube/v3/playlistItems`,
@@ -27,7 +29,7 @@ export const useVideos = (language, playList,setSelectedVideo) => {
         );
     
         if (response.data.items.length > 0) {
-           setSelectedVideo(response.data.items[0].snippet.resourceId.videoId);
+          setSelectedVideo(response.data.items[0].snippet.resourceId.videoId);
         }
 
         return response.data.items;
@@ -35,10 +37,11 @@ export const useVideos = (language, playList,setSelectedVideo) => {
 
   
     const videos = useQuery({
-      queryKey: ["currentPlayList", language],
-      queryFn: ()=>fetchData(language, playList),
+      queryKey: ["currentPlayList", languageYoutube],
+      queryFn: ()=>fetchData(languageYoutube, playList),
       refetchOnWindowFocus: false,
       enabled: false,
+      refetchOnMount:false
     });
     return {videos};
   };

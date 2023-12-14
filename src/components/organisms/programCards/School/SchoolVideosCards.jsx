@@ -3,7 +3,7 @@ import Card from "../../../atoms/card/Card";
 import { programateAcademyStore } from "../../../../store/programateAcademyStore";
 import programateSchoolData from "../../../../DataBases/programateSchoolData";
 
-function ProgramCards() {
+function SchoolVideosCards() {
   const { setLanguage, language } = programateAcademyStore();
 
   const handleCardClick = (clickedLanguage) => {
@@ -24,4 +24,4 @@ function ProgramCards() {
   );
 }
 
-export default ProgramCards;
+export default SchoolVideosCards;
