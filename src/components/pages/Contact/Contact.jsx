@@ -3,12 +3,12 @@ import ContactForm from "../../organisms/ContactForm/ContactForm";
 
 function Contact() {
   return (
-    <div className="about-container">
-      <div className="about-content">
-        <h2 className="about-title">
+    <div className="contact-container">
+      <div className="contact-content">
+        <h2 className="contact-title">
           ¡En Prográmate Academy, valoramos enormemente tu opinión!
         </h2>
-        <p className="about-text">
+        <p className="contact-text">
           ¡Tu opinión es clave para mejorar! Si tienes ideas, sugerencias o
           simplemente quieres compartir tus pensamientos, ¡nos encantaría
           escucharte!
