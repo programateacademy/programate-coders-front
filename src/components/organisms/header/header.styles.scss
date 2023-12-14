@@ -11,6 +11,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: $font-Bold;
 }
 .logo-header{
     width: 35px;
@@ -25,6 +26,7 @@ header{
     transition: transform 0.3s ease-in-out;
     position: absolute;
     z-index: 2;
+    font-family: $font-Bold;
 }
 .nav-open {
     transform: translateX(-100%);
@@ -34,11 +36,11 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-family: $font-Bold;
     
     li{
-        a{  
-            font-family: "Gilroy-ExtraBold"; 
-            font-weight: 400; 
+        a{
+            font-family: $font-Bold;
             text-decoration: none;
             color: $color-white;
             font-size: 16px;
@@ -54,18 +56,22 @@ header{
             width: 0%;
             transition: width 0.2s ease-in-out;
             opacity: 0;
+            font-family: $font-Bold;
         }
         a:hover::before{
             width: 100%;
             opacity: 1;
+            font-family: $font-Bold;
         }
         a::after{
             width: 0%;
             opacity: 0;
+            font-family: $font-Bold;
         }
         a:hover::after{
             width: 100%;
             opacity: 1;
+            font-family: $font-Bold;
         }
         a:hover{
             color: $color-secondary;

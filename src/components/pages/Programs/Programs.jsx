@@ -20,4 +20,4 @@ function Programas() {
   );
 }
 
-export default Programas;
+export default Programs;
