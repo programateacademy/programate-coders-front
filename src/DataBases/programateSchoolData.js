@@ -32,7 +32,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1ERCq4ELCwUr4QYcD2z2jogo8tjpcKI76/view?usp=drive_link",
-            id: ""
+            id: "1ERCq4ELCwUr4QYcD2z2jogo8tjpcKI76"
         },
         {
             item: 5,
@@ -40,7 +40,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1LdQvnRvUGITKhusGbCgQW9aaM4TlOFni/view?usp=drive_link",
-            id: ""
+            id: "1LdQvnRvUGITKhusGbCgQW9aaM4TlOFni"
         },
         {
             item: 6,
@@ -48,7 +48,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1Gp_GI5ugdqFFOS0zl13_9LVzCz-BmwJa/view?usp=drive_link",
-            id: ""
+            id: "1Gp_GI5ugdqFFOS0zl13_9LVzCz-BmwJa"
         },
         {
             item: 7,
@@ -56,7 +56,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/11SQUEkd7C9rvp5HeB6GS5nCk6Y4xXIfa/view?usp=drive_link",
-            id: ""
+            id: "11SQUEkd7C9rvp5HeB6GS5nCk6Y4xXIfa"
         },
         {
             item: 8,
@@ -72,7 +72,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1pj2txq-X65BzK4Jv67XDH6Q_NYN3-Ghb/view?usp=drive_link",
-            id: ""
+            id: "1CJryX7pra2KjFf_X2pV5ZDAEX6lfl_dL"
         },
         {
             item: 10,
@@ -80,7 +80,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1DAsNMeoA3a5N4W7imZmPebYCLqmFopnG/view?usp=drive_link",
-            id: ""
+            id: "1DAsNMeoA3a5N4W7imZmPebYCLqmFopnG"
         },
         {
             item: 11,
@@ -88,7 +88,7 @@ const programateSchoolData = {
             language: "Logica",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1n37xyXg7KouuNQpOwKtO7pS6LcjCpE0o/view?usp=drive_link",
-            id: ""
+            id: "1n37xyXg7KouuNQpOwKtO7pS6LcjCpE0o"
         },
         {
             item: 12,
@@ -96,7 +96,7 @@ const programateSchoolData = {
             language: "Otros",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1ENuTj7ZPPutppp2w2bB3UvdWYyIzSBo9/view?usp=drive_link",
-            id: ""
+            id: "1ENuTj7ZPPutppp2w2bB3UvdWYyIzSBo9"
         },
         {
             item: 13,
@@ -104,7 +104,7 @@ const programateSchoolData = {
             language: "Otros",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1fRveoEdwnbVCLNl3dzDcM0KarkO5WiiI/view?usp=drive_link",
-            id: ""
+            id: "1fRveoEdwnbVCLNl3dzDcM0KarkO5WiiI"
         },
         {
             item: 14,
@@ -112,7 +112,7 @@ const programateSchoolData = {
             language: "Otros",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1ZxPUb0UfhxVkzT989mlgVUSUU2hY8DJq/view?usp=drive_link",
-            id: ""
+            id: "1ZxPUb0UfhxVkzT989mlgVUSUU2hY8DJq"
         }
     ],
 

@@ -4,11 +4,10 @@ import { programateStore } from "../../../store/programateStore";
 import ListDrive from "../../molecules/ListDrive/ListDrive";
 
 function PanelSchool({ programa }) {
-  const {SelectedResource,setLanguage,filterItems } =
-  programateStore();
-    useEffect(()=>{
-        setLanguage("HTML")
-    },[]);
+  const { SelectedResource, setLanguage, filterItems } = programateStore();
+  useEffect(() => {
+    setLanguage("HTML");
+  }, []);
   return (
     <div className="panel-sources">
       <div className="player-container">
@@ -22,8 +21,8 @@ function PanelSchool({ programa }) {
       </div>
       <div className="tabSources">
         <TabList programa={programa} />
-        <ListDrive  sources={filterItems} nameSource={"videos"}/>
-        <ListDrive sources={filterItems}nameSource={"workbooks"}/>
+        <ListDrive sources={filterItems} nameSource={"videos"} />
+        <ListDrive sources={filterItems} nameSource={"workbooks"} />
       </div>
     </div>
   );
