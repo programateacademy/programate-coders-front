@@ -5,10 +5,10 @@ import ReactPlayer from "react-player";
 import { programateAcademyStore } from "../../../store/programateAcademyStore";
 import { useVideos } from "../../../hooks/useVideos";
 import ListDrive from "../../molecules/ListDrive/ListDrive";
-function PanelAcademy({}) {
+function PanelAcademy({programa}) {
   const [tabTogleState,setTabTogleState]= useState("videos")
   const [filterWorkbooks, setFilterWorkbooks] = useState([])
-  const { setSelectedVideo, SelectedVideo, language, playList,workbooks,fileType,languageYoutube} = programateAcademyStore();
+  const { setSelectedVideo, SelectedVideo, language, playList,workbooks,fileType,languageYoutube,filterItems} = programateAcademyStore();
   const { videos } = useVideos(languageYoutube, playList);
   console.log(languageYoutube);
   useEffect(() => {
@@ -67,9 +67,9 @@ function PanelAcademy({}) {
         )}
       </div>
       <div className="tabSources">
-        <TabList onTabChange={handleTabChange}tabTogleState={tabTogleState} />
+        <TabList programa={programa}/>
         <ListVideos videos={videos.data}/>
-        <ListDrive  source={filterWorkbooks} nameSource={"workbooks"}/>
+        <ListDrive  sources={filterItems} nameSource={"workbooks"}/>
       </div>
     </div>
   );

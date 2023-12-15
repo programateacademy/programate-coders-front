@@ -4,10 +4,12 @@ import { programateAcademyStore } from "../../../../store/programateAcademyStore
 import programateSchoolData from "../../../../DataBases/programateSchoolData";
 
 function SchoolVideosCards() {
-  const { setLanguage, language } = programateAcademyStore();
-
-  const handleCardClick = (clickedLanguage) => {
+  const { setLanguage,videos,setFilterItems,setSelectedVideo,} = programateAcademyStore();
+  const handleCardClick = (clickedLanguage) => {   
     setLanguage(clickedLanguage);
+    const filteredVideo =videos.school.filter((item) => item.language === clickedLanguage)
+    setFilterItems(filteredVideo)
+    setSelectedVideo(filteredVideo[0].id)
   };
 
   return (

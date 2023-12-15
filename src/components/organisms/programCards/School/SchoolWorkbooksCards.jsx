@@ -4,9 +4,12 @@ import { programateAcademyStore } from "../../../../store/programateAcademyStore
 import programateSchoolData from "../../../../DataBases/programateSchoolData";
 
 function SchoolWorkbooksCards() {
-  const { setLanguage, language } = programateAcademyStore();
+  const { setLanguage, workbooks,setFilterItems,setSelectedVideo } = programateAcademyStore();
   const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
+    const filteredWorkbook =workbooks.school.filter((item) => item.language === clickedLanguage)
+    setFilterItems(filteredWorkbook)
+    setSelectedVideo(filteredWorkbook[0].id)
   };
 
   return (

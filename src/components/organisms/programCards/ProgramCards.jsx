@@ -5,7 +5,6 @@ import SchoolVideosCards from "./School/SchoolVideosCards";
 import SchoolWorkbooksCards from "./School/SchoolWorkbooksCards";
 
 function ProgramCards({ programa, tipoArchivo }) {
-  console.log(programa , tipoArchivo);
   if (programa === "academy" && tipoArchivo === "videos") {
     return <AcademyVideosCards />;
   } else if (programa === "academy" && tipoArchivo === "workbooks") {

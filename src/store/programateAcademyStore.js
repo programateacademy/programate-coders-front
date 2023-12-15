@@ -5,6 +5,7 @@ export const programateAcademyStore = create((set) => ({
   SelectedVideo: "",
   fileType: "videos",
   playList: programateAcademyData.videos,
+  filterItems:programateSchoolData.videos,
   workbooks: {
     academy: programateAcademyData.workbooks,
     school: programateSchoolData.workbooks,
@@ -15,6 +16,7 @@ export const programateAcademyStore = create((set) => ({
   },
   language: "JavaScript",
   languageYoutube:"JavaScript",
+  setFilterItems:(videos) => set({ filterItems: videos }),
   setFileType: (newType) => set({ fileType: newType }),
   setLanguage: (newlanguage) => set({ language: newlanguage }),
   setLanguageYoutube: (newlanguage) => set({ languageYoutube: newlanguage }),

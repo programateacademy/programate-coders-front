@@ -4,10 +4,11 @@ import { programateAcademyStore } from "../../../../store/programateAcademyStore
 import programateAcademyData from "../../../../DataBases/programateAcademyData";
 
 function AcademyVideosCards() {
-  const { setLanguageYoutube, language } = programateAcademyStore();
+  const { setLanguageYoutube, } = programateAcademyStore();
 
   const handleCardClick = (clickedLanguage) => {
     setLanguageYoutube(clickedLanguage);
+    
   };
 
   return (

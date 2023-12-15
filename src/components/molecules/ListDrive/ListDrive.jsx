@@ -2,7 +2,7 @@ import React from 'react'
 import ListItem from '../../atoms/ListItem/ListItem'
 import { programateAcademyStore } from '../../../store/programateAcademyStore'
 import { FaCloudDownloadAlt } from "react-icons/fa";
-function ListDrive({source,nameSource}) {
+function ListDrive({sources,nameSource}) {
     const tab ={
         videos:"videos",
         workbooks:"workbooks",
@@ -11,7 +11,7 @@ function ListDrive({source,nameSource}) {
     
   return (
     <ul className={fileType=== `${nameSource}` ?"list-drive list-drive-active":"list-drive"}>
-      {source.map((workbook)=>(
+      {sources.map((workbook)=>(
         <>
         <ListItem className={"list-item"} key={workbook.item} setSelectedVideo={()=>setSelectedVideo(workbook.id)}>{workbook.title} <a href={`https://drive.google.com/uc?export=download&id=${workbook.id}`}><FaCloudDownloadAlt></FaCloudDownloadAlt></a></ListItem>
         </>

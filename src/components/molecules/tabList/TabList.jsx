@@ -6,17 +6,35 @@ const tab = {
   videos: "videos",
   workbooks: "workbooks",
 };
-function handleTabState({setFileType, setSelectedVideo, videos, workbooks },state) {
-  setFileType(state);
-  if (state === "videos") {
-    setSelectedVideo(videos.school[0].id);
+
+function TabList({programa}) {
+  const { fileType, setSelectedVideo,setFileType,videos,workbooks,setFilterItems } = programateAcademyStore();
+
+  function handleTabState(state) {
+    setFileType(state);
+    if (state === "videos" && programa === "academy") {
+      // setSelectedVideo(videos.academy[0].id);
+    }
+    if (state === "videos" && programa === "school") {
+      const filteritems =(videos.school)
+      setFilterItems(filteritems)
+      setSelectedVideo(filteritems[0].id);
+      console.log("videos");
+    }
+    if (state === "workbooks" && programa === "academy") {
+
+      const filteritems =(workbooks.academy)
+      setFilterItems(filteritems)
+      setSelectedVideo(filteritems[0].id);
+    }
+    if (state === "workbooks" && programa === "school") {
+      console.log("workbooks");
+      const filteritems =(workbooks.school)
+      setFilterItems(filteritems)
+      setSelectedVideo(filteritems[0].id);
+    }
+    
   }
-  if (state === "workbooks") {
-    setSelectedVideo(workbooks.school[0].id);
-  }
-}
-function TabList() {
-  const { fileType, setSelectedVideo,setFileType,videos,workbooks } = programateAcademyStore();
   const data = { setFileType, setSelectedVideo, videos, workbooks };
   return (
     <div className="TabList">
@@ -36,7 +54,7 @@ function TabList() {
             ? "button-tab button-tab-active"
             : "button-tab"
         }
-        onClick={() => handleTabState(data,tab.workbooks)}
+        onClick={() => handleTabState(tab.workbooks)}
       >
         workbooks
       </Button>
