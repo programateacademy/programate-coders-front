@@ -8,7 +8,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/12tXRzr2ZNSQ3Zrv0vXpi2ZFgX55w2f1b/view?usp=drive_link",
-            id: ""
+            id: "12tXRzr2ZNSQ3Zrv0vXpi2ZFgX55w2f1b"
         },
         {
             item: 2,
@@ -16,7 +16,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1PfQCZ9tGv-XHuQweoio4R1OhygBCHZm4/view?usp=drive_link",
-            id: ""
+            id: "1PfQCZ9tGv-XHuQweoio4R1OhygBCHZm4"
         },
         {
             item: 3,
@@ -24,7 +24,7 @@ const programateSchoolData = {
             language: "HTML",
             program: "Programate School",
             link: "https://drive.google.com/file/d/1V9HuLIM9QHghB-b4kxT8t1U3khdnQ0eK/view?usp=drive_link",
-            id: ""
+            id: "1V9HuLIM9QHghB-b4kxT8t1U3khdnQ0eK"
         },
         {
             item: 4,

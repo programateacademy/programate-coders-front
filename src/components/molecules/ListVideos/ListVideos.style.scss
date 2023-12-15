@@ -20,14 +20,29 @@
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #0F205B;
     }
-
-    @include mixins.desktop{
+    @include mixins.desktop(700px){
         height: 600px;
-        max-height: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
         padding-left: 2rem;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 100vw; 
+        padding-left: 30%;
+
     }
+    @include mixins.desktop(1200px){
+        height: 600px;
+        position: static; 
+        top: auto; 
+        right: auto;
+        height: auto; 
+        width: auto;
+        padding: 2rem;
+
+    }
+    
     &-active{
         display: flex;
     }

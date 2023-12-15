@@ -13,7 +13,7 @@ function AcademyVideosCards() {
   const { setLanguage, language } = programateAcademyStore();
 
   const handleCardClick = (clickedLanguage) => {
-    setLanguage(clickedLanguage);
+    setLanguageYoutube(clickedLanguage);
   };
 
   return (

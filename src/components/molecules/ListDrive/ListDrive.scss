@@ -1,5 +1,5 @@
 @use "../../_settings/mixins";
-.list-workbooks{
+.list-drive{
     display: none;
     flex-direction: column;
     background-color: #0F205B;
@@ -31,4 +31,8 @@
         display: flex;
     }
 
+}
+.iframe-container{
+    width: 100%;
+    height: 100%;
 }
