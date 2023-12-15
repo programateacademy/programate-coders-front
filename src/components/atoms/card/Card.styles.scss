@@ -1,27 +1,41 @@
-.card-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 96px;
-    height: 130px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    margin-bottom: 8px;
-    cursor: pointer;
+@use "../../_settings/variables";
+@use "../../_settings/base";
 
-    &:hover{
-        transform: scale(1.05);
-    }
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 96px;
+  height: 130px;
+  background: variables.$color-white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
-.card-header{
-    width: 72px;
-    height: 96px;
+.card-container img {
+  width: 72px;
+  height: 72px;
+  object-fit: scale-down;
 }
 
-.card-body h2{
-    margin-top: 8px;
-    font-size: 16px;
+.card-title {
+  color: variables.$color-secondary;
+  font-family: "Gilroy";
+}
+
+.card-header {
+  width: 72px;
+  height: 96px;
+}
+
+.card-body h2 {
+  margin-top: 8px;
+  font-size: 16px;
 }
