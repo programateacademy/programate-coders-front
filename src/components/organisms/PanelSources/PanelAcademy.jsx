@@ -17,10 +17,6 @@ function PanelAcademy({programa}) {
       videos.refetch();
   }, [languageYoutube]);
 
-  useEffect(()=>{
-    setFilterWorkbooks(workbooks.academy.filter((item) => item.language === language))
-  },[language]);
-
   if (videos.isFetching) {
     return <p>Loading...</p>;
   }
@@ -67,7 +63,7 @@ function PanelAcademy({programa}) {
         )}
       </div>
       <div className="tabSources">
-        <TabList programa={programa}/>
+        <TabList programa={programa} videosYoutube={videos.data}/>
         <ListVideos videos={videos.data}/>
         <ListDrive  sources={filterItems} nameSource={"workbooks"}/>
       </div>

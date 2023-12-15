@@ -6,7 +6,6 @@ function ListVideos({videos}) {
   const {setSelectedVideo,language,fileType}=programateAcademyStore()
   // const queryClient = useQueryClient();
   // const videos = queryClient.getQueryData(["currentPlayList", language]);
-  console.log(videos);
   const tab ={
     videos:"videos",
     workbooks:"workbooks",

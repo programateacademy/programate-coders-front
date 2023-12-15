@@ -7,13 +7,14 @@ const tab = {
   workbooks: "workbooks",
 };
 
-function TabList({programa}) {
+function TabList({programa,videosYoutube}) {
   const { fileType, setSelectedVideo,setFileType,videos,workbooks,setFilterItems } = programateAcademyStore();
 
   function handleTabState(state) {
     setFileType(state);
     if (state === "videos" && programa === "academy") {
-      // setSelectedVideo(videos.academy[0].id);
+      console.log(videosYoutube);
+      setSelectedVideo(videosYoutube[0].snippet.resourceId.videoId);
     }
     if (state === "videos" && programa === "school") {
       const filteritems =(videos.school)
@@ -44,7 +45,7 @@ function TabList({programa}) {
             ? "button-tab button-tab-active"
             : "button-tab"
         }
-        onClick={() => handleTabState(data,tab.videos)}
+        onClick={() => handleTabState(tab.videos)}
       >
         Videos
       </Button>
