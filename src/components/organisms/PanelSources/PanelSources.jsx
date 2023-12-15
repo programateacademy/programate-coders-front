@@ -6,7 +6,7 @@ import { videosStore } from "../../../store/videosStore";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 //solicitud a la Api de Youtube para traer las listas de reproducción
-const fetchData = async (language, playList, setSelectedVideo) => {
+const fetchData = async (language, playList, setSelectedResource) => {
   const apiKey = "AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ";
   const extractID = (playlistLink) => {
     const urlParts = playlistLink.split("?");
@@ -29,14 +29,14 @@ const fetchData = async (language, playList, setSelectedVideo) => {
   );
   if (response.data.items.length > 0) {
     const defaultVideoId = response.data.items[0].snippet.resourceId.videoId;
-    setSelectedVideo(defaultVideoId);
+    setSelectedResource(defaultVideoId);
   }
 
   return response.data.items;
 };
 
 function PanelSources() {
-  const { setSelectedVideo, SelectedVideo, language, playList } = videosStore();
+  const { setSelectedResource, SelectedResource, language, playList } = videosStore();
 
   const {
     data: videos,
@@ -45,7 +45,7 @@ function PanelSources() {
     error,
   } = useQuery({
     queryKey: ["currentPlayList"],
-    queryFn: () => fetchData(language, playList, setSelectedVideo),
+    queryFn: () => fetchData(language, playList, setSelectedResource),
   });
 
   if (isLoading) {
@@ -67,7 +67,7 @@ function PanelSources() {
         controls={true}
         width={"100%"}
         height={"100%"}
-        url={`https://www.youtube.com/watch?v=${SelectedVideo}`}
+        url={`https://www.youtube.com/watch?v=${SelectedResource}`}
       ></ReactPlayer>
     </div>
       <div className="tabSources">

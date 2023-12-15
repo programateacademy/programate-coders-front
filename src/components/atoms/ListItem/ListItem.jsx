@@ -1,8 +1,8 @@
 import React from "react";
-import { programateAcademyStore } from "../../../store/programateAcademyStore";
-function ListItem({children, className,setSelectedVideo}) {
+import { programateStore } from "../../../store/programateStore";
+function ListItem({children, className,setSelectedResource}) {
   const ListItemClass = `button ${className || ""}`;
-  return <li className={ListItemClass} onClick={setSelectedVideo}>{children}</li>;
+  return <li className={ListItemClass} onClick={setSelectedResource}>{children}</li>;
 }
 
 export default ListItem;

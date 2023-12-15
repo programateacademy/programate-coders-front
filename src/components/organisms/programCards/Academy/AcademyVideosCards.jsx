@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../../atoms/card/Card";
-import { programateAcademyStore } from "../../../../store/programateAcademyStore";
+import { programateStore } from "../../../../store/programateStore";
 import programateAcademyData from "../../../../DataBases/programateAcademyData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -10,7 +10,7 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function AcademyVideosCards() {
-  const { setLanguageYoutube, } = programateAcademyStore();
+  const { setLanguageYoutube, } = programateStore();
 
   const handleCardClick = (clickedLanguage) => {
     setLanguageYoutube(clickedLanguage);

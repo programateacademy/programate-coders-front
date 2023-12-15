@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../../atoms/card/Card";
-import { programateAcademyStore } from "../../../../store/programateAcademyStore";
+import { programateStore } from "../../../../store/programateStore";
 import programateAcademyData from "../../../../DataBases/programateAcademyData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -10,12 +10,12 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function AcademyWorkbooksCards() {
-  const { setLanguage, workbooks,setFilterItems,setSelectedVideo } = programateAcademyStore();
+  const { setLanguage, workbooks,setFilterItems,setSelectedResource } = programateStore();
   const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
     const filteredWorkbook =workbooks.academy.filter((item) => item.language === clickedLanguage)
     setFilterItems(filteredWorkbook)
-    setSelectedVideo(filteredWorkbook[0].id)
+    setSelectedResource(filteredWorkbook[0].id)
   };
 
   return (

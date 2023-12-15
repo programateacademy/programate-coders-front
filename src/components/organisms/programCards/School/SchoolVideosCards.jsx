@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../../atoms/card/Card";
-import { programateAcademyStore } from "../../../../store/programateAcademyStore";
+import { programateStore } from "../../../../store/programateStore";
 import programateSchoolData from "../../../../DataBases/programateSchoolData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -10,12 +10,12 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function SchoolVideosCards() {
-  const { setLanguage,videos,setFilterItems,setSelectedVideo,} = programateAcademyStore();
+  const { setLanguage,videos,setFilterItems,setSelectedResource,} = programateStore();
   const handleCardClick = (clickedLanguage) => {   
     setLanguage(clickedLanguage);
     const filteredVideo =videos.school.filter((item) => item.language === clickedLanguage)
     setFilterItems(filteredVideo)
-    setSelectedVideo(filteredVideo[0].id)
+    setSelectedResource(filteredVideo[0].id)
   };
 
   return (

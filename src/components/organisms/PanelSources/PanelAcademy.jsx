@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import ListVideos from "../../molecules/ListVideos/ListVideos";
 import TabList from "../../molecules/tabList/TabList";
 import ReactPlayer from "react-player";
-import { programateAcademyStore } from "../../../store/programateAcademyStore";
+import { programateStore } from "../../../store/programateStore";
 import { useVideos } from "../../../hooks/useVideos";
 import ListDrive from "../../molecules/ListDrive/ListDrive";
 function PanelAcademy({programa}) {
   const [tabTogleState,setTabTogleState]= useState("videos")
   const [filterWorkbooks, setFilterWorkbooks] = useState([])
-  const { setSelectedVideo, SelectedVideo, language, playList,workbooks,fileType,languageYoutube,filterItems} = programateAcademyStore();
+  const { setSelectedResource, SelectedResource, language, playList,workbooks,fileType,languageYoutube,filterItems} = programateStore();
   const { videos } = useVideos(languageYoutube, playList);
   console.log(languageYoutube);
   useEffect(() => {
@@ -32,11 +32,11 @@ function PanelAcademy({programa}) {
     setTabTogleState(newTab)
     if (newTab === "videos"){
       console.log(videos.data[0].snippet.resourceId.videoId);
-      setSelectedVideo(videos.data[0].snippet.resourceId.videoId)
+      setSelectedResource(videos.data[0].snippet.resourceId.videoId)
         
     }
     if (newTab === "workbooks"){
-      setSelectedVideo(workbooks.academy[0].id)    
+      setSelectedResource(workbooks.academy[0].id)    
     }
 
 
@@ -50,12 +50,12 @@ function PanelAcademy({programa}) {
             controls={true}
             width={"100%"}
             height={"100%"}
-            url={`https://www.youtube.com/watch?v=${SelectedVideo}`}
+            url={`https://www.youtube.com/watch?v=${SelectedResource}`}
           ></ReactPlayer>
         ) : (
           <iframe
             className="iframe-container"
-            src={`https://drive.google.com/file/d/${SelectedVideo}/preview`}
+            src={`https://drive.google.com/file/d/${SelectedResource}/preview`}
             width="640"
             height="480"
             allow="autoplay"

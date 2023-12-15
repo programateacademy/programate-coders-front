@@ -3,8 +3,8 @@ import {render, screen} from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
 import ListDrive from "../../molecules/ListDrive/ListDrive";
-import { programateAcademyStore } from "../../../store/programateAcademyStore";
-{workbooks}=programateAcademyStore
+import { programateStore } from "../../../store/programateStore";
+{workbooks}=programateStore
 test('loads and displays greeting', async () => {
     // ARRANGE
     render(<ListDrive source={workbooks.academy} nameSource={"workbooks"}/>)

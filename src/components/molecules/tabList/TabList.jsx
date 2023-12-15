@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../atoms/button/Button";
-import { programateAcademyStore } from "../../../store/programateAcademyStore";
+import { programateStore } from "../../../store/programateStore";
 
 const tab = {
   videos: "videos",
@@ -8,35 +8,35 @@ const tab = {
 };
 
 function TabList({programa,videosYoutube}) {
-  const { fileType, setSelectedVideo,setFileType,videos,workbooks,setFilterItems } = programateAcademyStore();
+  const { fileType, setSelectedResource,setFileType,videos,workbooks,setFilterItems } = programateStore();
 
   function handleTabState(state) {
     setFileType(state);
     if (state === "videos" && programa === "academy") {
       console.log(videosYoutube);
-      setSelectedVideo(videosYoutube[0].snippet.resourceId.videoId);
+      setSelectedResource(videosYoutube[0].snippet.resourceId.videoId);
     }
     if (state === "videos" && programa === "school") {
       const filteritems =(videos.school)
       setFilterItems(filteritems)
-      setSelectedVideo(filteritems[0].id);
+      setSelectedResource(filteritems[0].id);
       console.log("videos");
     }
     if (state === "workbooks" && programa === "academy") {
 
       const filteritems =(workbooks.academy)
       setFilterItems(filteritems)
-      setSelectedVideo(filteritems[0].id);
+      setSelectedResource(filteritems[0].id);
     }
     if (state === "workbooks" && programa === "school") {
       console.log("workbooks");
       const filteritems =(workbooks.school)
       setFilterItems(filteritems)
-      setSelectedVideo(filteritems[0].id);
+      setSelectedResource(filteritems[0].id);
     }
     
   }
-  const data = { setFileType, setSelectedVideo, videos, workbooks };
+  const data = { setFileType, setSelectedResource, videos, workbooks };
   return (
     <div className="TabList">
       <Button

@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import { programateAcademyStore } from "../store/programateAcademyStore";
+import { programateStore } from "../store/programateStore";
 
 export const useVideos = (languageYoutube, playList) => {
-    const{setSelectedVideo}= programateAcademyStore()
+    const{setSelectedResource}= programateStore()
     console.log("prueba2");
     const fetchData = async (languageYoutube, playList) => {
         const apiKey = "AIzaSyCOgAm7ywQ9rYOF20uRC3HlKT3BjDKaXLQ";
@@ -29,7 +29,7 @@ export const useVideos = (languageYoutube, playList) => {
         );
     
         if (response.data.items.length > 0) {
-          setSelectedVideo(response.data.items[0].snippet.resourceId.videoId);
+          setSelectedResource(response.data.items[0].snippet.resourceId.videoId);
         }
 
         return response.data.items;

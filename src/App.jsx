@@ -4,7 +4,9 @@ import Footer from "./components/organisms/Footer/Footer.jsx";
 import Home from "./components/pages/Home/Home.jsx";
 import About from "./components/pages/About/About.jsx";
 import Programs from "./components/pages/Programs/Programs.jsx";
+import Resources from "./components/pages/Resources/Resources.jsx";
 import Contact from "./components/pages/Contact/Contact.jsx";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre-nosotros" element={<About />} />
           <Route path="/programas" element={<Programs />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/contacto" element={<Contact />} />
         </Routes>
         <Footer />
