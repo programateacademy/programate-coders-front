@@ -1,26 +1,40 @@
 import React from "react";
 import Card from "../../../atoms/card/Card";
-import { programateAcademyStore } from "../../../../store/programateAcademyStore";
+import { programateStore } from "../../../../store/programateStore";
 import programateAcademyData from "../../../../DataBases/programateAcademyData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import SwiperCore from "swiper";
+import "swiper/css/bundle";
 
-function WorkbooksCards() {
-  const { setLanguage, language } = programateAcademyStore();
+SwiperCore.use([Navigation]);
+
+function AcademyWorkbooksCards() {
+  const { setLanguage, workbooks,setFilterItems,setSelectedResource } = programateStore();
   const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
+    const filteredWorkbook =workbooks.academy.filter((item) => item.language === clickedLanguage)
+    setFilterItems(filteredWorkbook)
+    setSelectedResource(filteredWorkbook[0].id)
   };
 
   return (
-    <div className="program-cards">
-      {programateAcademyData["workbooks-cards"].map((card) => (
-        <Card
-          key={card.item}
-          title={card.title}
-          image={card.img}
-          onclick={() => handleCardClick(card.language)}
-        />
-      ))}
+    <div className="cards-container">
+      <div className="program-cards">
+        <Swiper slidesPerView={3} navigation>
+          {programateAcademyData["workbooks-cards"].map((card) => (
+            <SwiperSlide key={card.item}>
+              <Card
+                title={card.title}
+                image={card.img}
+                onclick={() => handleCardClick(card.language)}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 }
 
-export default WorkbooksCards;
+export default AcademyWorkbooksCards;

@@ -1,27 +1,43 @@
 import React from "react";
 import Card from "../../../atoms/card/Card";
-import { programateAcademyStore } from "../../../../store/programateAcademyStore";
+import { programateStore } from "../../../../store/programateStore";
 import programateSchoolData from "../../../../DataBases/programateSchoolData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import SwiperCore from "swiper";
+import "swiper/css/bundle";
 
-function ProgramCards() {
-  const { setLanguage, language } = programateAcademyStore();
+SwiperCore.use([Navigation]);
 
+function SchoolVideosCards() {
+  const { setLanguage, videos, setFilterItems, setSelectedResource } =
+    programateStore();
   const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
+    const filteredVideo = videos.school.filter(
+      (item) => item.language === clickedLanguage
+    );
+    setFilterItems(filteredVideo);
+    setSelectedResource(filteredVideo[0].id);
   };
 
   return (
-    <div className="program-cards">
-      {programateSchoolData["videos-cards"].map((card) => (
-        <Card
-          key={card.item}
-          title={card.title}
-          image={card.img}
-          onclick={() => handleCardClick(card.language)}
-        />
-      ))}
+    <div className="cards-container">
+      <div className="program-cards">
+        <Swiper slidesPerView={2} navigation>
+          {programateSchoolData["videos-cards"].map((card) => (
+            <SwiperSlide key={card.item}>
+              <Card
+                title={card.title}
+                image={card.img}
+                onclick={() => handleCardClick(card.language)}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 }
 
-export default ProgramCards;
+export default SchoolVideosCards;

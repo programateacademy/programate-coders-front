@@ -1,8 +1,8 @@
 .footer {
   background: black;
-  height: 200px;
+  height: 214px;
 
-  margin-top: 3rem;
+  
 }
 .footer1 {
   display: flex;
@@ -10,23 +10,33 @@
   align-items: center;
   margin: 0 50px;
   color: white;
+  height: 50%;
 }
 .footer2 {
   margin: 0 50px;
   
 }
+.number {
+  font-size: 20px;
+
+}  
+.direction{
+  margin: 0 20px;
+  font-size: 20px;
+}
 .footer-bottom {
   text-align: center;
-  font-size: medium;
+  font-size: 20px;
   color: white;
+  margin-top: 15px;
 }
 .logo {
   width: 80px;
   height: 80px;
   font-weight: bold;
   font-size: 15px;
-  color: aqua;
-  border-radius: 10px;
+
+  
 }
 .social-media {
   display: flex;
@@ -34,7 +44,7 @@
   
 }
 .redes {
-  font-size: 3rem;
+  font-size: 32px;
   color: white;
   margin: 0.5rem;
 }
@@ -52,14 +62,23 @@
   }
   .footer1 {
     height: 60px;
-    
+    font-size: 14px;
+    margin: 0 30px;
   }
   .footer2 {
     
     height: 60px;
   }
+  .number {
+    font-size: 14px;
+  
+  }  
+  .direction{
+  
+    font-size: 14px;
+  }
   .footer-bottom {
-    font-size: small;
+    font-size: 14px;
   }
   .logo {
     transform: scale(0.6);
@@ -67,21 +86,30 @@
   }
   
   .redes {
-    font-size: 2rem;
+    font-size: 16px;
 
     margin: 0.5rem;
     
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
  
   .logo {
     transform: scale(0.5);
   }
   .footer1 {
-    font-size: smaller;
+    font-size: 8px;
+    margin: 0 25px;
   }
   .footer-bottom {
-    font-size: smaller;
+    font-size: 9px;
+  }
+  .number {
+    font-size: 9px;
+  
+  }  
+  .direction{
+  
+    font-size: 9px;
   }
 }

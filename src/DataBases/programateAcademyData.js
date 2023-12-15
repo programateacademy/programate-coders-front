@@ -22,7 +22,7 @@ const programateAcademyData = {
         {
             item: 3,
             title: "Curso HTML",
-            language: "Html",
+            language: "HTML",
             program: "Programate Academy",
             link: "https://www.youtube.com/playlist?list=PLHE0O79Fwx1IvMC9vhy4t5Z-OwgQwc4hz",
             id: "PLHE0O79Fwx1IvMC9vhy4t5Z-OwgQwc4hz",
@@ -55,7 +55,7 @@ const programateAcademyData = {
         {
             item: 3,
             title: "HTML",
-            language: "Html",
+            language: "HTML",
             program: "Programate Academy",
             img: "../../src/assets/Imagenes/Cards/Programate/html5.svg",
         },
