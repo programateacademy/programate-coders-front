@@ -1,10 +1,53 @@
-.program-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    align-items: center;
-    background-color: #3d4b7a;
+@use "../../_settings/variables";
+
+.cards-container {
+  background-color: variables.$color-fifth;
+}
+
+.program-cards {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.swiper-container {
+  margin-top: 2rem;
+}
+.swiper {
+  max-width: 100%;
+  min-height: 220px;
+  padding: 10px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+  background: variables.$color-primary;
+  color: variables.$color-white;
+  transition: transform 0.2s ease-in-out;
+
+  transform: translateY(135%);
+  border-radius: 8px;
+  &:hover {
+    color: variables.$color-secondary;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.swiper-button-next {
+  right: 5rem;
+}
+
+.swiper-button-prev {
+  left: 5rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 2rem;
 }
