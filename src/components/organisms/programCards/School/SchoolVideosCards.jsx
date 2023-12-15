@@ -10,12 +10,15 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function SchoolVideosCards() {
-  const { setLanguage,videos,setFilterItems,setSelectedResource,} = programateStore();
-  const handleCardClick = (clickedLanguage) => {   
+  const { setLanguage, videos, setFilterItems, setSelectedResource } =
+    programateStore();
+  const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
-    const filteredVideo =videos.school.filter((item) => item.language === clickedLanguage)
-    setFilterItems(filteredVideo)
-    setSelectedResource(filteredVideo[0].id)
+    const filteredVideo = videos.school.filter(
+      (item) => item.language === clickedLanguage
+    );
+    setFilterItems(filteredVideo);
+    setSelectedResource(filteredVideo[0].id);
   };
 
   return (

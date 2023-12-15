@@ -6,33 +6,82 @@
   justify-content: center;
   margin: 20px;
   align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 4rem;
 
   h1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
     color: variables.$color-secondary;
     width: 50%;
-    @include mixins.desktop {
-      width: 100%;
+  }
+
+  .program-text {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: variables.$color-black;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    h1 {
+      width: 90%;
       font-size: 32px;
     }
   }
-  >P{
-    @include mixins.desktop{
-        width: 40%;
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      width: 90%;
+      font-size: 24px;
     }
 
-  }
-  >button{
-    a{
-        color: white;
+    .program-text {
+      width: 90%;
+      font-size: 16px;
+      line-height: 24px;
     }
-    @include mixins.desktop{
-        width: 30%;
+
+    > button {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
     }
-    
+    .program-button {
+      width: 90%;
+    }
   }
 
+  > button {
+    margin-top: 20px;
+    background-color: variables.$color-fourth;
+    border: none;
+    list-style: none;
+
+    font-size: 20px;
+    color: white;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: variables.$color-tertiary;
+      transition: background-color 0.3s ease;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }

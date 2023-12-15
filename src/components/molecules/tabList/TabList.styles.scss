@@ -1,10 +1,15 @@
 @use "../../_settings/mixins";
 @use "../../_settings/variables";
-.TabList{
-    display: flex;
+.TabList {
+  display: flex;
+  width: 100%;
+  @include mixins.desktop(1200px) {
     width: 100%;
-    @include mixins.desktop(1200px) {
-        width: 100%;
-      }
-
+  }
+  :not(.button-tab-active) {
+    &:hover {
+      cursor: pointer;
+      background-color: variables.$color-primary;
+    }
+  }
 }

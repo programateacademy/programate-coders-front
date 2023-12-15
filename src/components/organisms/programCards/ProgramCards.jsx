@@ -14,6 +14,7 @@ function ProgramCards({ programa, tipoArchivo }) {
   } else if (programa === "school" && tipoArchivo === "workbooks") {
     return <SchoolWorkbooksCards />;
   }
+
   return null;
 }
 

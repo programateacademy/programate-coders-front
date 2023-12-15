@@ -13,6 +13,22 @@
   box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 425px) {
+  .SchoolAcademyToggle {
+    max-width: 320px;
+    gap: 0;
+    padding: 0.5rem;
+  }
+  .programate {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+.programate {
+  transition: all 0.3s ease; /* Esto aplicará una transición suave a todos los cambios */
+}
 .programate {
   justify-content: center;
   justify-content: flex-end;
@@ -28,7 +44,7 @@
     0
   ); /* Asegura que el elemento está inicialmente en su posición final */
   animation-duration: 0.5s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in;
   @include mixins.desktop {
     width: 265px;
     height: 94px;
@@ -40,7 +56,9 @@
     font-size: 20px;
     font-family: "Gilroy-ExtraBold";
     color: variables.$color-secondary;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+
     @include mixins.desktop {
       width: 50%;
       align-self: flex-start;
@@ -49,6 +67,14 @@
   button {
     @include mixins.desktop {
       align-self: flex-end;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        border: none;
+        background-color: variables.$color-secondary;
+        color: variables.$color-white;
+        transition: background-color 0.3s ease;
+      }
     }
   }
   &-school {
@@ -57,9 +83,9 @@
     background: no-repeat right
         url("../../../../src/assets/Imagenes/imagenSchoolPrueva.svg"),
       variables.$color-primary;
-      @include mixins.desktop {
-        background-position: top -12px right;
-      }
+    @include mixins.desktop {
+      background-position: top -12px right;
+    }
   }
   &-academy {
     opacity: 1;
@@ -67,15 +93,14 @@
     background: no-repeat right
         url("../../../../src/assets/Imagenes/cohete.svg"),
       variables.$color-primary;
-      @include mixins.desktop {
-        background-position: top -12px left;
-      }
+    @include mixins.desktop {
+      background-position: top -12px left;
+    }
   }
   &-active {
     @include mixins.desktop {
       justify-content: center;
       align-items: center;
-
     }
     p {
       color: variables.$color-white;
@@ -89,23 +114,5 @@
     button {
       display: none;
     }
-  }
-}
-
-@keyframes moveFromLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveFromRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
   }
 }
