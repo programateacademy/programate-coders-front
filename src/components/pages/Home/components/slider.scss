@@ -1,9 +1,5 @@
 @import "../../../../components/_settings/variables.scss";
 
-*{
-    margin: 0;
-    padding: 0;
-}
 .main-container {
     width: 90%;
     height: 220px;
@@ -81,6 +77,7 @@
 }
 .text-slider{
     position: absolute;
+    font-family: Gilroy-Medium;
     top: 50%;
     transform: translate(5%, -50%);
     font-size: 20px;
