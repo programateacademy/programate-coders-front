@@ -11,7 +11,7 @@ import NodeImg from "../../src/assets/Imagenes/Cards/Programate/nodejs.svg";
 
 const programateAcademyData = {
 
-    /*  Videos = JavaScript, React, Html, CSS*/
+    /* Videos = Html, CSS, JavaScript, React */
     "videos": [
         {
             item: 1,
@@ -50,35 +50,35 @@ const programateAcademyData = {
     "videos-cards": [
         {
             item: 1,
-            title: "React",
-            language: "React",
-            program: "Programate Academy",
-            img: ReactImg,
-        },
-        {
-            item: 2,
-            title: "JavaScript",
-            language: "JavaScript",
-            program: "Programate Academy",
-            img: JavaScriptImg,
-        },
-        {
-            item: 3,
             title: "HTML",
             language: "HTML",
             program: "Programate Academy",
             img: HtmlImage,
         },
         {
-            item: 4,
+            item: 2,
             title: "CSS",
             language: "CSS",
             program: "Programate Academy",
             img: CssImage,
         },
+        {
+            item: 3,
+            title: "JavaScript",
+            language: "JavaScript",
+            program: "Programate Academy",
+            img: JavaScriptImg,
+        },
+        {
+            item: 4,
+            title: "React",
+            language: "React",
+            program: "Programate Academy",
+            img: ReactImg,
+        }
     ],
 
-    /* Workbooks = HTML, Logica, Python, Otros, Git, CSS, JavaScript, Node JS */
+    /* Workbooks = Logica, Python, HTML, CSS, JavaScript, Node JS, Git, Otros */
     "workbooks": [
         {
             item: 1,
@@ -250,60 +250,64 @@ const programateAcademyData = {
     "workbooks-cards": [
         {
             item: 1,
-            title: "HTML",
-            language: "HTML",
-            program: "Programate Academy",
-            img: HtmlImage,
-        },
-        {
-            item: 2,
             title: "Lógica",
             language: "Logica",
             program: "Programate Academy",
             img: LogicaImg,
         },
         {
-            item: 3,
+            item: 2,
             title: "Python",
             language: "Python",
             program: "Programate Academy",
             img: PythonImg,
         },
         {
+            item: 3,
+            title: "HTML",
+            language: "HTML",
+            program: "Programate Academy",
+            img: HtmlImage,
+        },
+        {
             item: 4,
-            title: "Otros",
-            language: "Otros",
-            program: "Programate Academy",
-            img: OtrosImg,
-        },
-        {
-            item: 5,
-            title: "Git",
-            language: "Git",
-            program: "Programate Academy",
-            img: GitImg,
-        },
-        {
-            item: 6,
             title: "CSS",
             language: "CSS",
             program: "Programate Academy",
             img: CssImage,
         },
         {
-            item: 7,
+            item: 5,
             title: "JavaScript",
             language: "JavaScript",
             program: "Programate Academy",
             img: JavaScriptImg,
         },
         {
-            item: 8,
+            item: 6,
             title: "Node JS",
             language: "Node JS",
             program: "Programate Academy",
             img: NodeImg,
         },
+        {
+            item: 7,
+            title: "Git",
+            language: "Git",
+            program: "Programate Academy",
+            img: GitImg,
+        },
+        {
+            item: 8,
+            title: "Otros",
+            language: "Otros",
+            program: "Programate Academy",
+            img: OtrosImg,
+        },
+
+
+
+
     ],
 
 }
