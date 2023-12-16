@@ -19,17 +19,16 @@
       font-size: 32px;
     }
   }
-  >P{
-    @include mixins.desktop{
-        width: 40%;
+  > P {
+    font-family: "Gilroy Light";
+    @include mixins.desktop {
+      width: 40%;
     }
-
   }
-  >button{
-    @include mixins.desktop{
-        width: 30%;
+  > button {
+    font-family: "Gilroy Light";
+    @include mixins.desktop {
+      width: 30%;
     }
-    
   }
-
 }
