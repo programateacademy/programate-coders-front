@@ -89,7 +89,7 @@ header {
     a {
       font-family: variables.$font-Bold;
       text-decoration: none;
-      color: $color-white;
+      color: variables.$color-white;
       font-size: 16px;
       margin: 0 50px;
       position: relative;
@@ -179,7 +179,7 @@ header {
         a {
           margin: 0 20px;
           font-size: 26px;
-          color: $color-white;
+          color: variables.$color-white;
         }
       }
       .nav-icons {
