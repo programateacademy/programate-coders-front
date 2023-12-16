@@ -20,13 +20,11 @@
     }
   }
   > P {
-    font-family: "Gilroy Light";
     @include mixins.desktop {
       width: 40%;
     }
   }
   > button {
-    font-family: "Gilroy Light";
     @include mixins.desktop {
       width: 30%;
     }
