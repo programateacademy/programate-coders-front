@@ -1,4 +1,13 @@
-import reactimg from "../../src/assets/Imagenes/Cards/Programate/react.svg";
+import ReactImg from "../../src/assets/Imagenes/Cards/Programate/react.svg";
+import JavaScriptImg from "../../src/assets/Imagenes/Cards/Programate/javascript.svg";
+import HtmlImage from "../../src/assets/Imagenes/Cards/Programate/html5.svg";
+import CssImage from "../../src/assets/Imagenes/Cards/Programate/css3.svg";
+import LogicaImg from "../../src/assets/Imagenes/Cards/Programate/logica.svg";
+import PythonImg from "../../src/assets/Imagenes/Cards/Programate/python.svg";
+import OtrosImg from "../../src/assets/Imagenes/Cards/Programate/otros.svg";
+import GitImg from "../../src/assets/Imagenes/Cards/Programate/git.svg";
+import NodeImg from "../../src/assets/Imagenes/Cards/Programate/nodejs.svg";
+
 
 const programateAcademyData = {
 
@@ -44,28 +53,28 @@ const programateAcademyData = {
             title: "React",
             language: "React",
             program: "Programate Academy",
-            img: reactimg,
+            img: ReactImg,
         },
         {
             item: 2,
             title: "JavaScript",
             language: "JavaScript",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/javascript.svg",
+            img: JavaScriptImg,
         },
         {
             item: 3,
             title: "HTML",
             language: "HTML",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/html5.svg",
+            img: HtmlImage,
         },
         {
             item: 4,
             title: "CSS",
             language: "CSS",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/css.svg",
+            img: CssImage,
         },
     ],
 
@@ -244,56 +253,56 @@ const programateAcademyData = {
             title: "HTML",
             language: "HTML",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/html5.svg",
+            img: HtmlImage,
         },
         {
             item: 2,
             title: "Lógica",
             language: "Logica",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/logica.svg",
+            img: LogicaImg,
         },
         {
             item: 3,
             title: "Python",
             language: "Python",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/python.svg",
+            img: PythonImg,
         },
         {
             item: 4,
             title: "Otros",
             language: "Otros",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/otros.svg",
+            img: OtrosImg,
         },
         {
             item: 5,
             title: "Git",
             language: "Git",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/git.svg",
+            img: GitImg,
         },
         {
             item: 6,
             title: "CSS",
             language: "CSS",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/css.svg",
+            img: CssImage,
         },
         {
             item: 7,
             title: "JavaScript",
             language: "JavaScript",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/javascript.svg",
+            img: JavaScriptImg,
         },
         {
             item: 8,
             title: "Node JS",
             language: "Node JS",
             program: "Programate Academy",
-            img: "../../src/assets/Imagenes/Cards/Programate/nodejs.svg",
+            img: NodeImg,
         },
     ],
 
