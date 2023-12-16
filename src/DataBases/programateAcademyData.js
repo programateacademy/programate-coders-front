@@ -43,7 +43,7 @@ const programateAcademyData = {
             title: "React",
             language: "React",
             program: "Programate Academy",
-            img: "../../../../src/assets/Imagenes/Cards/Programate/react.svg",
+            img: "react.svg",
         },
         {
             item: 2,
