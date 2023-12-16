@@ -13,7 +13,7 @@ function Container1(){
                     <div className='card1-Cont1'>
                         <h3 className='title-card1'>Programate</h3>
                         <h2>Academy</h2>
-                        <img src="src\assets\Imagenes\img-card1-cont1.svg" alt="" className='img-card1-cont1'/>
+                        <img src={new URL(`../../../../../assets/Imagenes/img-card1-cont1.svg`, import.meta.url).href}alt="" className='img-card1-cont1'/>
                         <a href="#"><button className='button1-card1-cont1'>Ver programa</button></a>
                     </div>
                     <div className='card2-Cont1'>
