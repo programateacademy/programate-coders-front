@@ -18,8 +18,18 @@ function AcademyVideosCards() {
 
   return (
     <div className="cards-container">
-      <div className="program-cards">
-        <Swiper slidesPerView={3} navigation>
+      <div className="videos-cards-academy">
+        <Swiper
+          className="swiper-videos-cards-academy"
+          slidesPerView={3}
+          navigation
+          breakpoints={{
+            // width >= 440px
+            440: {
+              slidesPerView: 4,
+            },
+          }}
+        >
           {programateAcademyData["videos-cards"].map((card) => (
             <SwiperSlide key={card.item}>
               <Card

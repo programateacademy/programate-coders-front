@@ -10,18 +10,40 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function AcademyWorkbooksCards() {
-  const { setLanguage, workbooks,setFilterItems,setSelectedResource } = programateStore();
+  const { setLanguage, workbooks, setFilterItems, setSelectedResource } =
+    programateStore();
   const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
-    const filteredWorkbook =workbooks.academy.filter((item) => item.language === clickedLanguage)
-    setFilterItems(filteredWorkbook)
-    setSelectedResource(filteredWorkbook[0].id)
+    const filteredWorkbook = workbooks.academy.filter(
+      (item) => item.language === clickedLanguage
+    );
+    setFilterItems(filteredWorkbook);
+    setSelectedResource(filteredWorkbook[0].id);
   };
 
   return (
     <div className="cards-container">
-      <div className="program-cards">
-        <Swiper slidesPerView={3} navigation>
+      <div className="workbooks-cards-academy">
+        <Swiper
+          className="swiper-workbooks-cards-academy"
+          slidesPerView={3}
+          navigation
+          breakpoints={{
+            // width >= 640px
+            420: {
+              slidesPerView: 4,
+            },
+            650: {
+              slidesPerView: 6,
+            },
+            800: {
+              slidesPerView: 7,
+            },
+            900: {
+              slidesPerView: 8,
+            },
+          }}
+        >
           {programateAcademyData["workbooks-cards"].map((card) => (
             <SwiperSlide key={card.item}>
               <Card

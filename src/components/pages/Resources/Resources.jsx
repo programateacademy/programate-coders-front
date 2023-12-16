@@ -9,7 +9,6 @@ function Resources() {
     <>
       <div className="resources-container">
         <div className="resources-content">
-          {" "}
           <ProgramCards
             programa={programa}
             tipoArchivo={fileType}

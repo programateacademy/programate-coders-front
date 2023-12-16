@@ -10,23 +10,30 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function SchoolWorkbooksCards() {
-  const { setLanguage, workbooks,setFilterItems,setSelectedResource } = programateStore();
+  const { setLanguage, workbooks, setFilterItems, setSelectedResource } =
+    programateStore();
   const handleCardClick = (clickedLanguage) => {
     setLanguage(clickedLanguage);
-    const filteredWorkbook =workbooks.school.filter((item) => item.language === clickedLanguage)
-    setFilterItems(filteredWorkbook)
-    setSelectedResource(filteredWorkbook[0].id)
+    const filteredWorkbook = workbooks.school.filter(
+      (item) => item.language === clickedLanguage
+    );
+    setFilterItems(filteredWorkbook);
+    setSelectedResource(filteredWorkbook[0].id);
   };
 
   return (
     <div className="cards-container">
-      <div className="program-cards">
-        <Swiper slidesPerView={3} navigation>
+      <div className="workbooks-cards-school">
+        <Swiper
+          className="swiper-workbooks-cards-academy"
+          slidesPerView={3}
+          navigation
+        >
           {programateSchoolData["workbooks-cards"].map((card) => (
             <SwiperSlide key={card.item}>
               <Card
                 title={card.title}
-                image={new URL(`../../../../assets/Imagenes/Cards/School/${card.img}.svg`, import.meta.url).href}
+                image={card.img}
                 onclick={() => handleCardClick(card.language)}
               />
             </SwiperSlide>
