@@ -1,5 +1,4 @@
-
-import react from "../assets/Imagenes/Cards/Programate/react.svg";
+import reactimg from "../../src/assets/Imagenes/Cards/Programate/react.svg";
 
 const programateAcademyData = {
 
@@ -45,7 +44,7 @@ const programateAcademyData = {
             title: "React",
             language: "React",
             program: "Programate Academy",
-            img: "",
+            img: reactimg,
         },
         {
             item: 2,
