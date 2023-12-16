@@ -26,14 +26,14 @@ select::placeholder {
 
 .form-button {
   width: 100%;
-  background-color: variables.$color-fourth;
+  background-color: variables.$color-tertiary;
   border: 4px solid variables.$color-fourth;
   outline: none;
   border: none;
 }
 
 .form-button:hover {
-  background-color: variables.$color-tertiary;
+  background-color: variables.$color-fourth;
 }
 
 input,

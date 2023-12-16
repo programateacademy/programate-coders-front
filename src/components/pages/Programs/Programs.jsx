@@ -33,9 +33,9 @@ function Programs() {
             ),
           }[programa]
         }
-        <Button className="program-button">
-          <Link to={`/recursos/${programa}`}>Iniciar programa</Link>
-        </Button>
+        <Link className="link-button" to={`/recursos/${programa}`}>
+          <Button className="program-button">Iniciar programa</Button>
+        </Link>
       </div>
     </>
   );
