@@ -10,11 +10,10 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function AcademyVideosCards() {
-  const { setLanguageYoutube, } = programateStore();
+  const { setLanguageYoutube } = programateStore();
 
   const handleCardClick = (clickedLanguage) => {
     setLanguageYoutube(clickedLanguage);
-    
   };
 
   return (
