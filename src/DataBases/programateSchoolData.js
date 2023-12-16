@@ -1,3 +1,11 @@
+import ReactImg from "../../src/assets/Imagenes/Cards/School/react.svg";
+import JavaScriptImg from "../../src/assets/Imagenes/Cards/School/javascript.svg";
+import HtmlImage from "../../src/assets/Imagenes/Cards/School/html5.svg";
+import CssImage from "../../src/assets/Imagenes/Cards/School/css.svg";
+import LogicaImg from "../../src/assets/Imagenes/Cards/School/logica.svg";
+import OtrosImg from "../../src/assets/Imagenes/Cards/School/otros.svg";
+import GitImg from "../../src/assets/Imagenes/Cards/School/git.svg";
+
 const programateSchoolData = {
 
     /*  Videos = HTML, Logica, Otros*/
@@ -122,21 +130,21 @@ const programateSchoolData = {
             title: "HTML",
             language: "HTML",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/html5.svg",
+            img: HtmlImage,
         },
         {
             item: 2,
             title: "Lógica",
             language: "Logica",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/logica.svg",
+            img: LogicaImg,
         },
         {
             item: 3,
             title: "Otros",
             language: "Otros",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/otros.svg",
+            img: OtrosImg,
         },
     ],
 
@@ -268,42 +276,42 @@ const programateSchoolData = {
             title: "CSS",
             language: "CSS",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/css.svg",
+            img: CssImage,
         },
         {
             item: 2,
             title: "Otros",
             language: "Otros",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/otros.svg",
+            img: OtrosImg,
         },
         {
             item: 3,
             title: "Git",
             language: "Git",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/git.svg",
+            img: GitImg,
         },
         {
             item: 4,
             title: "Lógica",
             language: "Logica",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/logica.svg",
+            img: LogicaImg,
         },
         {
             item: 5,
             title: "React",
             language: "React",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/react.svg",
+            img: ReactImg,
         },
         {
             item: 6,
             title: "JavaScript",
             language: "JavaScript",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/javascript.svg",
+            img: JavaScriptImg,
         },
     ],
 }
