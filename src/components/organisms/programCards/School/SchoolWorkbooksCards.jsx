@@ -26,7 +26,7 @@ function SchoolWorkbooksCards() {
             <SwiperSlide key={card.item}>
               <Card
                 title={card.title}
-                image={card.img}
+                image={new URL(`../../../../assets/Imagenes/Cards/School/css.svg`, import.meta.url).href}
                 onclick={() => handleCardClick(card.language)}
               />
             </SwiperSlide>
