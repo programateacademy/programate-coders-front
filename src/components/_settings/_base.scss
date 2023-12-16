@@ -1,23 +1,21 @@
 @import "reset.scss";
 @import "variables";
 @font-face {
-    font-family: "Gilroy";
-    src: url(../../../public/fonts/Gilroy-Light.woff) format("woff");
-    // src: url(../../../public/fonts/Gilroy-Light.ttf) format("truetype");
-
+  font-family: "Gilroy";
+  src: url("../../../public/fonts/Gilroy-Light.woff") format("woff");
+  // src: url(../../../public/fonts/Gilroy-Light.ttf) format("truetype");
 }
 @font-face {
-    font-family:"Gilroy-ExtraBold";
-    src: url(../../../public/fonts/Gilroy-ExtraBold.woff) format("woff");
-    // src: url(../../../public/fonts/Gilroy-ExtraBold.ttf) format("truetype");
-
-
+  font-family: "Gilroy-ExtraBold";
+  src: url("../../../public/fonts/Gilroy-ExtraBold.woff") format("woff");
+  // src: url(../../../public/fonts/Gilroy-ExtraBold.ttf) format("truetype");
 }
-
-
-
 
 @import "@picocss/pico/scss/pico";
 
-body{font-family: "Gilroy"}
-h1{font-family:"Gilroy-ExtraBold" }
+body {
+  font-family: "Gilroy";
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gilroy-ExtraBold";
+}
