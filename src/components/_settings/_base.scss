@@ -3,27 +3,27 @@
 @import "@picocss/pico/scss/pico";
 
   @font-face {
-    font-family: 'Gilroy Regular';
+    font-family: 'Gilroy';
     src: url(/public/fonts/Gilroy-Regular.ttf);
     font-style: normal;
   }
   @font-face {
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy-Medium';
     src: url(/public/fonts/Gilroy-Medium.ttf);
     font-style: normal;
   }
   @font-face {
-    font-family: 'Gilroy SemiBold';
+    font-family: 'Gilroy-SemiBold';
     src: url(/public/fonts/Gilroy-SemiBold.ttf);
     font-style: normal;
   }
   @font-face {
-    font-family: 'Gilroy Bold';
+    font-family: 'Gilroy-Bold';
     src: url(/public/fonts/Gilroy-Bold.ttf);
     font-style: normal;
   }
   @font-face {
-    font-family: 'Gilroy ExtraBold';
+    font-family: 'Gilroy-ExtraBold';
     src: url(/public/fonts/Gilroy-ExtraBold.ttf);
     font-style: normal;
   }
