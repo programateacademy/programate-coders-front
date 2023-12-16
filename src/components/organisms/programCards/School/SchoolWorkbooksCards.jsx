@@ -25,9 +25,19 @@ function SchoolWorkbooksCards() {
     <div className="cards-container">
       <div className="workbooks-cards-school">
         <Swiper
-          className="swiper-workbooks-cards-academy"
+          className="swiper-workbooks-cards-school"
           slidesPerView={3}
           navigation
+          breakpoints={{
+            // width >= 640px
+            420: {
+              slidesPerView: 4,
+            },
+            // width >= 800px
+            650: {
+              slidesPerView: 6,
+            },
+          }}
         >
           {programateSchoolData["workbooks-cards"].map((card) => (
             <SwiperSlide key={card.item}>

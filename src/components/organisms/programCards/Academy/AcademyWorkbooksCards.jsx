@@ -29,16 +29,19 @@ function AcademyWorkbooksCards() {
           slidesPerView={3}
           navigation
           breakpoints={{
-            // width >= 640px
+            // width >= 420px
             420: {
               slidesPerView: 4,
             },
+            // width >= 650px
             650: {
               slidesPerView: 6,
             },
+            // width >= 800px
             800: {
               slidesPerView: 7,
             },
+            // width >= 900px
             900: {
               slidesPerView: 8,
             },

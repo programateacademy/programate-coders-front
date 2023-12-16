@@ -26,7 +26,7 @@ function SchoolVideosCards() {
       <div className="videos-cards-school">
         <Swiper slidesPerView={3} navigation>
           {programateSchoolData["videos-cards"].map((card) => (
-            <SwiperSlide key={card.item}>
+            <SwiperSlide className="swiper-videos-cards-school" key={card.item}>
               <Card
                 title={card.title}
                 image={card.img}
