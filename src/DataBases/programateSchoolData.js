@@ -8,7 +8,7 @@ import GitImg from "../../src/assets/Imagenes/Cards/School/git.svg";
 
 const programateSchoolData = {
 
-    /*  Videos = HTML, Logica, Otros*/
+    /*  Videos =  Logica, HTML, Otros*/
     "videos": [
         {
             item: 1,
@@ -125,19 +125,20 @@ const programateSchoolData = {
     ],
 
     "videos-cards": [
+
         {
             item: 1,
-            title: "HTML",
-            language: "HTML",
-            program: "Programate School",
-            img: HtmlImage,
-        },
-        {
-            item: 2,
             title: "Lógica",
             language: "Logica",
             program: "Programate School",
             img: LogicaImg,
+        },
+        {
+            item: 2,
+            title: "HTML",
+            language: "HTML",
+            program: "Programate School",
+            img: HtmlImage,
         },
         {
             item: 3,
@@ -148,7 +149,7 @@ const programateSchoolData = {
         },
     ],
 
-    /*  Workbooks = CSS, Otros, Git, Logica, React, JavaScript*/
+    /*  Workbooks = Logica, CSS, JavaScript, React, Git, Otros*/
     "workbooks": [
         {
             item: 1,
@@ -273,45 +274,46 @@ const programateSchoolData = {
     "workbooks-cards": [
         {
             item: 1,
-            title: "CSS",
-            language: "CSS",
-            program: "Programate School",
-            img: CssImage,
-        },
-        {
-            item: 2,
-            title: "Otros",
-            language: "Otros",
-            program: "Programate School",
-            img: OtrosImg,
-        },
-        {
-            item: 3,
-            title: "Git",
-            language: "Git",
-            program: "Programate School",
-            img: GitImg,
-        },
-        {
-            item: 4,
             title: "Lógica",
             language: "Logica",
             program: "Programate School",
             img: LogicaImg,
         },
         {
-            item: 5,
+            item: 2,
+            title: "CSS",
+            language: "CSS",
+            program: "Programate School",
+            img: CssImage,
+        },
+        {
+            item: 3,
+            title: "JavaScript",
+            language: "JavaScript",
+            program: "Programate School",
+            img: JavaScriptImg,
+        },
+
+        {
+            item: 4,
             title: "React",
             language: "React",
             program: "Programate School",
             img: ReactImg,
         },
         {
-            item: 6,
-            title: "JavaScript",
-            language: "JavaScript",
+            item: 5,
+            title: "Git",
+            language: "Git",
             program: "Programate School",
-            img: JavaScriptImg,
+            img: GitImg,
+        },
+        {
+            item: 6,
+            title: "Otros",
+            language: "Otros",
+            program: "Programate School",
+            img: OtrosImg,
         },
     ],
 }
