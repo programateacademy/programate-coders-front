@@ -9,6 +9,11 @@
    position: relative;
    height: 100%;
    width: 100%;
+   button{
+    top: 90%;
+    position: absolute;
+    transform: translate(10%, -90%);
+   }
 }
 .dots-container {
     display: flex;
@@ -64,16 +69,6 @@
     background-color: $color-tertiary;
     border-radius: 50%;
     padding: 0 15px;
-}
-.button-slider{
-    position: absolute;
-    width: 170px;
-    height: 36px;
-    font-size: 10px;
-    top: 90%;
-    padding: 0 0 2px 0;
-    transform: translate(10%, -90%);
-    z-index: 1;
 }
 .text-slider{
     position: absolute;
