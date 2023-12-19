@@ -1,12 +1,11 @@
 @use "../../_settings/variables";
+@use "./Academy/AcademyVideosCards.responsive.scss";
+@use "./Academy/AcademyWorkbooksCards.responsive.scss";
+@use "./School/SchoolVideosCards.responsive.scss";
+@use "./School/SchoolWorkbooksCards.responsive.scss";
 
 .cards-container {
   background-color: variables.$color-fifth;
-}
-
-.program-cards {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .swiper-container {
@@ -14,7 +13,6 @@
 }
 .swiper {
   max-width: 100%;
-  min-height: 220px;
   padding: 10px 0;
 }
 

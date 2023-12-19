@@ -1,16 +1,35 @@
 @use "../../_settings/variables";
 @use "../../_settings/mixins";
+@import "@picocss/pico/scss/pico";
 button {
   font-family: "Gilroy-ExtraBold";
   letter-spacing: 2px;
   font-weight: 400;
+  cursor: pointer;
+}
+.button-slider {
+  width: 170px;
+  height: 36px;
+  font-size: 10px;
+  padding: 0 0 2px 0;
+  z-index: 1;
+}
+.button-form {
+  font-family: "Gilroy-SemiBold";
+  width: 100%;
+  background-color: variables.$color-tertiary;
+  border: 4px solid variables.$color-fourth;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: variables.$color-fourth;
+  }
 }
 .button-tab {
   font-style: normal;
   text-transform: capitalize;
   border-radius: 0px;
-  background-color: #3d4a7a;
-  width: 50%;
+  background-color: rgb(variables.$color-secondary, 0.8);
   border: none;
   height: 60px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -18,22 +37,64 @@ button {
   margin: 0px;
   transition: background-color 0.5s ease;
   &-active {
-    background-color: #0f205b;
+    background-color: variables.$color-secondary;
   }
 }
 .button-show {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
   font-size: 20px;
-  background-color: #d9d9d9;
+  background-color: variables.$color-grey;
   border: none;
   border-radius: 10px;
   height: 25px;
-  padding: 0px;
+  padding: 8px;
   color: variables.$color-secondary;
   @include mixins.desktop {
     margin: 0px;
+  }
+}
+.button-card {
+  font-size: 14px;
+  height: 45px;
+  background: variables.$color-shadow2;
+  border: 2px solid variables.$color-primary;
+  color: variables.$color-secondary;
+  padding: 0 2rem 2px 2rem;
+  box-shadow: 0px 5px 10px 0px #2948984d;
+}
+.button-primary {
+  background: variables.$color-secondary;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px #2948984d;
+  &:hover {
+    background: variables.$color-shadow2;
+    border: 2px solid variables.$color-shadow;
+    color: variables.$color-primary;
+  }
+}
+.program-button {
+  font-family: Gilroy-Bold;
+  margin-top: 20px;
+  background-color: variables.$color-tertiary;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  text-underline-offset: none;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: variables.$color-fourth;
+    transition: background-color 0.3s ease;
+  }
+
+  a {
+    color: white;
   }
 }

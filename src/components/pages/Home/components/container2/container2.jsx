@@ -1,6 +1,6 @@
 import './styleContainer2.scss';
 import { RiComputerLine } from "react-icons/ri";
-
+import Button from '../../../../atoms/button/Button';
 
 function Container2(){
     return(
@@ -42,7 +42,7 @@ function Container2(){
                     </div>
                 </div>
             </div>
-            <a href="#"><button className='button-container2'>¡Explora más Cursos!</button></a>
+            <a href="#"><Button className='button-primary button-container2'>¡Explora más Cursos!</Button></a>
         </div>
     )
 }

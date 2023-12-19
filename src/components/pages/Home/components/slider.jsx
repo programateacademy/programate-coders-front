@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import  { data }  from '../../../../assets/dataImgSlide.js';
 import './slider.scss';
+import Button from '../../../atoms/button/Button.jsx';
 import { MdOutlineHorizontalRule } from "react-icons/md";
 
 function Slider() {
@@ -43,7 +44,7 @@ function Slider() {
     <div className="main-container">
       <div className="slider-container">
         <p className='text-slider'>Descubre <span>el mundo del desarrollo web  con </span>nuestros programas educativos.</p>
-        <button className='button-slider'>¡Explora Programas!</button>
+        <Button className='button-slider'>¡Explora Programas!</Button>
         <div className='rightArrow' onClick={() => scrollToImage('next')}>&#10093;</div>
         <div className="container-images">
           <ul ref={listRef}>

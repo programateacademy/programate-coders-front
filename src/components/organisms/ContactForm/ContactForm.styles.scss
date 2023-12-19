@@ -17,23 +17,11 @@ select {
 textarea::placeholder,
 select::placeholder {
   color: variables.$color-white;
-  font-family: "Gilroy";
+  font-family: "Gilroy-SemiBold";
 }
 
 .form-group {
   width: 100%;
-}
-
-.form-button {
-  width: 100%;
-  background-color: variables.$color-fourth;
-  border: 4px solid variables.$color-fourth;
-  outline: none;
-  border: none;
-}
-
-.form-button:hover {
-  background-color: variables.$color-tertiary;
 }
 
 input,
@@ -41,7 +29,7 @@ textarea,
 select {
   width: 100%;
   font-size: 22px;
-  font-family: "Gilroy";
+  font-family: "Gilroy-SemiBold";
   padding: 0.5rem;
   border-radius: 8px;
   outline: none;
@@ -54,7 +42,7 @@ select {
 
 p {
   margin-top: -1rem;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Regular";
   color: variables.$color-black;
   text-align: left;
   font-weight: 500;

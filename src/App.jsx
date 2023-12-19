@@ -7,7 +7,6 @@ import Programs from "./components/pages/Programs/Programs.jsx";
 import Resources from "./components/pages/Resources/Resources.jsx";
 import Contact from "./components/pages/Contact/Contact.jsx";
 
-
 function App() {
   return (
     <>

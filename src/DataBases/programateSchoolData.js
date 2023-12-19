@@ -1,6 +1,14 @@
+import ReactImg from "../../src/assets/Imagenes/Cards/School/react.svg";
+import JavaScriptImg from "../../src/assets/Imagenes/Cards/School/javascript.svg";
+import HtmlImage from "../../src/assets/Imagenes/Cards/School/html5.svg";
+import CssImage from "../../src/assets/Imagenes/Cards/School/css.svg";
+import LogicaImg from "../../src/assets/Imagenes/Cards/School/logica.svg";
+import OtrosImg from "../../src/assets/Imagenes/Cards/School/otros.svg";
+import GitImg from "../../src/assets/Imagenes/Cards/School/git.svg";
+
 const programateSchoolData = {
 
-    /*  Videos = HTML, Logica, Otros*/
+    /*  Videos =  Logica, HTML, Otros*/
     "videos": [
         {
             item: 1,
@@ -117,30 +125,31 @@ const programateSchoolData = {
     ],
 
     "videos-cards": [
+
         {
             item: 1,
-            title: "HTML",
-            language: "HTML",
-            program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/html5.svg",
-        },
-        {
-            item: 2,
             title: "Lógica",
             language: "Logica",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/logica.svg",
+            img: LogicaImg,
+        },
+        {
+            item: 2,
+            title: "HTML",
+            language: "HTML",
+            program: "Programate School",
+            img: HtmlImage,
         },
         {
             item: 3,
             title: "Otros",
             language: "Otros",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/otros.svg",
+            img: OtrosImg,
         },
     ],
 
-    /*  Workbooks = CSS, Otros, Git, Logica, React, JavaScript*/
+    /*  Workbooks = Logica, CSS, JavaScript, React, Git, Otros*/
     "workbooks": [
         {
             item: 1,
@@ -265,45 +274,46 @@ const programateSchoolData = {
     "workbooks-cards": [
         {
             item: 1,
-            title: "CSS",
-            language: "CSS",
-            program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/css.svg",
-        },
-        {
-            item: 2,
-            title: "Otros",
-            language: "Otros",
-            program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/otros.svg",
-        },
-        {
-            item: 3,
-            title: "Git",
-            language: "Git",
-            program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/git.svg",
-        },
-        {
-            item: 4,
             title: "Lógica",
             language: "Logica",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/logica.svg",
+            img: LogicaImg,
         },
         {
-            item: 5,
-            title: "React",
-            language: "React",
+            item: 2,
+            title: "CSS",
+            language: "CSS",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/react.svg",
+            img: CssImage,
         },
         {
-            item: 6,
+            item: 3,
             title: "JavaScript",
             language: "JavaScript",
             program: "Programate School",
-            img: "../../src/assets/Imagenes/Cards/School/javascript.svg",
+            img: JavaScriptImg,
+        },
+
+        {
+            item: 4,
+            title: "React",
+            language: "React",
+            program: "Programate School",
+            img: ReactImg,
+        },
+        {
+            item: 5,
+            title: "Git",
+            language: "Git",
+            program: "Programate School",
+            img: GitImg,
+        },
+        {
+            item: 6,
+            title: "Otros",
+            language: "Otros",
+            program: "Programate School",
+            img: OtrosImg,
         },
     ],
 }
