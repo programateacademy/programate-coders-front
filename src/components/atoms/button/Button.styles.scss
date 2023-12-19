@@ -1,5 +1,6 @@
 @use "../../_settings/variables";
 @use "../../_settings/mixins";
+@import "@picocss/pico/scss/pico";
 button {
   font-family: "Gilroy-ExtraBold";
   letter-spacing: 2px;

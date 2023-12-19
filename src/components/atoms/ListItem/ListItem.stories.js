@@ -11,7 +11,7 @@ export default {
   },
 };
   /**
-   * Boton para seleccionar la lista de recursos que se quiere mostrar
+   * Li(listItem) para seleccionar el recurso que se quiere mostrar
    */
 export const ListIte = {
   args: {

@@ -12,17 +12,16 @@ function Button({ children, className, onClick }) {
   );
 }
 Button.propTypes = {
-  //gjhkgkhj
     /**
-   * Is this the principal call to action on the page?
+   * Contenido del boton
    */
   children: PropTypes.string.isRequired,
     /**
-   * Is this the principal call to action on the page?
+   * Clase que va a definir los estilos
    */
   className: PropTypes.string,
     /**
-   * Is this the principal call to action on the page?
+   * Evento onClick opcional 
    */
   onClick: PropTypes.func,
 };
