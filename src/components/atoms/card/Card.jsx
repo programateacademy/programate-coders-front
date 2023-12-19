@@ -1,5 +1,5 @@
 import React from "react";
-
+import { PropTypes } from "prop-types";
 function Card({ title, image, onclick }) {
   return (
     <div class="card-container" onClick={onclick}>
@@ -12,5 +12,20 @@ function Card({ title, image, onclick }) {
     </div>
   );
 }
+Card.propTypes = {
+  //gjhkgkhj
+    /**
+   * Is this the principal call to action on the page?
+   */
+    title: PropTypes.string.isRequired,
+    /**
+   * Is this the principal call to action on the page?
+   */
+    image: PropTypes.string,
+    /**
+   * Is this the principal call to action on the page?
+   */
+    onclick: PropTypes.func,
+};
 
 export default Card;
