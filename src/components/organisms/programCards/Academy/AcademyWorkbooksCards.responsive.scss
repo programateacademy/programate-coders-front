@@ -1,0 +1,44 @@
+.swiper-workbooks-cards-academy {
+  max-width: 100%;
+  min-height: 210px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .workbooks-cards-academy {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 650px) {
+  .workbooks-cards-academy {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+  .workbooks-cards-academy {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .workbooks-cards-academy {
+    max-width: 810px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 2560px) {
+  .workbooks-cards-academy {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .swiper-workbooks-cards-academy {
+    min-height: 0px;
+    max-height: 150px;
+  }
+}
