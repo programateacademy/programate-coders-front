@@ -86,8 +86,8 @@
   &-school {
     opacity: 1;
     animation-name: moveFromLeft;
-    background: no-repeat right
-        url("../assets/Imagenes/imagenSchoolPrueva.svg"),
+    background: no-repeat right,
+        url("../../../assets/Imagenes/school.svg"),
       variables.$color-primary;
     @include mixins.desktop {
       background-position: top -12px right;
@@ -97,7 +97,7 @@
     opacity: 1;
     animation-name: moveFromRight;
     background: no-repeat right
-        url("../../../../src/assets/Imagenes/cohete.svg"),
+        variables.$url-cohete,
       variables.$color-primary;
     @include mixins.desktop {
       background-position: top -12px left;
