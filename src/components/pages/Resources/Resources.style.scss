@@ -1,0 +1,10 @@
+@use "../../_settings/variables";
+.resources-content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resources-container {
+  background-color: variables.$color-fifth;
+}

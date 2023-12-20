@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
-
+import Button from "../../atoms/button/Button";
 function ContactForm() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -95,9 +95,9 @@ function ContactForm() {
           </label>
           <p>Carácteres restantes: {500 - message.length}</p>
         </div>
-        <button className="form-button" type="submit">
+        <Button className="button-secondary" type="submit">
           Enviar
-        </button>
+        </Button>
       </form>
     </div>
   );

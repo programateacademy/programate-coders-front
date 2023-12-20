@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../../atoms/card/Card";
-import { programateAcademyStore } from "../../../../store/programateAcademyStore";
+import { programateStore } from "../../../../store/programateStore";
 import programateAcademyData from "../../../../DataBases/programateAcademyData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -10,7 +10,7 @@ import "swiper/css/bundle";
 SwiperCore.use([Navigation]);
 
 function AcademyVideosCards() {
-  const { setLanguage, language } = programateAcademyStore();
+  const { setLanguageYoutube } = programateStore();
 
   const handleCardClick = (clickedLanguage) => {
     setLanguageYoutube(clickedLanguage);
@@ -18,8 +18,18 @@ function AcademyVideosCards() {
 
   return (
     <div className="cards-container">
-      <div className="program-cards">
-        <Swiper slidesPerView={3} navigation>
+      <div className="videos-cards-academy">
+        <Swiper
+          className="swiper-videos-cards-academy"
+          slidesPerView={3}
+          navigation
+          breakpoints={{
+            // width >= 440px
+            440: {
+              slidesPerView: 4,
+            },
+          }}
+        >
           {programateAcademyData["videos-cards"].map((card) => (
             <SwiperSlide key={card.item}>
               <Card

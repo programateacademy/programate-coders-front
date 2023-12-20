@@ -1,38 +1,52 @@
 @use "../../_settings/mixins";
-.list-drive{
-    display: none;
-    flex-direction: column;
-    background-color: #0F205B;
-    &::-webkit-scrollbar-track
-    {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        background-color: #F5F5F5;
-    }
-    
-    &::-webkit-scrollbar
-    {
-        width: 12px;
-        background-color: #F5F5F5;
-    }
-    
-    &::-webkit-scrollbar-thumb
-    {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        background-color: #0F205B;
-    }
+@use "../../_settings/variables";
+.list-drive {
+  display: none;
+  flex-direction: column;
+  background-color: #0f205b;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
 
-    @include mixins.desktop{
-        max-height: 600px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        padding-left: 2rem;
-    }
-    &-active{
-        display: flex;
-    }
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #0f205b;
+  }
+  p{
+    margin: 0px;
+    color: variables.$color-primary;
+    font-family: "Gilroy-ExtraBold";
+    cursor: pointer;
+    text-wrap: wrap;
+    line-height: normal;
+    width: 90%;
+  }
+  @include mixins.desktop {
+    max-height: 540px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 2rem;
+  }
+  &-active {
+    display: flex;
+  }
 
 }
-.iframe-container{
-    width: 100%;
-    height: 100%;
+.download-link{
+    align-self: flex-end;
+    margin-right: 1rem;
+}
+.download-icon{
+  width: 3rem;
+  height: 1.3em;
+}
+.iframe-container {
+  width: 100%;
+  height: 100%;
 }

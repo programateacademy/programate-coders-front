@@ -2,7 +2,7 @@ import './styleContainer1.scss';
 import { LiaUserClockSolid } from "react-icons/lia";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { IoChatbubblesOutline } from "react-icons/io5";
-
+import Button from '../../../../atoms/button/Button';
 function Container1(){
     return(
         <div className='container1'>
@@ -13,14 +13,14 @@ function Container1(){
                     <div className='card1-Cont1'>
                         <h3 className='title-card1'>Programate</h3>
                         <h2>Academy</h2>
-                        <img src="src\assets\Imagenes\img-card1-cont1.svg" alt="" className='img-card1-cont1'/>
-                        <a href="#"><button className='button1-card1-cont1'>Ver programa</button></a>
+                        <img src={new URL(`../../../../../assets/Imagenes/img-card1-cont1.svg`, import.meta.url).href}alt="" className='img-card1-cont1'/>
+                        <a href="#"><Button className='button-card button1-card1-cont1'>Ver programa</Button></a>
                     </div>
                     <div className='card2-Cont1'>
                         <h3>Programate</h3>
                         <h2>School</h2>
                         <img src="src\assets\Imagenes\KeepingBook.png" alt="" className='img-card2-cont1' />
-                        <a href="#"><button className='button2-card2-cont1'>Ver programa</button></a>
+                        <a href="#"><Button className='button-card button2-card2-cont1'>Ver programa</Button></a>
                     </div>
                 </div>
             </div>

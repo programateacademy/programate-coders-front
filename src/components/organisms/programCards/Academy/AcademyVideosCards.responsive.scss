@@ -1,0 +1,23 @@
+.swiper-videos-cards-academy {
+  max-width: 100%;
+  min-height: 210px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 440px) {
+  .videos-cards-academy {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 2560px) {
+  .videos-cards-academy {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .swiper-videos-cards-academy {
+    min-height: 0px;
+    max-height: 150px;
+  }
+}

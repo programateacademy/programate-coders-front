@@ -1,11 +1,11 @@
 import { create } from "zustand";
 import playListData from "../DataBases/PlayList";
 export const videosStore = create((set) => ({
-    SelectedVideo:"",
+    SelectedResource:"",
     playList:playListData,
     language:"JavaScript",
     setLanguage: (language) => set({ language: language }),
-    setSelectedVideo:(video)=> set({SelectedVideo:video}),
+    setSelectedResource:(video)=> set({SelectedResource:video}),
 
 
   }))

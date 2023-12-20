@@ -1,32 +1,35 @@
 @use "../../_settings/mixins";
-.list-item{
-    margin-top: 10px;
-    font-family: "Gilroy-ExtraBold";
-    font-style: normal;
-    text-transform: uppercase;
-    list-style-type: none;
-    color: #80A1F8;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    &::before{
-        color: #6384D3;
-        content: "\2022"; 
-        font-size: 4rem; 
-        margin-right: 12px; 
-        vertical-align: bottom; 
-        display: inline-block;
-
-    }
-    &:hover{
-        color: white;
-    }
-    @include mixins.desktop{
-        overflow: visible;
-        
-    }
-
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  text-transform: uppercase;
+  list-style-type: none;
+  color: #80a1f8;
+  width: 100%;
+  height: 50px;
+  text-wrap: balance;
+  line-height: normal;
+  line-height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &::before {
+    color: #6384d3;
+    content: "\2022";
+    font-size: 4rem;
+    margin-left: 12px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  &:hover {
+    color: white;
+  }
+  @include mixins.desktop {
+    overflow: visible;
+  }
 }
