@@ -76,11 +76,13 @@
     .title-graduados {
       color: variables.$color-secondary;
       font-family: "Gilroy-Bold";
+      font-size: 25px;
     }
 
     .text-graduados {
       font-family: "Gilroy-Regular";
       color: white;
+      font-size: 20px;
     }
   }
 
@@ -102,11 +104,13 @@
 
     .text-empleabilidad {
       font-family: "Gilroy-Regular";
+      font-size: 20px;
       color: white;
     }
 
     .title-empleabilidad {
       color: variables.$color-shadow;
+      font-size: 25px;
       font-family: "Gilroy-Bold";
     }
   }
@@ -128,10 +132,12 @@
     }
     .text-empresas-aliadas {
       font-family: "Gilroy-Regular";
+      font-size: 20px;
       color: white;
     }
 
     .title-empresas-aliadas {
+      font-size: 25px;
       font-family: "Gilroy-Bold";
       color: variables.$color-secondary;
     }
