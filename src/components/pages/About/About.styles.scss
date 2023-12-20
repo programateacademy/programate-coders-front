@@ -1,160 +1,188 @@
 @use "../../_settings/base.scss";
 @use "../../_settings/variables.scss";
 
-
 .container-about {
-    width: 100%;
-    height: 100%;
-    
-    
+  background: rgb(15, 32, 91);
+  background: linear-gradient(
+    133deg,
+    rgba(15, 32, 91, 0.1966036414565826) 22%,
+    rgba(99, 132, 211, 0.30015756302521013) 54%,
+    rgba(239, 178, 0, 0.1517857142857143) 91%
+  );
+  padding: 2rem 0;
 }
 
-.container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 180px;
-    align-items: left;
-    width: 100%;
+.content-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  min-height: 80vh;
+  margin: 0 auto;
 }
 
-.container2 {
-    width: 100%;
-    height: 350px;
-    margin: 20px 180px;
-    
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+}
+
+.container-2 {
+  width: 100%;
 }
 .title {
-    font-size: 32px;
-    text-align: left;
-    font-family: "Gilroy-ExtraBold";
-    color: variables.$color-secondary;
+  font-family: "Gilroy-Bold";
+  text-align: center;
+  color: variables.$color-secondary;
+  font-size: 38px;
 }
 
 .about-text {
-    font-family: "Gilroy";
-    text-align: left;
-    font-weight: 500;
-    font-size: 18px;
+  font-family: "Gilroy-Regular";
+  color: variables.$color-black;
+  text-align: center;
+  font-size: 22px;
+}
+
+.subrayado {
+  font-family: "Gilroy-Bold";
+  color: variables.$color-secondary;
+  font-size: 22px;
 }
 
 .info-educamas {
-    display: flex;
-    justify-content: space-between;
-    
-    .info-graduados {
-        background: variables.$color-shadow;
-        width: 280px;
-        height: 350px;
-        border-radius: 10px;
-        padding: 12px;
-        
-        
-        .contador-graduados {
-            display: flex;
-            font-size: 40px;
-            font-family: Poppins, Helvetica, Arial, sans-serif;
-            color: #fcd21c;
-            font-weight: bold;
-            position: relative;
-        }
+  display: flex;
+  justify-content: space-between;
 
-        .title-graduados {
+  .info-graduados {
+    background: variables.$color-shadow;
+    box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 12px;
 
-            color: variables.$color-secondary;
-        };
-        
-
-        .text-graduados {
-            color: white;
-        }
+    .contador-graduados {
+      display: flex;
+      font-size: 40px;
+      font-family: "Gilroy-ExtraBold";
+      color: #fcd21c;
+      position: relative;
     }
 
-    
-    
-    .info-empleabilidad {
-        background: variables.$color-secondary;
-        width: 280px;
-        height: 350px;
-        border-radius: 10px;
-        padding: 12px;
-
-        .porcentaje-empleados {
-            display: flex;
-            font-size: 40px;
-            font-family: Poppins, Helvetica, Arial, sans-serif;
-            color: #fcd21c;
-            font-weight: bold;
-            position: relative;
-            
-        }
-
-        .text-empleabilidad {
-            color: white;
-        }
-
-        .title-empleabilidad {
-            color: variables.$color-shadow;
-        }
-        
+    .title-graduados {
+      color: variables.$color-secondary;
+      font-family: "Gilroy-Bold";
     }
 
-    .empresas-aliadas {
-        background: variables.$color-shadow;
-        width: 280px;
-        height: 350px;
-        border-radius: 10px;
-        padding: 12px;
-
-        .contador-empresas {
-            display: flex;
-            font-size: 40px;
-            font-family: Poppins, Helvetica, Arial, sans-serif;
-            color: #fcd21c;
-            font-weight: bold;
-            position: relative;
-        }
-        .text-empresas-aliadas {
-            color: white;
-        }
-
-        .title-empresas-aliadas  {
-            color: variables.$color-secondary;
-        }
-    }
-
-}
-
-
-
-.subrayado {
-    font-family: "Gilroy-ExtraBold";
-    color: variables.$color-secondary;
-}
-
-
-
-@media (max-width: 1536px) {
-    .container-about {
-      width: 70%;
+    .text-graduados {
+      font-family: "Gilroy-Regular";
+      color: white;
     }
   }
-  
-  @media (max-width: 1440px) {
-    .container-about {
-      width: 75%;
+
+  .info-empleabilidad {
+    background: variables.$color-secondary;
+    box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 12px;
+
+    .porcentaje-empleados {
+      display: flex;
+      font-size: 40px;
+      font-family: "Gilroy-ExtraBold";
+      color: #fcd21c;
+      position: relative;
+    }
+
+    .text-empleabilidad {
+      font-family: "Gilroy-Regular";
+      color: white;
+    }
+
+    .title-empleabilidad {
+      color: variables.$color-shadow;
+      font-family: "Gilroy-Bold";
     }
   }
-  
-  @media (max-width: 1024px) {
-    .container-about {
-      width: 80%;
+
+  .empresas-aliadas {
+    box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+    background: variables.$color-shadow;
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 12px;
+
+    .contador-empresas {
+      display: flex;
+      font-size: 40px;
+      font-family: "Gilroy-ExtraBold";
+      color: #fcd21c;
+      position: relative;
+    }
+    .text-empresas-aliadas {
+      font-family: "Gilroy-Regular";
+      color: white;
+    }
+
+    .title-empresas-aliadas {
+      font-family: "Gilroy-Bold";
+      color: variables.$color-secondary;
     }
   }
-  
-  @media (max-width: 576px) {
-    .container-about {
-      width: 85%;
-    }
 }
 
+@media (max-width: 2560px) {
+  .content-about {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .content-about {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content-about {
+    width: 90%;
+  }
+}
+
+@media (max-width: 960px) {
+  .content-about {
+    width: 90%;
+  }
+  .info-educamas {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-graduados,
+  .info-empleabilidad,
+  .porcentaje-empleados {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .subrayado {
+    font-size: 16px;
+  }
+}
