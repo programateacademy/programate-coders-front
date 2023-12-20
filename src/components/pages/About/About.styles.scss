@@ -1,0 +1,160 @@
+@use "../../_settings/base.scss";
+@use "../../_settings/variables.scss";
+
+
+.container-about {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 180px;
+    align-items: left;
+    width: 100%;
+}
+
+.container2 {
+    width: 100%;
+    height: 350px;
+    margin: 20px 180px;
+    
+}
+.title {
+    font-size: 32px;
+    text-align: left;
+    font-family: "Gilroy-ExtraBold";
+    color: variables.$color-secondary;
+}
+
+.about-text {
+    font-family: "Gilroy";
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info-educamas {
+    display: flex;
+    justify-content: space-between;
+    
+    .info-graduados {
+        background: variables.$color-shadow;
+        width: 280px;
+        height: 350px;
+        border-radius: 10px;
+        padding: 12px;
+        
+        
+        .contador-graduados {
+            display: flex;
+            font-size: 40px;
+            font-family: Poppins, Helvetica, Arial, sans-serif;
+            color: #fcd21c;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .title-graduados {
+
+            color: variables.$color-secondary;
+        };
+        
+
+        .text-graduados {
+            color: white;
+        }
+    }
+
+    
+    
+    .info-empleabilidad {
+        background: variables.$color-secondary;
+        width: 280px;
+        height: 350px;
+        border-radius: 10px;
+        padding: 12px;
+
+        .porcentaje-empleados {
+            display: flex;
+            font-size: 40px;
+            font-family: Poppins, Helvetica, Arial, sans-serif;
+            color: #fcd21c;
+            font-weight: bold;
+            position: relative;
+            
+        }
+
+        .text-empleabilidad {
+            color: white;
+        }
+
+        .title-empleabilidad {
+            color: variables.$color-shadow;
+        }
+        
+    }
+
+    .empresas-aliadas {
+        background: variables.$color-shadow;
+        width: 280px;
+        height: 350px;
+        border-radius: 10px;
+        padding: 12px;
+
+        .contador-empresas {
+            display: flex;
+            font-size: 40px;
+            font-family: Poppins, Helvetica, Arial, sans-serif;
+            color: #fcd21c;
+            font-weight: bold;
+            position: relative;
+        }
+        .text-empresas-aliadas {
+            color: white;
+        }
+
+        .title-empresas-aliadas  {
+            color: variables.$color-secondary;
+        }
+    }
+
+}
+
+
+
+.subrayado {
+    font-family: "Gilroy-ExtraBold";
+    color: variables.$color-secondary;
+}
+
+
+
+@media (max-width: 1536px) {
+    .container-about {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    .container-about {
+      width: 75%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .container-about {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container-about {
+      width: 85%;
+    }
+}
+
