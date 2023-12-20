@@ -18,7 +18,7 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #0f205b;
   }
-  p{
+  p {
     margin: 0px;
     color: variables.$color-primary;
     font-family: "Gilroy-ExtraBold";
@@ -29,6 +29,7 @@
   }
   @include mixins.desktop {
     max-height: 540px;
+    min-height: 540px;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-left: 2rem;
@@ -36,13 +37,12 @@
   &-active {
     display: flex;
   }
-
 }
-.download-link{
-    align-self: flex-end;
-    margin-right: 1rem;
+.download-link {
+  align-self: flex-end;
+  margin-right: 1rem;
 }
-.download-icon{
+.download-icon {
   width: 3rem;
   height: 1.3em;
 }
