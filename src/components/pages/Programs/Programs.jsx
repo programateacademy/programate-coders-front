@@ -4,22 +4,20 @@ import SchoolAcademyToggle from "../../molecules/SchoolAcademyToggle/SchoolAcade
 import Button from "../../atoms/button/Button";
 import { Link } from "react-router-dom";
 function Programs() {
-  const { programa, setPrograma,setSelectedResource,videos,setFileType} = programateStore();
+  const { programa, setPrograma, setSelectedResource, videos, setFileType } =
+    programateStore();
   const handleClickProgram = () => {
-    if (programa==="academy") {
-      setFileType("videos")
+    if (programa === "academy") {
+      setFileType("videos");
     }
-    if (programa==="school") {
-      setFileType("videos")
-      setSelectedResource(videos.school[0].id)
+    if (programa === "school") {
+      setFileType("videos");
+      setSelectedResource(videos.school[0].id);
     }
-    
-
-    
-  }
+  };
   return (
-    <>
-      <div className="program-container">
+    <div className="program-container">
+      <div className="program-content">
         <h1 className="program-title">
           Conoce nuestros <br /> programas
         </h1>
@@ -46,10 +44,12 @@ function Programs() {
           }[programa]
         }
         <Link className="link-button" to={`/recursos/${programa}`}>
-          <Button className="program-button" onClick={handleClickProgram} >Iniciar programa</Button>
+          <Button className="program-button" onClick={handleClickProgram}>
+            Iniciar programa
+          </Button>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 
