@@ -10,7 +10,6 @@ function PanelAcademy({programa}) {
   const [filterWorkbooks, setFilterWorkbooks] = useState([])
   const { setSelectedResource, SelectedResource, language, playList,workbooks,fileType,languageYoutube,filterItems} = programateStore();
   const { videos } = useVideos(languageYoutube, playList);
-  console.log(languageYoutube);
   useEffect(() => {
 
       console.log("isfeching");

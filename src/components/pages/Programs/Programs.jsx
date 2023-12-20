@@ -46,7 +46,7 @@ function Programs() {
           }[programa]
         }
         <Link className="link-button" to={`/recursos/${programa}`}>
-          <Button className="program-button" onClick={handleClickProgram} >Iniciar programa</Button>
+          <Button className="program-button button-secondary" onClick={handleClickProgram} >Iniciar programa</Button>
         </Link>
       </div>
     </>

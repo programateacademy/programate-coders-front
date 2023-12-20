@@ -82,7 +82,7 @@
     opacity: 1;
     animation-name: moveFromLeft;
     background: no-repeat right
-        url("../../../../src/assets/Imagenes/imagenSchoolPrueva.svg"),
+        url("../assets/Imagenes/imagenSchoolPrueva.svg"),
       variables.$color-primary;
     @include mixins.desktop {
       background-position: top -12px right;

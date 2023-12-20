@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './button.css';
 
 /**
- * Primary UI component for user interaction asdfgafd
+ * Componente basico de botton para la interacción del usuario
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';

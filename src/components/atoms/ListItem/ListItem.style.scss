@@ -1,5 +1,8 @@
 @use "../../_settings/mixins";
 .list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-top: 10px;
   text-align: left;
   font-family: "Gilroy-ExtraBold";
@@ -9,6 +12,8 @@
   color: #80a1f8;
   width: 100%;
   height: 50px;
+  text-wrap: balance;
+  line-height: normal;
   line-height: 50px;
   white-space: nowrap;
   overflow: hidden;
@@ -17,8 +22,8 @@
     color: #6384d3;
     content: "\2022";
     font-size: 4rem;
-    margin-right: 12px;
-    vertical-align: bottom;
+    margin-left: 12px;
+    margin-top: 5px;
     display: inline-block;
   }
   &:hover {
