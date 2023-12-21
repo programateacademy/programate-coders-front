@@ -1,4 +1,5 @@
 @use "../../_settings/mixins";
+@use "../../_settings/variables";
 .list-videos {
   display: none;
   flex-direction: column;
@@ -18,7 +19,16 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #0f205b;
   }
-  @include mixins.desktop(1000px) {
+  p {
+    margin: 0px;
+    color: variables.$color-primary;
+    font-family: "Gilroy-ExtraBold";
+    cursor: pointer;
+    text-wrap: wrap;
+    line-height: normal;
+    width: 90%;
+  }
+  @include mixins.desktop(1200px) {
     max-height: 540px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -36,7 +46,7 @@
     right: auto;
     height: auto;
     width: auto;
-    padding: 2rem;
+    padding: 0.5rem 2rem;
   }
 
   &-active {

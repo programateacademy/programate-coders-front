@@ -1,0 +1,197 @@
+@use "../../_settings/base.scss";
+@use "../../_settings/variables.scss";
+
+.container-about {
+  background: rgb(15, 32, 91);
+  background: linear-gradient(
+    133deg,
+    rgba(15, 32, 91, 0.1966036414565826) 22%,
+    rgba(99, 132, 211, 0.30015756302521013) 54%,
+    rgba(239, 178, 0, 0.1517857142857143) 91%
+  );
+  padding: 2rem 0;
+}
+
+.content-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+}
+
+.container-2 {
+  width: 100%;
+}
+.title {
+  font-family: "Gilroy-Bold";
+  text-align: center;
+  color: variables.$color-secondary;
+  font-size: 38px;
+}
+
+.about-text {
+  font-family: "Gilroy-Regular";
+  color: variables.$color-black;
+  text-align: center;
+  font-size: 22px;
+}
+
+.subrayado {
+  font-family: "Gilroy-Bold";
+  color: variables.$color-secondary;
+  font-size: 22px;
+}
+
+.info-educamas {
+  display: flex;
+  justify-content: space-between;
+
+  .info-graduados {
+    background: variables.$color-shadow;
+    box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 12px;
+
+    .contador-graduados {
+      display: flex;
+      font-size: 40px;
+      font-family: "Gilroy-ExtraBold";
+      color: #fcd21c;
+      position: relative;
+    }
+
+    .title-graduados {
+      color: variables.$color-secondary;
+      font-weight: 500;
+      font-family: "Gilroy-Bold";
+      font-size: 25px;
+    }
+
+    .text-graduados {
+      font-family: "Gilroy-Regular";
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  .info-empleabilidad {
+    background: variables.$color-secondary;
+    box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 12px;
+
+    .porcentaje-empleados {
+      display: flex;
+      font-size: 40px;
+      font-family: "Gilroy-ExtraBold";
+      color: #fcd21c;
+      position: relative;
+    }
+
+    .text-empleabilidad {
+      font-family: "Gilroy-Regular";
+      font-size: 20px;
+      color: white;
+    }
+
+    .title-empleabilidad {
+      color: variables.$color-shadow;
+      font-weight: 500;
+      font-size: 25px;
+      font-family: "Gilroy-Bold";
+    }
+  }
+
+  .empresas-aliadas {
+    box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+    background: variables.$color-shadow;
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 12px;
+
+    .contador-empresas {
+      display: flex;
+      font-size: 40px;
+      font-family: "Gilroy-ExtraBold";
+      color: #fcd21c;
+      position: relative;
+    }
+    .text-empresas-aliadas {
+      font-family: "Gilroy-Regular";
+      font-size: 20px;
+      color: white;
+    }
+
+    .title-empresas-aliadas {
+      font-size: 25px;
+      font-family: "Gilroy-Bold";
+      font-weight: 500;
+      color: variables.$color-secondary;
+    }
+  }
+}
+
+@media (max-width: 2560px) {
+  .content-about {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .content-about {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content-about {
+    width: 90%;
+  }
+}
+
+@media (max-width: 960px) {
+  .content-about {
+    width: 90%;
+  }
+  .info-educamas {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-graduados,
+  .info-empleabilidad,
+  .porcentaje-empleados {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .subrayado {
+    font-size: 16px;
+  }
+}

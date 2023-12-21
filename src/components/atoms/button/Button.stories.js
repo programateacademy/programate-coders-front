@@ -1,5 +1,6 @@
 import Button from "./Button";
 import "./Button.styles.scss";
+
 export default {
   title: "Components/atoms/Button",
   component: Button,
@@ -9,17 +10,27 @@ export default {
   tags: ["autodocs"],
   argTypes: {
     children: "Boton",
-    className: "",
+    className: "button-primary",
   },
 };
 /**
- * Boton para seleccionar la lista de recursos que se quiere mostrar
+ * Boton primario usado en el home para ir a los cursos
  */
 export const ButtonPrimary={
   args:{
     className: "button-primary",
     children: "Boton",
   },
+}
+/**
+ * Boton secundario usado para programas y el formulario
+ */
+export const ButtonSecondary={
+  args: {
+    className: "button-secondary",
+    children: "Enviar",
+  },
+
 }
 /**
  * Boton para seleccionar la lista de recursos que se quiere mostrar
@@ -40,7 +51,7 @@ export const ButtonShow = {
   },
 };
 /**
- * Boton
+ * Boton que acompaña el slider para poder exprorar los programas
  */
 export const ButtonSlider = {
   args: {
@@ -49,7 +60,7 @@ export const ButtonSlider = {
   },
 };
 /**
- * Boton 
+ * Boton para las card de home
  */
 export const ButtonCard = {
   args: {
@@ -57,17 +68,4 @@ export const ButtonCard = {
     children: "Ver programa",
   },
 };
-export const ButtonForm={
-  args: {
-    className: "button-form",
-    children: "Enviar",
-  },
 
-}
-export const ButtonProgram={
-  args: {
-    className: "program-button",
-    children: "Iniciar programa",
-  },
-  
-}

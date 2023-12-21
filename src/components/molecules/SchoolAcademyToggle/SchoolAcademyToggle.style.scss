@@ -1,7 +1,6 @@
 @use "../../_settings/variables";
 @use "../../_settings/mixins";
 .SchoolAcademyToggle {
-  border: 1px solid variables.$color-secondary;
   align-items: center;
   justify-content: center;
   padding: 1rem;
@@ -10,6 +9,12 @@
   gap: 1rem;
   border-radius: 20px;
   background-color: variables.$color-white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    295deg,
+    rgba(255, 255, 255, 0.49352240896358546) 22%,
+    rgba(255, 255, 255, 0.5159313725490196) 54%
+  );
   box-shadow: 0px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
 }
@@ -78,12 +83,11 @@
       }
     }
   }
+
   &-school {
     opacity: 1;
     animation-name: moveFromLeft;
-    background: no-repeat right
-        url("../../../../src/assets/Imagenes/imagenSchoolPrueva.svg"),
-      variables.$color-primary;
+    background: no-repeat right variables.$url-school, variables.$color-primary;
     @include mixins.desktop {
       background-position: top -12px right;
     }
@@ -91,9 +95,7 @@
   &-academy {
     opacity: 1;
     animation-name: moveFromRight;
-    background: no-repeat right
-        url("../../../../src/assets/Imagenes/cohete.svg"),
-      variables.$color-primary;
+    background: no-repeat right variables.$url-cohete, variables.$color-primary;
     @include mixins.desktop {
       background-position: top -12px left;
     }
@@ -115,5 +117,12 @@
     button {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .button-show {
+    font-size: 17px;
+    width: 100px;
   }
 }

@@ -95,7 +95,7 @@ function ContactForm() {
           </label>
           <p>Carácteres restantes: {500 - message.length}</p>
         </div>
-        <Button className="button-form" type="submit">
+        <Button className="button-secondary" type="submit">
           Enviar
         </Button>
       </form>

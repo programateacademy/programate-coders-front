@@ -13,7 +13,7 @@ function ListDrive({sources,nameSource}) {
     <ul className={fileType=== `${nameSource}` ?"list-drive list-drive-active":"list-drive"}>
       {sources.map((workbook)=>(
         <>
-        <ListItem className={"list-item"} key={workbook.item} setSelectedResource={()=>setSelectedResource(workbook.id)}>{workbook.title} <a href={`https://drive.google.com/uc?export=download&id=${workbook.id}`}><FaCloudDownloadAlt></FaCloudDownloadAlt></a></ListItem>
+        <ListItem className={"list-item"} key={workbook.item} setSelectedResource={()=>setSelectedResource(workbook.id)}> <p>{workbook.title}</p> <a className='download-link' href={`https://drive.google.com/uc?export=download&id=${workbook.id}`}><FaCloudDownloadAlt className='download-icon'></FaCloudDownloadAlt></a></ListItem>
         </>
         
       ))}

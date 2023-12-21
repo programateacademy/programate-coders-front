@@ -14,7 +14,7 @@ function ListVideos({videos}) {
     
     <ul className={fileType=== tab.videos ?"list-videos list-videos-active":"list-videos"}>
       {videos.map((video)=>(
-        <ListItem className={"list-item"} key={video.id} setSelectedResource={()=>setSelectedResource(video.snippet.resourceId.videoId)}>{video.snippet.title}</ListItem>
+        <ListItem className={"list-item"} key={video.id} setSelectedResource={()=>setSelectedResource(video.snippet.resourceId.videoId)}> <p>{video.snippet.title}</p> </ListItem>
       ))}
     </ul>
   )

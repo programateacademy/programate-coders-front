@@ -19,10 +19,15 @@ Button.propTypes = {
     /**
    * Clase que va a definir los estilos
    */
-  className: PropTypes.string,
+  className:PropTypes.oneOf(['button-primary','button-secondary', 'button-slider', 'button-tab ','button-show','button-card']),
     /**
    * Evento onClick opcional 
    */
   onClick: PropTypes.func,
+};
+Button.defaultProps = {
+  className: "button-primary",
+
+  onClick: undefined,
 };
 export default Button;
