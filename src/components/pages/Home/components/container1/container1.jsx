@@ -14,13 +14,13 @@ function Container1(){
                         <h3 className='title-card1'>Programate</h3>
                         <h2>Academy</h2>
                         <img src={new URL(`../../../../../assets/Imagenes/img-card1-cont1.svg`, import.meta.url).href}alt="" className='img-card1-cont1'/>
-                        <a href="#"><Button className='button-card button1-card1-cont1'>Ver programa</Button></a>
+                        <a href="/recursos/academy"><Button className='button-card button1-card1-cont1'>Ver programa</Button></a>
                     </div>
                     <div className='card2-Cont1'>
                         <h3>Programate</h3>
                         <h2>School</h2>
-                        <img src="src\assets\Imagenes\KeepingBook.png" alt="" className='img-card2-cont1' />
-                        <a href="#"><Button className='button-card button2-card2-cont1'>Ver programa</Button></a>
+                        <img src={new URL(`../../../../../assets/Imagenes/KeepingBook.png`, import.meta.url).href} alt="" className='img-card2-cont1' />
+                        <a href="/recursos/school"><Button className='button-card button2-card2-cont1'>Ver programa</Button></a>
                     </div>
                 </div>
             </div>

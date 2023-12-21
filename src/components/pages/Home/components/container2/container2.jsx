@@ -11,7 +11,7 @@ function Container2(){
                 <div className='info1-container2'>
                     <div className='img1-container2'>
                         <RiComputerLine className='icon1-info1-container2'/>
-                        <img src="src\assets\Imagenes\img-card1-cont1.svg" alt="" className='img-info1-container2'/>
+                        <img src={new URL(`../../../../../assets/Imagenes/img-card1-cont1.svg`, import.meta.url).href}  alt="" className='img-info1-container2'/>
                     </div>
                     <div className='text-container2'>
                         <h2>HTML </h2>
@@ -22,7 +22,7 @@ function Container2(){
                 <div className='info1-container2'>
                     <div className='img1-container2'>
                         <RiComputerLine className='icon1-info1-container2'/>
-                        <img src="src\assets\Imagenes\Vectary texture.svg" alt="" className='img-info1-container2'/>
+                        <img src={new URL(`../../../../../assets/Imagenes/Vectary texture.svg`, import.meta.url).href}  alt="" className='img-info1-container2'/>
                     </div>
                     <div className='text-container2'>
                         <h2>CSS </h2>
@@ -33,7 +33,7 @@ function Container2(){
                 <div className='info1-container2'>
                     <div className='img1-container2'>
                         <RiComputerLine className='icon1-info1-container2'/>
-                        <img src="src\assets\Imagenes\img-card1-cont1.svg" alt="" className='img-info1-container2'/>
+                        <img src={new URL(`../../../../../assets/Imagenes/img-card1-cont1.svg`, import.meta.url).href} alt="" className='img-info1-container2'/>
                     </div>
                     <div className='text-container2'>
                         <h2>JavaScript</h2>
@@ -42,7 +42,7 @@ function Container2(){
                     </div>
                 </div>
             </div>
-            <a href="#"><Button className='button-primary button-container2'>¡Explora más Cursos!</Button></a>
+            <a href="/programas"><Button className='button-primary button-container2'>¡Explora más Cursos!</Button></a>
         </div>
     )
 }
