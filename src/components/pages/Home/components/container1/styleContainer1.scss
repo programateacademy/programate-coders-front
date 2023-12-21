@@ -44,7 +44,7 @@
         margin-left: 10px;
         top: 97%;
         transform: translate(0%, -200%);
-        z-index: 2;
+        z-index: 1;
         position: absolute;
     }
     h2{
@@ -85,7 +85,7 @@
     border: 3px solid variables.$color-primary
 }
 .cont2{
-    width: 90%;
+    width: 80%;
     margin-top: 80px;
     h1{
         font-size: 20px;
@@ -143,8 +143,8 @@
         }
     }
     .cont2{
-        width: 38%;
-        margin-left: 20px;
+        width: 40%;
+        margin-left: 50px;
         margin-top: -1px;
     }
     .cards-cont2{
@@ -163,8 +163,7 @@
     }
     .container1{
         margin-top: 170px;
-        display: flex;
-        margin-right: -10px;
+        display: flex;;
     }
     .card-cont2{
         margin-right: 10px;
@@ -174,6 +173,7 @@
 @media (min-width: 769px){
     .container1{
         width: 90%;
+        margin-left: 100px;
     }
     .cont1{
         width: 45%;
@@ -206,7 +206,7 @@
             transform: translate(0%, 190%);
         }
         img{
-            transform: translate(45%, -107%);
+            transform: translate(20%, -102%);
         }
     }
     .img-card2-cont1{
@@ -261,5 +261,27 @@
         border-radius: 10px;
         padding: 20px 25px;
         opacity: 0.9;
+    }
+}
+
+@media (min-width: 1025px){
+    .card1-Cont1, .card2-Cont1{
+        width: 270px;
+        height: 130px;
+        h3{
+            font-size: 27px;
+            top: 105%;
+        }
+        h2{
+            font-size: 30px;
+            transform: translate(0%, 190%);
+        }
+        img{
+            transform: translate(50%, -109%);
+        } 
+    }
+    .container1{
+        width: 80%;
+        margin: 170px auto;
     }
 }

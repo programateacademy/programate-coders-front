@@ -6,7 +6,7 @@
 .container3{
     background: variables.$color-shadow2;
     width: 100%;
-    height: 420px;
+    height: 550px;
     margin-top: 60px;
 }
 .info-cont3{
@@ -24,7 +24,7 @@
     margin: 0 auto;
     margin-top: -30px;
     width: 90%;
-    height: 130px;
+    height: 180px;
     background: variables.$color-white;
     border-radius: 20px;
     h2{
@@ -34,6 +34,7 @@
         transform: translate(3%, 40%);
     }
     p{
+        width: 300px;
         font-size: 14px;
         font-family: variables.$font-Regular;
         color: variables.$color-secondary;
@@ -41,18 +42,37 @@
     }
     img{
         width: 100px;
-        transform: translate(252%, -134%);
+        transform: translate(252%, -176%);
     }
 }
 #history2{
     margin-top: 20px;
+    height: 205px;
+    img{
+        transform: translate(252%, -197%);
+    }
 }
 
 
 @media (min-width: 426px){
+    .container3{
+        height: 550px;
+    }
     .history{
+        p{
+            width: 600px;
+            font-size: 18px;
+            transform: translate(3%, 20%);
+        }
         img{
-            transform: translate(528%, -141%);
+            transform: translate(528%, -180%);
+        }
+    }
+    #history2{
+        margin-top: 20px;
+        height: 205px;
+        img{
+            transform: translate(528%, -207%);
         }
     }
 }
@@ -61,13 +81,55 @@
     .info-cont3{
         display: flex;
     }
+    .container3{
+        height: 450px;
+    }
     .history{
-        width: 45%;
+        width: 400px;
+        height: 250px;
+        p{
+            margin-top: -30px;
+            width: 350px;
+            font-size: 18px;
+            transform: translate(3%, 20%);
+        }
         img{
-            transform: translate(490%, -146%);
+            transform: translate(308%, -198%);
         }
     }
     #history2{
         margin-top: -30px;
+        height: 250px;
+        p{
+            margin-top: -50px;
+        }
+        img{
+            transform: translate(308%, -232%);
+        }
+    }
+}
+
+@media (min-width: 1025px){
+    .container3{
+        height: 450px;
+    }
+    .history{
+        width: 550px;
+        height: 240px;
+        p{
+            margin-top: -10px;
+            width: 500px;
+            font-size: 20px;
+            transform: translate(3%, 20%);
+        }
+        img{
+            transform: translate(458%, -204%);
+        }
+    }
+    #history2{
+        height: 240px;
+        img{
+            transform: translate(458%, -224%);
+        }
     }
 }

@@ -12,6 +12,7 @@ header {
   justify-content: space-around;
   align-items: center;
   font-family: variables.$font-Bold;
+  gap: 250px;
 }
 .logo-header {
   width: 35px;
@@ -19,7 +20,7 @@ header {
 .nav {
   background: variables.$color-primary;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 130px);
   display: flex;
   flex-direction: column;
   transform: translateX(0%);
@@ -135,25 +136,15 @@ header {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 50px;
-
+  height: 70px;
+  
   a {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    color: variables.$color-white;
   }
-  .nav-icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 50px;
 
-    a {
-      width: 40px;
-      height: 40px;
-      color: variables.$color-white;
-    }
-  }
+
   @include mixins.desktop {
     .menu-bars {
       display: none;
@@ -167,6 +158,7 @@ header {
       height: 70px;
       position: relative;
       margin-bottom: 30px;
+      display: block;
     }
     .nav-list {
       width: 100%;
@@ -174,6 +166,7 @@ header {
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
+      display: block;
 
       li {
         a {
@@ -185,49 +178,49 @@ header {
       .nav-icons {
         display: none;
       }
-      .nav {
-        background: variables.$color-primary;
-        width: 100%;
-        height: 70px;
-        position: relative;
-        margin-bottom: 30px;
-      }
-      .nav-list {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
+      // .nav {
+      //   background: variables.$color-primary;
+      //   width: 100%;
+      //   height: 70px;
+      //   position: relative;
+      //   margin-bottom: 30px;
+      // }
+      // .nav-list {
+      //   width: 100%;
+      //   display: flex;
+      //   flex-direction: row;
+      //   align-items: center;
+      //   justify-content: flex-end;
 
-        li {
-          a {
-            margin: 0 20px;
-            font-size: 26px;
-            font-family: "tipographyBold";
-            color: variables.$color-white;
-          }
-        }
-      }
-      .cont-Head {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-        background: variables.$color-primary;
-      }
-      header {
-        width: 25%;
-        height: 100px;
-        display: block;
-      }
-      .logo-header {
-        width: 45px;
-        margin: 20px 20px;
-      }
-      .nav-open {
-        transform: translate(0%);
-      }
+      //   li {
+      //     a {
+      //       margin: 0 20px;
+      //       font-size: 26px;
+      //       font-family: "tipographyBold";
+      //       color: variables.$color-white;
+      //     }
+      //   }
+      // }
+      // .cont-Head {
+      //   display: flex;
+      //   justify-content: space-around;
+      //   align-items: center;
+      //   width: 100%;
+      //   height: 100px;
+      //   background: variables.$color-primary;
+      // }
+      // header {
+      //   width: 25%;
+      //   height: 100px;
+      //   display: block;
+      // }
+      // .logo-header {
+      //   width: 45px;
+      //   margin: 20px 20px;
+      // }
+      // .nav-open {
+      //   transform: translate(0%);
+      // }
     }
   }
 }

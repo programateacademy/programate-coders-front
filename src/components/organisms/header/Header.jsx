@@ -4,8 +4,6 @@ import {
   FaBars,
   FaFacebookF,
   FaLinkedinIn,
-  FaSpotify,
-  FaTiktok,
 } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import "./header.styles.scss";
@@ -52,20 +50,14 @@ function Header() {
           </li>
         </ul>
         <ul className="nav-icons">
-          <a href="#" className="icons-nav">
+          <a href="https://www.facebook.com/somoseducamas/" className="icons-nav">
             <FaFacebookF />
           </a>
-          <a href="#" className="icons-nav">
+          <a href="https://www.instagram.com/programate_academy/" className="icons-nav">
             <IoLogoInstagram />
           </a>
-          <a href="#" className="icons-nav">
+          <a href="https://www.linkedin.com/company/educam%C3%A1s/?originalSubdomain=co" className="icons-nav">
             <FaLinkedinIn />
-          </a>
-          <a href="#" className="icons-nav">
-            <FaTiktok />
-          </a>
-          <a href="#" className="icons-nav">
-            <FaSpotify />
           </a>
         </ul>
       </nav>
