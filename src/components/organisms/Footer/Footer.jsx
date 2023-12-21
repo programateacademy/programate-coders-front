@@ -25,7 +25,8 @@ function Footer() {
           <div className="facebook">
             <a
               className="redes"
-              href="https://web.facebook.com/somoseducamas/?_rdc=1&_rdr"
+              href="https://www.facebook.com/programateacademy"
+              target="_blank"
             >
               <BiLogoFacebook />
             </a>
@@ -34,6 +35,7 @@ function Footer() {
             <a
               className="redes"
               href="https://www.instagram.com/somoseducamas/"
+              target="_blank"
             >
               <BiLogoInstagram />
             </a>
@@ -42,12 +44,17 @@ function Footer() {
             <a
               className="redes"
               href="https://www.linkedin.com/company/educam%C3%A1s/"
+              target="_blank"
             >
               <BiLogoLinkedin />
             </a>
           </div>
           <div className="tiktok">
-            <a className="redes" href="">
+            <a
+              className="redes"
+              href="https://www.tiktok.com/@programateacademy"
+              target="_blank"
+            >
               <BiLogoTiktok />
             </a>
           </div>
@@ -55,6 +62,7 @@ function Footer() {
             <a
               className="redes"
               href="https://open.spotify.com/show/4mYZpSGP4SJMEDvFilTNRp?si=5bNY3MFmTpS1Fq5GtiUpag.+&nd=1"
+              target="_blank"
             >
               <BiLogoSpotify />
             </a>

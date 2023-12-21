@@ -1,233 +1,126 @@
 @use "../../_settings/mixins";
 @use "../../_settings/variables.scss";
 
-.cont-Head {
-  width: 100%;
-}
-header {
+.header-content {
   width: 100%;
   height: 70px;
   background: variables.$color-primary;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 20px;
   align-items: center;
   font-family: variables.$font-Bold;
+  z-index: 1002;
 }
-.logo-header {
-  width: 35px;
-}
-.nav {
-  background: variables.$color-primary;
-  width: 100%;
-  height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  transform: translateX(0%);
-  transition: transform 0.3s ease-in-out;
-  position: absolute;
-  z-index: 2;
-  font-family: variables.$font-Bold;
-}
-.nav-open {
-  transform: translateX(-100%);
-}
-.nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: variables.$font-Bold;
 
-  li {
-    a {
-      font-family: variables.$font-Bold;
-      text-decoration: none;
-      color: variables.$color-white;
-      font-size: 16px;
-      margin: 0 50px;
-      position: relative;
-    }
-    a::before {
-      content: "";
-      border-bottom: 3px solid variables.$color-secondary;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      transition: width 0.2s ease-in-out;
-      opacity: 0;
-      font-family: variables.$font-Bold;
-    }
-    a:hover::before {
-      width: 100%;
-      opacity: 1;
-      font-family: variables.$font-Bold;
-    }
-    a::after {
-      width: 0%;
-      opacity: 0;
-      font-family: variables.$font-Bold;
-    }
-    a:hover::after {
-      width: 100%;
-      opacity: 1;
-      font-family: variables.$font-Bold;
-    }
-    a:hover {
-      color: variables.$color-secondary;
-    }
-  }
-}
-.nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: variables.$font-Bold;
-
-  li {
-    a {
-      font-family: variables.$font-Bold;
-      text-decoration: none;
-      color: variables.$color-white;
-      font-size: 16px;
-      margin: 0 50px;
-      position: relative;
-    }
-    a::before {
-      content: "";
-      border-bottom: 3px solid variables.$color-secondary;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      transition: width 0.2s ease-in-out;
-      opacity: 0;
-      font-family: variables.$font-Bold;
-    }
-    a:hover::before {
-      width: 100%;
-      opacity: 1;
-      font-family: variables.$font-Bold;
-    }
-    a::after {
-      width: 0%;
-      opacity: 0;
-      font-family: variables.$font-Bold;
-    }
-    a:hover::after {
-      width: 100%;
-      opacity: 1;
-      font-family: variables.$font-Bold;
-    }
-    a:hover {
-      color: variables.$color-secondary;
-    }
-  }
-}
 .menu-bars {
   color: white;
   width: 40px;
   height: 40px;
+  display: none;
+  z-index: 1001;
 }
-.nav-icons {
+
+.logo-header {
+  z-index: 1001;
+}
+
+.nav-item-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: end;
+  margin: 0 20px;
+
+  .text-item {
+    color: variables.$color-white;
+    margin: 0 20px;
+    font-family: variables.$font-Bold;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .text-item:hover {
+    color: variables.$color-secondary;
+  }
+}
+
+.nav-list-container {
+  background: variables.$color-primary;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  z-index: 1000;
+}
+
+.nav-open {
+  transform: translatex(-120%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.nav-list-content {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: variables.$font-Bold;
+
+  .nav-list {
+    .text-list {
+      font-family: variables.$font-Bold;
+      text-decoration: none;
+
+      color: variables.$color-white;
+      font-size: 20px;
+      margin: 0 50px;
+      position: relative;
+    }
+  }
+}
+
+.nav-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
   width: 100%;
   height: 50px;
+  margin-top: 3rem;
 
-  a {
+  .nav-icons {
     width: 40px;
     height: 40px;
-  }
-  .nav-icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 50px;
+    color: variables.$color-white;
 
-    a {
-      width: 40px;
-      height: 40px;
+    svg {
+      width: 100%;
+      height: 100%;
       color: variables.$color-white;
     }
   }
-  @include mixins.desktop {
-    .menu-bars {
-      display: none;
-    }
-    .nav-icons {
-      display: none;
-    }
-    .nav {
-      background: variables.$color-primary;
-      width: 100%;
-      height: 70px;
-      position: relative;
-      margin-bottom: 30px;
-    }
-    .nav-list {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
+}
 
-      li {
-        a {
-          margin: 0 20px;
-          font-size: 26px;
-          color: variables.$color-white;
-        }
-      }
-      .nav-icons {
-        display: none;
-      }
-      .nav {
-        background: variables.$color-primary;
-        width: 100%;
-        height: 70px;
-        position: relative;
-        margin-bottom: 30px;
-      }
-      .nav-list {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-
-        li {
-          a {
-            margin: 0 20px;
-            font-size: 26px;
-            font-family: "tipographyBold";
-            color: variables.$color-white;
-          }
-        }
-      }
-      .cont-Head {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-        background: variables.$color-primary;
-      }
-      header {
-        width: 25%;
-        height: 100px;
-        display: block;
-      }
-      .logo-header {
-        width: 45px;
-        margin: 20px 20px;
-      }
-      .nav-open {
-        transform: translate(0%);
-      }
+@media (max-width: 768px) {
+  .menu-bars {
+    display: block;
+  }
+  .nav-item {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 2560px) {
+  .header-content {
+    .nav-item {
+      display: block;
     }
   }
 }
