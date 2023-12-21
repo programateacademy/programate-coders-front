@@ -9,7 +9,6 @@
   justify-content: space-between;
   padding: 0 20px;
   align-items: center;
-  font-family: variables.$font-Bold;
   z-index: 1002;
 }
 
@@ -29,17 +28,16 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  margin: 0 20px;
 
   .text-item {
     color: variables.$color-white;
     margin: 0 20px;
-    font-family: variables.$font-Bold;
+    font-family: variables.$font-SemiBold;
     text-decoration: none;
     font-size: 22px;
-    font-weight: 400;
     cursor: pointer;
   }
+
   .text-item:hover {
     color: variables.$color-secondary;
   }
