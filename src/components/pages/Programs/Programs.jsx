@@ -1,6 +1,6 @@
 import React from "react";
 import { programateStore } from "../../../store/programateStore";
-import SchoolAcademyToggle from "../../molecules/SchoolAcademyToggle/SchoolAcademyToggle";
+import ChooseProgram from "../../molecules/ChooseProgram/ChooseProgram";
 import Button from "../../atoms/button/Button";
 import { Link } from "react-router-dom";
 function Programs() {
@@ -21,10 +21,10 @@ function Programs() {
         <h1 className="program-title">
           Conoce nuestros <br /> programas
         </h1>
-        <SchoolAcademyToggle
+        <ChooseProgram
           programa={programa}
           setPrograma={setPrograma}
-        ></SchoolAcademyToggle>
+        ></ChooseProgram>
         {
           {
             academy: (

@@ -6,9 +6,8 @@ import { programateStore } from "../../../store/programateStore";
 import { useVideos } from "../../../hooks/useVideos";
 import ListDrive from "../../molecules/ListDrive/ListDrive";
 function PanelAcademy({programa}) {
-  const [tabTogleState,setTabTogleState]= useState("videos")
-  const [filterWorkbooks, setFilterWorkbooks] = useState([])
-  const { setSelectedResource, SelectedResource, language, playList,workbooks,fileType,languageYoutube,filterItems} = programateStore();
+  console.log(programa);
+  const { setSelectedResource, SelectedResource, playList,workbooks,fileType,languageYoutube,filterItems} = programateStore();
   const { videos } = useVideos(languageYoutube, playList);
   useEffect(() => {
 
@@ -16,9 +15,6 @@ function PanelAcademy({programa}) {
       videos.refetch();
   }, [languageYoutube]);
 
-  if (videos.isFetching) {
-    return <p>Loading...</p>;
-  }
 
   if (videos.isError) {
     return <p>{`${videos.error}`}</p>;
@@ -62,7 +58,7 @@ function PanelAcademy({programa}) {
         )}
       </div>
       <div className="tabSources">
-        <TabList programa={programa} videosYoutube={videos.data}/>
+        <TabList videosYoutube={videos.data} programa={programa}/>
         <ListVideos videos={videos.data}/>
         <ListDrive  sources={filterItems} nameSource={"workbooks"}/>
       </div>

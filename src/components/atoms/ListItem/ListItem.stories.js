@@ -1,5 +1,7 @@
 import ListItem from "./ListItem";
 import "./ListItem.style.scss"
+import "../../_settings/_base.scss";
+
 export default {
   title: "Components/atoms/ListItem",
   component: ListItem,
@@ -11,9 +13,9 @@ export default {
   },
 };
   /**
-   * Li(listItem) para seleccionar el recurso que se quiere mostrar
+   * Li(listItem) para mostrar los tilulos de los recursos y seleccionar el recurso que se quiere cargar
    */
-export const ListIte = {
+export const ListItemDefault = {
   args: {
     className: "list-item",
     children: "Curso JavaScript"

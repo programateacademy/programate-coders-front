@@ -3,7 +3,7 @@ import ListItem from '../../atoms/ListItem/ListItem'
 import { programateStore } from '../../../store/programateStore'
 import { Query, useQueryClient } from '@tanstack/react-query'
 function ListVideos({videos}) {
-  const {setSelectedResource,language,fileType}=programateStore()
+  const {setSelectedResource,fileType}=programateStore()
   // const queryClient = useQueryClient();
   // const videos = queryClient.getQueryData(["currentPlayList", language]);
   const tab ={

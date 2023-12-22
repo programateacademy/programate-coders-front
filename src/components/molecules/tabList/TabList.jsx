@@ -1,26 +1,19 @@
 import React from "react";
 import Button from "../../atoms/button/Button";
 import { programateStore } from "../../../store/programateStore";
-
-const tab = {
-  videos: "videos",
-  workbooks: "workbooks",
-};
-
-function TabList({programa,videosYoutube}) {
-  const { fileType, setSelectedResource,setFileType,videos,workbooks,setFilterItems } = programateStore();
-
+import PropTypes from 'prop-types';
+function TabList({videosYoutube, programa}) {
+  const { fileType, setSelectedResource,setFileType,videos,workbooks,setFilterItems, } = programateStore();
+  console.log(programa);
   function handleTabState(state) {
     setFileType(state);
     if (state === "videos" && programa === "academy") {
-      console.log(videosYoutube);
       setSelectedResource(videosYoutube[0].snippet.resourceId.videoId);
     }
     if (state === "videos" && programa === "school") {
       const filteritems =(videos.school)
       setFilterItems(filteritems)
       setSelectedResource(filteritems[0].id);
-      console.log("videos");
     }
     if (state === "workbooks" && programa === "academy") {
 
@@ -36,31 +29,40 @@ function TabList({programa,videosYoutube}) {
     }
     
   }
-  const data = { setFileType, setSelectedResource, videos, workbooks };
   return (
     <div className="TabList">
       <Button
         className={
-          fileType === tab.videos
+          fileType === "videos"
             ? "button-tab button-tab-active"
             : "button-tab"
         }
-        onClick={() => handleTabState(tab.videos)}
+        onClick={() => handleTabState("videos")}
       >
         Videos
       </Button>
       <Button
         className={
-          fileType === tab.workbooks
+          fileType === "workbooks"
             ? "button-tab button-tab-active"
             : "button-tab"
         }
-        onClick={() => handleTabState(tab.workbooks)}
+        onClick={() => handleTabState("workbooks")}
       >
         workbooks
       </Button>
     </div>
   );
 }
+TabList.propTypes = {
+  /**
+   * se usa en el onclick para saber que valores poder al cargar la lista
+   */
+  programa: PropTypes.oneOf(['school','academy']).isRequired,
+  /**
+   * se usa en el onclick para saber que valores poder al cargar la lista
+   */
+  videosYoutube: PropTypes.object,
+};
 
 export default TabList;

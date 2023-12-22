@@ -1,5 +1,6 @@
 import Button from "./Button";
 import "./Button.styles.scss";
+import "../../_settings/_base.scss";
 
 export default {
   title: "Components/atoms/Button",
