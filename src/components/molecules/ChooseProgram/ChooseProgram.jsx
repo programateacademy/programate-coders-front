@@ -19,9 +19,9 @@ function ChooseProgram({ programa, setPrograma }) {
         <p>Prográmate Academy</p>
         <Button
           className={"button-show"}
-          onClick={() =>setPrograma("academy") }
+          onClick={() => setPrograma("academy")}
         >
-          ver mas.
+          ver más
         </Button>
       </div>
       <div
@@ -33,7 +33,7 @@ function ChooseProgram({ programa, setPrograma }) {
       >
         <p>Prográmate School</p>
         <Button className={"button-show"} onClick={() => setPrograma("school")}>
-          ver más.
+          ver más
         </Button>
       </div>
     </section>

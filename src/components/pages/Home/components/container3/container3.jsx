@@ -6,17 +6,15 @@ function Container3() {
         <div className='container3'>
                 <h1 className='title-info-cont3'>Conocer algunas historias</h1>
             <div className='info-cont3'>
-                <div className='history'>
-                    <h2>Nombre</h2>
-                    <p>Gracias al Programa, ahora estoy construyendo sitios web. 
-                    ¡Excelente experiencia de aprendizaje!</p>
-                    <img src="src\assets\Imagenes\commits.svg" alt="" />
+                <div className='history' >
+                    <h2>Sebastian</h2>
+                    <p>El bootcamp de desarrollo frontend no solo me equipó con habilidades técnicas, sino que también fue una oportunidad para desarrollar mis habilidades blandas.</p>
+                    <img src={new URL(`../../../../../assets/Imagenes/commits.svg`, import.meta.url).href}  alt="" />
                 </div>
                 <div className='history' id='history2'>
-                    <h2>Nombre</h2>
-                    <p>Gracias al Programa, ahora estoy construyendo sitios web. 
-                    ¡Excelente experiencia de aprendizaje!</p>
-                    <img src="src\assets\Imagenes\commits.svg" alt="" />
+                    <h2>Andres</h2>
+                    <p>Aprendí habilidades clave para el desarrollo web y ahora me siento confiado para enfrentar nuevos proyectos. ¡Gracias por brindarme las herramientas para impulsar mi carrera en el mundo del desarrollo Frontend!"</p>
+                    <img src={new URL(`../../../../../assets/Imagenes/commits.svg`, import.meta.url).href} alt="" />
                 </div>
             </div>
         </div>
