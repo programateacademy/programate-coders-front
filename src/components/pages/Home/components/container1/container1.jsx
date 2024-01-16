@@ -33,7 +33,7 @@ function Container1() {
         </p>
         <div className="cards-container1">
           <div className="cards-1">
-            <h3>Programate</h3>
+            <h3>Prográmate</h3>
             <h2>Academy</h2>
             <img
               src={
@@ -55,7 +55,7 @@ function Container1() {
             </Link>
           </div>
           <div className="cards-1">
-            <h3>Programate</h3>
+            <h3>Prográmate</h3>
             <h2>School</h2>
             <img
               src={
