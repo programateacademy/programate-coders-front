@@ -4,6 +4,8 @@ import {
   FaBars,
   FaFacebookF,
   FaLinkedinIn,
+  FaTiktok,
+  FaSpotify,
 } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import EducamasLogo from "../../../assets/Imagenes/logo1 1.svg";
