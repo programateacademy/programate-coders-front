@@ -1,8 +1,14 @@
 import React from "react";
 import Button from "../../atoms/button/Button";
-function SchoolAcademyToggle({ programa, setPrograma }) {
+import PropTypes from 'prop-types';
+/**
+ * Componente para seleccionar el programa al que se quiere acceder
+ */
+function ChooseProgram({ programa, setPrograma }) {
+ 
+
   return (
-    <section className="SchoolAcademyToggle">
+    <section className="ChooseProgram">
       <div
         className={
           programa === "academy"
@@ -33,5 +39,16 @@ function SchoolAcademyToggle({ programa, setPrograma }) {
     </section>
   );
 }
+ChooseProgram.propTypes = {
+  /**
+   * Define cual es el activo programa para variar el aspecto del componente 
+   */
+  programa: PropTypes.oneOf(['school','academy']).isRequired,
+  /**
+   * Funcion que permite cambiar de programa cuando se hace click en mostrar mas
+   */
+  setPrograma: PropTypes.func.isRequired,
+};
 
-export default SchoolAcademyToggle;
+
+export default ChooseProgram;

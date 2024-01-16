@@ -1,6 +1,6 @@
 @use "../../_settings/variables";
 @use "../../_settings/mixins";
-.SchoolAcademyToggle {
+.ChooseProgram {
   align-items: center;
   justify-content: center;
   padding: 1rem;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .SchoolAcademyToggle {
+  .ChooseProgram {
     max-width: 320px;
     gap: 0;
     padding: 0.5rem;
