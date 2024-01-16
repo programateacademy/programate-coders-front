@@ -2,8 +2,6 @@
   font-family: "Gilroy-Regular";
   background: black;
   height: 214px;
-
-  
 }
 .footer1 {
   display: flex;
@@ -15,13 +13,11 @@
 }
 .footer2 {
   margin: 0 50px;
-  
 }
 .number {
   font-size: 20px;
-
-}  
-.direction{
+}
+.direction {
   margin: 0 20px;
   font-size: 20px;
 }
@@ -36,13 +32,10 @@
   height: 80px;
   font-weight: bold;
   font-size: 15px;
-
-  
 }
 .social-media {
   display: flex;
   justify-content: space-between;
-  
 }
 .redes {
   font-size: 32px;
@@ -52,14 +45,12 @@
 
 .footer-divider {
   border: 1px solid white; /* Color y grosor de la línea */
-  margin: 0 50px; /* Espaciado a cada lado de la línea */
-
+  margin: 0 20px; /* Espaciado a cada lado de la línea */
 }
 
 @media (max-width: 768px) {
   .footer {
     height: 150px;
-    
   }
   .footer1 {
     height: 60px;
@@ -67,15 +58,12 @@
     margin: 0 30px;
   }
   .footer2 {
-    
     height: 60px;
   }
   .number {
     font-size: 14px;
-  
-  }  
-  .direction{
-  
+  }
+  .direction {
     font-size: 14px;
   }
   .footer-bottom {
@@ -83,34 +71,32 @@
   }
   .logo {
     transform: scale(0.6);
-    
   }
-  
+
   .redes {
     font-size: 16px;
 
     margin: 0.5rem;
-    
   }
 }
 @media (max-width: 480px) {
- 
   .logo {
     transform: scale(0.5);
+    margin-left: -20px;
   }
   .footer1 {
     font-size: 8px;
     margin: 0 25px;
   }
   .footer-bottom {
-    font-size: 9px;
+    font-size: 12px;
   }
   .number {
-    font-size: 9px;
-  
-  }  
-  .direction{
-  
-    font-size: 9px;
+    font-size: 12px;
+    margin-left: -10px;
+  }
+  .direction {
+    font-size: 12px;
+    margin-right: -5px;
   }
 }

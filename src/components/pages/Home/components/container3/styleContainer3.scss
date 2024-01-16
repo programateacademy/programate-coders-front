@@ -1,135 +1,90 @@
 @use "../../../../_settings/variables.scss";
-*{
-    margin: 0;
-    padding: 0;
+
+.container3 {
+  background: variables.$color-shadow2;
+  width: 100%;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
 }
-.container3{
-    background: variables.$color-shadow2;
+
+.info-cont3 {
+  width: 80%;
+  margin: 0 auto;
+  gap: 50px;
+  display: flex;
+}
+
+.title-info-cont3 {
+  padding: 50px 0 0 0px;
+  font-size: 26px;
+  font-family: variables.$font-Bold;
+  font-weight: 400;
+  color: variables.$color-secondary;
+  text-align: center;
+}
+
+.header-history {
+  display: flex;
+}
+
+.title-history {
+  flex: 1;
+  font-size: 28px;
+  font-family: variables.$font-Bold;
+  font-weight: 400;
+
+  color: variables.$color-secondary;
+}
+
+.text-history {
+  font-size: 20px;
+  font-family: variables.$font-Regular;
+  color: variables.$color-secondary;
+}
+
+.history {
+  margin: 0 auto;
+  margin-top: -30px;
+  padding: 10px;
+  width: 600px;
+  background: variables.$color-white;
+  border-radius: 20px;
+}
+
+.img-history {
+  width: 20%;
+  height: 20%;
+  margin-top: -10px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .container3 {
+    margin-top: 140px;
+  }
+  .info-cont3 {
+    flex-direction: column;
     width: 100%;
-    height: 550px;
-    margin-top: 60px;
-}
-.info-cont3{
-    width: 90%;
-    margin: 0 auto;
-}
-.title-info-cont3{
-    padding: 50px 0 0 0px ;
-    font-size: 26px;
-    font-family: variables.$font-Bold;
-    color: variables.$color-secondary;
-    text-align: center;
-}
-.history{
-    margin: 0 auto;
-    margin-top: -30px;
-    width: 90%;
-    height: 180px;
-    background: variables.$color-white;
-    border-radius: 20px;
-    h2{
-        font-size: 28px;
-        font-family: variables.$font-Bold;
-        color: variables.$color-secondary;
-        transform: translate(3%, 40%);
-    }
-    p{
-        width: 300px;
-        font-size: 14px;
-        font-family: variables.$font-Regular;
-        color: variables.$color-secondary;
-        transform: translate(3%, 20%);
-    }
-    img{
-        width: 100px;
-        transform: translate(252%, -176%);
-    }
-}
-#history2{
-    margin-top: 20px;
-    height: 205px;
-    img{
-        transform: translate(252%, -197%);
-    }
-}
+  }
 
+  .history {
+    max-width: 300px;
+  }
 
-@media (min-width: 426px){
-    .container3{
-        height: 550px;
-    }
-    .history{
-        p{
-            width: 600px;
-            font-size: 18px;
-            transform: translate(3%, 20%);
-        }
-        img{
-            transform: translate(528%, -180%);
-        }
-    }
-    #history2{
-        margin-top: 20px;
-        height: 205px;
-        img{
-            transform: translate(528%, -207%);
-        }
-    }
-}
+  .title-info-cont3 {
+    font-size: 24px;
+  }
 
-@media (min-width: 769px){
-    .info-cont3{
-        display: flex;
-    }
-    .container3{
-        height: 450px;
-    }
-    .history{
-        width: 400px;
-        height: 250px;
-        p{
-            margin-top: -30px;
-            width: 350px;
-            font-size: 18px;
-            transform: translate(3%, 20%);
-        }
-        img{
-            transform: translate(308%, -198%);
-        }
-    }
-    #history2{
-        margin-top: -30px;
-        height: 250px;
-        p{
-            margin-top: -50px;
-        }
-        img{
-            transform: translate(308%, -232%);
-        }
-    }
-}
+  .title-history {
+    font-size: 25px;
+  }
 
-@media (min-width: 1025px){
-    .container3{
-        height: 450px;
-    }
-    .history{
-        width: 550px;
-        height: 240px;
-        p{
-            margin-top: -10px;
-            width: 500px;
-            font-size: 20px;
-            transform: translate(3%, 20%);
-        }
-        img{
-            transform: translate(458%, -204%);
-        }
-    }
-    #history2{
-        height: 240px;
-        img{
-            transform: translate(458%, -224%);
-        }
-    }
+  .text-history {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
 }

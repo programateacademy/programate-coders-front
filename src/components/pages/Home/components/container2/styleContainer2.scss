@@ -1,150 +1,159 @@
 @use "../../../../_settings/variables.scss";
 
-*{
-    margin: 0;
-    padding: 0;
-}
-.container2{
-    width: 90%;
-    margin: -30px auto;
-    h1{
-        font-size: 20px;
-        font-family: variables.$font-Bold;
-        color: variables.$color-secondary;
-    }
-    p{
-        font-size: 14px;
-        font-family: variables.$font-Bold;
-        color: variables.$color-secondary;
-        margin-top: -40px;
-        span{
-            font-family: variables.$font-Regular;
-        }
-    }
-}
-.cont-info-container2{
-    width: 90%;
-}
-.info1-container2{
-    display: flex;
-}
-.img1-container2{
-    width: 80px;
-    height: 80px;
-    background: variables.$color-shadow;
-    position: relative;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-.icon1-info1-container2{
-    width: 60px;
-    height: 60px;
-    padding: 10px 10px;
-    margin: 10px 10px;
+.container2 {
+  width: 80%;
+  margin: -90px auto;
+  h1 {
+    font-size: 38px;
+    font-family: variables.$font-Bold;
+    font-weight: 400;
+
     color: variables.$color-secondary;
-}
-.img-info1-container2{
-    width: 35px;
-    position: absolute;
-    left: 45px;
-    background: variables.$color-secondary;
-    border-radius:  0 10px  0 10px;
-    padding: 5px 5px 0px 0px;
-}
-.text-container2{
-    h2{
-        font-size: 18px;
-        font-family: variables.$font-Bold;
-        color: variables.$color-secondary;
-        margin-top: -5px;
-    }
-    p{
-        margin-top: -45px;
-        line-height: 14px;
-    }
-    h3{
-        font-size: 14px;
-        margin-top: -20px;
-        background: variables.$color-shadow2;
-        font-family: variables.$font-Bold;
-        width: 77px;
-        padding: 3px 5px;
-        border-radius: 6px;
-        border: 2px solid variables.$color-shadow;
-        text-align: center;
-    }
-}
-.button-container2{
-    left: 50%;
-    position: absolute;
-    width: 70%;
-    transform: translate(-50%, 0%);
+  }
+  p {
+    font-size: 22px;
+    font-family: variables.$font-Bold;
+    font-weight: 400;
 
-}
-@media (min-width: 426px){
-    .container2{
-        margin-top: 30px;
-        h1{
-            font-size: 26px;
-        }
-        p{
-            font-size: 18px;
-        }
+    color: variables.$color-secondary;
+    margin-top: -40px;
+    span {
+      font-family: variables.$font-Regular;
     }
+  }
 }
 
-@media (min-width: 769px){
-    .container2{
-        width: 80%;
-    }
-    .cont-info-container2{
-        display: flex;
-    }
-    .info1-container2{
-        margin: 0 20px 0 0;
-    }
-    .img1-container2{
-        width: 90px;
-        height: 90px;
-    }
-    .text-container2{
-        p{
-           width: 160px;
-            line-height: 20px;
-        }
-    }
-    .icon1-info1-container2{
-        width: 70px;
-        height: 70px;
-    }
-    .img-info1-container2{
-        width: 40px;
-        position: absolute;
-        left: 50px;
-        background: variables.$color-secondary;
-        border-radius:  0 10px  0 10px;
-        padding: 5px 5px 0px 0px;
-    }
+.cont-info-container2 {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
 }
 
-@media (min-width: 1025px){
-    .container2{
-        margin-top: -100px;
+.info1-container2 {
+  display: flex;
+  max-width: 340px;
+}
+
+.img1-container2 {
+  width: 110px;
+  min-width: 110px;
+  height: 110px;
+  background: variables.$color-shadow;
+  position: relative;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.icon1-info1-container2 {
+  width: 90px;
+  height: 90px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  color: variables.$color-secondary;
+}
+
+.img-info1-container2 {
+  width: 35px;
+  position: absolute;
+  left: 75px;
+  background: variables.$color-secondary;
+  border-radius: 0 10px 0 10px;
+  padding: 5px 5px 0px 0px;
+}
+
+.text-container2 {
+  h2 {
+    font-size: 22px;
+    font-family: variables.$font-Bold;
+    font-weight: 400;
+    color: variables.$color-secondary;
+    margin-top: -5px;
+  }
+  p {
+    font-size: 20px;
+    margin-top: -45px;
+    line-height: 22px;
+  }
+  h3 {
+    font-size: 14px;
+    margin-top: -20px;
+    background: variables.$color-shadow2;
+    font-family: variables.$font-Bold;
+    width: 77px;
+    padding: 3px 5px;
+    border-radius: 6px;
+    border: 2px solid variables.$color-shadow;
+    text-align: center;
+  }
+}
+
+.button-container2 {
+  left: 50%;
+  position: absolute;
+  width: 70%;
+  transform: translate(-50%, 0%);
+  text-decoration: none;
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+  .cont-info-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .info1-container2 {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .container2 {
+    margin-top: -130px;
+    width: 85%;
+    h1 {
+      font-size: 24px;
     }
-    .img1-container2{
-        width: 110px;
-        height: 110px;
+    p {
+      font-size: 16px;
     }
-    .icon1-info1-container2{
-        width: 90px;
-        height: 90px;
+  }
+
+  .cont-info-container2 {
+    gap: 0px;
+    margin-bottom: 20px;
+  }
+
+  .text-container2 {
+    h2 {
+      font-size: 18px;
     }
-    .img-info1-container2{
-        left: 70px;
+
+    p {
+      font-size: 16px;
     }
-    .text-container2{
-        p{
-           width: 240px;
-        }
-    }
+  }
+
+  .img1-container2 {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+  }
+
+  .icon1-info1-container2 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .img-info1-container2 {
+    width: 30px;
+
+    left: 60px;
+  }
+
+  .button-container2 {
+    transform: translate(-50%, 5%);
+  }
 }

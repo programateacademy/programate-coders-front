@@ -13,7 +13,7 @@
 }
 
 .menu-bars {
-  color: white;
+  color: variables.$color-secondary;
   width: 40px;
   height: 40px;
   display: none;
@@ -30,16 +30,17 @@
   justify-content: end;
 
   .text-item {
-    color: variables.$color-white;
+    color: variables.$color-secondary;
     margin: 0 20px;
-    font-family: variables.$font-SemiBold;
+    font-family: variables.$font-Bold;
+    font-weight: 400;
     text-decoration: none;
     font-size: 22px;
     cursor: pointer;
   }
 
   .text-item:hover {
-    color: variables.$color-secondary;
+    color: variables.$color-white;
   }
 }
 
