@@ -3,7 +3,21 @@ import { LiaUserClockSolid } from "react-icons/lia";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { IoChatbubblesOutline } from "react-icons/io5";
 import Button from '../../../../atoms/button/Button';
+import { Link } from 'react-router-dom'; 
+import { programateStore } from '../../../../../store/programateStore';
 function Container1(){
+    const { setPrograma,setFileType,setSelectedResource ,videos} = programateStore();
+    const handleProgramClick = (programa) => {
+        setPrograma(programa);
+        console.log(programa);
+        if (programa === "academy") {
+            setFileType("videos");
+          }
+          if (programa === "school") {
+            setFileType("videos");
+            setSelectedResource(videos.school[0].id);
+          }
+    };
     return(
         <div className='container1'>
             <div className='cont1'>
@@ -14,13 +28,13 @@ function Container1(){
                         <h3 className='title-card1'>Programate</h3>
                         <h2>Academy</h2>
                         <img src={new URL(`../../../../../assets/Imagenes/img-card1-cont1.svg`, import.meta.url).href}alt="" className='img-card1-cont1'/>
-                        <a href="/recursos/academy"><Button className='button-card button1-card1-cont1'>Ver programa</Button></a>
+                        <Link to={"/recursos/academy"}><Button onClick={()=>handleProgramClick("academy")} className='button-card button1-card1-cont1'>Ver programa</Button></Link>
                     </div>
                     <div className='card2-Cont1'>
                         <h3>Programate</h3>
                         <h2>School</h2>
                         <img src={new URL(`../../../../../assets/Imagenes/KeepingBook.png`, import.meta.url).href} alt="" className='img-card2-cont1' />
-                        <a href="/recursos/school"><Button className='button-card button2-card2-cont1'>Ver programa</Button></a>
+                        <Link to={"/recursos/school"} ><Button onClick={()=>handleProgramClick("school")} className='button-card button2-card2-cont1'>Ver programa</Button></Link>
                     </div>
                 </div>
             </div>
